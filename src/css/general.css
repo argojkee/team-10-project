@@ -1,0 +1,89 @@
+:root {
+    --main-color-page: #111111;
+    --specific-color: #FD9222;
+    --primary-background-color: #1E1823;
+    --general-transition: 250ms linear;
+}
+
+
+/*General*/
+body {
+    font-family: 'Montserat', sans-serif;
+}
+
+.title {
+    font-weight: 600;
+    letter-spacing: -0.03;
+}
+
+
+
+@media screen and (min-width: 376px) {
+
+    /*General*/
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+/*Только мобилка*/
+@media screen and (max-width: 767px) {
+
+    /*General*/
+    .container {
+        max-width: 375px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+
+
+/*Мобилка и планшет*/
+@media screen and (max-width: 1199px) {
+
+}
+
+
+
+/*Планшет и десктоп*/
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+
+
+
+
+/*Только планшет*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    /*General*/
+    .container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/*Только десктоп*/
+@media screen and (min-width: 1200px) {
+
+    /*General*/
+    .container {
+        width: 1200px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
