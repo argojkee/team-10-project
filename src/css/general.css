@@ -12,6 +12,7 @@ body {
     font-family: 'Montserat', sans-serif;
 }
 
+
 .title {
     font-weight: 600;
     letter-spacing: -0.03em;
@@ -43,6 +44,9 @@ body {
         max-width: 375px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .section {
+        padding-top: 72px;
     }
 
     .title {
@@ -80,6 +84,10 @@ body {
         padding-left: 32px;
         padding-right: 32px;
     }
+
+    .section {
+        padding-top: 100px;
+    }
 }
 
 /*Только десктоп*/
@@ -90,5 +98,9 @@ body {
         width: 1200px;
         padding-left: 32px;
         padding-right: 32px;
+    }
+
+    .section {
+        padding-top: 128px;
     }
 }

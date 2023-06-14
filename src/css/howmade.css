@@ -1,5 +1,28 @@
 /* Alexander Chenykh */
 
+
+/*Для всех вьюпортов*/
+
+
 .chernykh-example {
     color: tomato;
 }
+
+/*Только мобилка*/
+@media screen and (max-width: 767px) {}
+
+/*Мобилка и планшет*/
+@media screen and (max-width: 1199px) {}
+
+
+
+/*Только планшет*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {}
+
+
+/*Планшет и десктоп*/
+@media screen and (min-width: 768px) {}
+
+
+/*Только десктоп*/
+@media screen and (min-width: 1200px) {}

@@ -1,5 +1,37 @@
 /* Anastasia */
 
+/*Для всех вьюпортов*/
+
+
 .anastasia-example {
     color: tomato;
 }
+
+/*Только мобилка*/
+@media screen and (max-width: 767px) {
+    .advantages-section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/*Мобилка и планшет*/
+@media screen and (max-width: 1199px) {}
+
+
+
+/*Только планшет*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {}
+
+
+/*Планшет и десктоп*/
+@media screen and (min-width: 768px) {
+    .advantages-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/*Только десктоп*/
+@media screen and (min-width: 1200px) {}

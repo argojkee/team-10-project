@@ -1,5 +1,42 @@
  /* Yakiv  */
 
+
+ /*Для всех вьюпортов*/
+
+
  .yakiv-example {
     color: tomato;
+ }
+
+ /*Только мобилка*/
+ @media screen and (max-width: 767px) {
+   .hero-section {
+      padding-bottom: 20px;
+   }
+ }
+
+ /*Мобилка и планшет*/
+ @media screen and (max-width: 1199px) {
+
+ }
+
+
+
+ /*Только планшет*/
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+ }
+
+
+ /*Планшет и десктоп*/
+ @media screen and (min-width: 768px) {
+   .hero-section {
+      padding-bottom: 40px;
+   }
+ }
+
+
+ /*Только десктоп*/
+ @media screen and (min-width: 1200px) {
+
  }
