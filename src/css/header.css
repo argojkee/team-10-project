@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 /*Header*/
 
 .header-container {
@@ -34,26 +28,16 @@
 }
 
 
-
-
 /* Только мобилка */
 
 
 @media screen and (max-width: 767px) {
 
-
-
   /*Header*/
   .page-header {
     padding-top: 20px;
     padding-bottom: 14px;
-
   }
-
-
-
-
-
 
   /*Mobile menu*/
   .close-mobile-menu {
@@ -139,7 +123,6 @@
 
   .mobile-menu-container {
     position: relative;
-    width: 100%;
     height: 100%;
 
   }
@@ -150,7 +133,7 @@
     justify-content: space-between;
 
     height: 100%;
-    background-color: #1E1823;
+    background-color: var(--primary-background-color);
     margin-left: auto;
   }
 
@@ -162,7 +145,7 @@
     border: none;
 
     position: absolute;
-    color: white;
+    color: var(--icon-dark-theme);
   }
 
   .close-mobile-menu:hover,
@@ -187,7 +170,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    color: white;
+    color: var(--icon-dark-theme);
   }
 
   .mobile-menu-link:hover,
@@ -206,7 +189,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--icon-dark-theme);
     transition: color var(--general-transition);
   }
 
@@ -219,11 +202,7 @@
     fill: transparent;
     stroke: currentColor;
   }
-
-
 }
-
-
 
 
 /*Планшет и десктоп*/
@@ -237,13 +216,10 @@
 }
 
 
-
 /*Только планшет */
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
-
 
   /*Header*/
   .page-header {
@@ -255,7 +231,6 @@
     height: 32px;
   }
 
-
   /*Mobile menu*/
   .mobile-menu-container {
     padding-right: 0;
@@ -264,7 +239,6 @@
   .close-mobile-menu {
     top: 24px;
     right: 32px;
-
   }
 
   .icon-close {
@@ -295,8 +269,6 @@
 
 
 @media screen and (min-width: 1200px) {
-
- 
 
   /*Header*/
   /*Mobile-menu*/

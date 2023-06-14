@@ -2,6 +2,7 @@
     --main-color-page: #111111;
     --specific-color: #FD9222;
     --primary-background-color: #1E1823;
+    --icon-dark-theme: #FFFFFF;
     --general-transition: 250ms linear;
 }
 
@@ -13,9 +14,13 @@ body {
 
 .title {
     font-weight: 600;
-    letter-spacing: -0.03;
+    letter-spacing: -0.03em;
+    color: var(--main-color-page);
 }
 
+.title-span {
+    color: var(--specific-color);
+}
 
 
 @media screen and (min-width: 376px) {
