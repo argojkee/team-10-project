@@ -7,6 +7,11 @@
 }
 
 
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('Montserrat.ttf') format ('truetype');
+}
 /*General*/
 body {
     font-family: 'Montserat', sans-serif;
