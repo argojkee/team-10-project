@@ -1,14 +1,27 @@
 <!-- Yakiv -->
 
 <section class="hero-section">
-    <div class="container">
-    <h2 class="yakiv-example">Hello my dear friend</h2>
-    <h2 class="title">TTILE-BLACK <span class="title-span">TITLE-ORANGE</span> </h2>
-    <!-- Обрати внимание, что стили на контейнер и на класс title приходят из файла стилей general.css  -->
-    <!-- Тебе нужно просто продолжать свой код html в этом контейнере -->
-    <!-- Общие сбросы для заголовков, списков и так далее   приходят с файла reset.css, поэтому тебе не нужно делать контейнер и общие сбросы -->
-    <!-- Перед началом работы, ознакомься, пожалуйста с файлами general.css u reset.css. В файле general я прописал общие падинги для секций. Если у твоей секции нет общих отступов, то значит, яз аписал их в твоём личном файле css -->
-    <!-- Цвет заголовка Томато приходит из твоего файла css, где ты будешь работать -->
-    <!-- Если я забыл указать какой-то общий сброс или есть идея по поводу общей переменной в руте или по общим стилям - сообщи мне. Удачи =) -->
+  <div class="container">
+    <div class="hero-container">
+      <h2 class="title visually-hidden">Simply Chocolate</h2>
+      <h1 class="hero-title">
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
+      </h1>
+      <div class="hero-nav">
+        <div class="hero-nav-btn-wrapper">
+          <button class="btn-buy-now" type="button">Buy now</button>
+          <a class="btn-how-its-made" href="#how-its-made"> How it’s made </a>
+        </div>
+        <a class="btn-scroll-down" href="#footer">
+          scroll down
+          <span class="icon-arrow-wrapper">
+            <svg class="icon-arrow">
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
