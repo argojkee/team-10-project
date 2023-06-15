@@ -1,7 +1,5 @@
 /* Yakiv  */
 
-
-
 /* Hero */
 
 .hero-container {
@@ -18,23 +16,30 @@
 /* bg mobile */
 @media screen and (max-width: 767px) {
   .hero-container {
-    padding-top: 385px;
+    padding-top: 395px;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-
-    background-image: linear-gradient(
-        180deg,
-        rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
-      url('../images/hero/bg-mobile.jpg');
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (max-device-pixel-ratio: 1.99),
+    screen and (-webkit-max-device-pixel-ratio: 1.99),
+    screen and (max-resolution: 191dpi),
+    screen and (max-resolution: 1.99dppx) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url('../images/hero/bg-mobile.jpg');
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-device-pixel-ratio: 2.99),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
+    screen and (min-resolution: 192dpi) and (max-resolution: 287dpi),
+    screen and (min-resolution: 2dppx) and (max-resolution: 2.99dppx) {
     .hero-container {
       background-image: linear-gradient(
           180deg,
@@ -66,19 +71,26 @@
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
-
-    background-image: linear-gradient(
-        180deg,
-        rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
-      url('../images/hero/bg-tablet.jpg');
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (max-device-pixel-ratio: 1.99),
+    screen and (-webkit-max-device-pixel-ratio: 1.99),
+    screen and (max-resolution: 191dpi),
+    screen and (max-resolution: 1.99dppx) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url('../images/hero/bg-tablet.jpg');
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-device-pixel-ratio: 2.99),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
+    screen and (min-resolution: 192dpi) and (max-resolution: 287dpi),
+    screen and (min-resolution: 2dppx) and (max-resolution: 2.99dppx) {
     .hero-container {
       background-image: linear-gradient(
           180deg,
@@ -111,19 +123,26 @@
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
-
-    background-image: linear-gradient(
-        180deg,
-        rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
-      url('../images/hero/bg-desktop.jpg');
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (max-device-pixel-ratio: 1.99),
+    screen and (-webkit-max-device-pixel-ratio: 1.99),
+    screen and (max-resolution: 191dpi),
+    screen and (max-resolution: 1.99dppx) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url('../images/hero/bg-desktop.jpg');
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-device-pixel-ratio: 2.99),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
+    screen and (min-resolution: 192dpi) and (max-resolution: 287dpi),
+    screen and (min-resolution: 2dppx) and (max-resolution: 2.99dppx) {
     .hero-container {
       background-image: linear-gradient(
           180deg,
@@ -154,16 +173,12 @@
 
   font-weight: 500;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 
-.hero-nav {
+.hero-nav-list {
   display: flex;
-}
-
-.hero-nav-btn-wrapper {
-  display: flex;
-  gap: 14px;
+  align-items: center;
 }
 
 .btn-buy-now,
@@ -171,21 +186,11 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  
-
-  
-}
-
-.btn-how-its-made {
-  color: var(--icon-dark-theme);
-  border-radius: 100px;
 }
 
 .btn-buy-now {
- 
-  border: none;
-
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: color var(--general-transition),
+    background-color var(--general-transition);
 }
 
 .btn-buy-now:hover,
@@ -195,17 +200,22 @@
 }
 
 .btn-how-its-made {
-  background-color: transparent;
-  border: 1px solid #ffffff;
+  display: inline-block;
 
-  transition: color 250ms linear, background-color 250ms linear,
-    border-color 250ms linear;
+  color: var(--icon-dark-theme);
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid var(--icon-dark-theme);
+
+  transition: color var(--general-transition),
+    background-color var(--general-transition),
+    border-color var(--general-transition);
 }
 
 .btn-how-its-made:hover,
 .btn-how-its-made:focus {
   color: var(--specific-color);
-  background-color: #ffffff;
+  background-color: var(--icon-dark-theme);
   border-color: var(--specific-color);
 }
 
@@ -217,12 +227,12 @@
 
   font-weight: 500;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--icon-dark-theme);
 
   background-color: transparent;
   border: none;
 
-  transition: color 250ms linear;
+  transition: color var(--general-transition);
 }
 
 .icon-arrow-wrapper {
@@ -245,7 +255,7 @@
 
 .btn-scroll-down:hover .icon-arrow,
 .btn-scroll-down:focus .icon-arrow {
-  fill: #ffffff;
+  fill: var(--icon-dark-theme);
 }
 
 /* mobile */
@@ -255,19 +265,18 @@
     line-height: 1.2;
   }
 
-  .hero-nav {
+  .hero-nav-list {
     flex-wrap: wrap;
+    column-gap: 14px;
     row-gap: 32px;
   }
 
-  .hero-nav-btn-wrapper {
-    flex-wrap: wrap;
-    row-gap: 32px;
-  }
-
-  .btn-buy-now,
-  .btn-how-its-made {
+  .btn-buy-now {
     padding: 12px 28px;
+  }
+
+  .btn-how-its-made {
+    padding: 11px 27px;
   }
 
   .btn-scroll-down {
@@ -297,13 +306,20 @@
     line-height: 1.21;
   }
 
-  .hero-nav {
-    justify-content: space-between;
+  .hero-nav-item:first-child {
+    margin-right: 14px;
   }
 
-  .btn-buy-now,
-  .btn-how-its-made {
+  .hero-nav-item:last-child {
+    margin-left: auto;
+  }
+
+  .btn-buy-now {
     padding: 14px 40px;
+  }
+
+  .btn-how-its-made {
+    padding: 13px 39px;
   }
 
   .btn-scroll-down {
@@ -316,10 +332,5 @@
   .icon-arrow-wrapper {
     width: 38px;
     height: 38px;
-  }
-
-  .icon-arrow {
-    width: 22px;
-    height: 22px;
   }
 }
