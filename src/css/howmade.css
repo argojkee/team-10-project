@@ -1,6 +1,18 @@
 /* Alexander Chenykh */
 
 /*Для всех вьюпортов*/
+.howmade-title {
+  text-align: center;
+}
+.howmade-container-list {
+  background: #ffffff;
+  border-radius: 15px;
+  margin: auto;
+}
+.howmade-subtitle {
+  text-align: justify;
+  flex: none;
+}
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
