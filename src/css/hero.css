@@ -171,13 +171,18 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+  
 
+  
+}
+
+.btn-how-its-made {
+  color: var(--icon-dark-theme);
   border-radius: 100px;
 }
 
 .btn-buy-now {
-  background-color: var(--specific-color);
+ 
   border: none;
 
   transition: color 250ms linear, background-color 250ms linear;
