@@ -8,10 +8,52 @@
 
 
 /* Подключение шрифтов */
+
+
+
 @font-face {
+
     font-family: 'Montserrat', sans-serif;
-    src: url('Montserrat.ttf') format ('truetype');
+    src: 
+        url(../font/static/Montserrat-Regular.ttf) format('truetype');
+
 }
+
+@font-face {
+
+    font-family: 'Montserrat', sans-serif;
+    src:
+        url(../font/static/Montserrat-Medium.ttf) format('truetype');
+        font-weight: 500;
+
+}
+
+@font-face {
+
+    font-family: 'Montserrat', sans-serif;
+    src:
+        url(../font/static/Montserrat-SemiBold.ttf) format('truetype');
+        font-weight: 600;
+}
+
+@font-face {
+
+    font-family: 'Montserrat', sans-serif;
+    src:
+        url(../font/static/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+
+    font-family: 'Montserrat', sans-serif;
+    src:
+        url(../font/static/Montserrat-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 /*General*/
 body {
     font-family: 'Montserat', sans-serif;
