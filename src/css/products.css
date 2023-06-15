@@ -1,16 +1,88 @@
 /* Taras Kuhta */
-
+:root{
+    --background-our-product-list:#FFFFFF;
+    --background-price-btn:#FAFAFA;
+}
 
 
 /*Для всех вьюпортов*/
 
+.title-our-product{
+    display: flex;
+        justify-content: center;
+        align-items: center;
 
-.tarasik-example {
-    color: tomato;
+}
+
+.our-product-list{
+    display: flex;
+    overflow: hidden;
+}
+.mobile-products-list{
+    background: var(--background-our-product-list);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.products-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 8px;
+}
+.text-main-products{
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.02em;
+}
+.text-minor-products{
+    padding-top: 2px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+
+    color: rgba(17, 17, 17, 0.7);
+}
+.price-btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 19px;
+    margin-top: 18px;
+    background:var(--background-price-btn);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
 }
 
 /*Только мобилка*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+    .Our-product-list{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 364px;
+        overflow: hidden;
+        
+    }
+    .title-our-product{
+        
+        margin-bottom: 32px;
+    }
+    .mobile-products-list{
+        width: 100%;
+        height: 100%;
+        padding-left: 53px;
+        padding-top: 32px;
+        padding-right: 52px;
+        padding-bottom: 32px;
+    }
+}
 
 /*Мобилка и планшет*/
 @media screen and (max-width: 1199px) {}
@@ -22,7 +94,18 @@
 
 
 /*Планшет и десктоп*/
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    .title-our-product{
+        margin-bottom: 50px;
+    }
+    .Our-product-list{
+ 
+    }
+    .products-list{
+    
+    }
+}
 
 
 /*Только десктоп*/
