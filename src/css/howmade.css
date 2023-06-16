@@ -15,6 +15,11 @@
 .howmade-title {
   text-align: center;
 }
+.howmade-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
 .howmade-container-list {
   background: var(--icon-dark-theme);
   border-radius: 15px;
@@ -23,22 +28,16 @@
 .howmade-list {
   list-style: disc;
 }
+.howmade-list-item {
+  font-size: 14px;
+  line-height: 18px;
+}
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
   .howmade-subtitle {
-    font-weight: 600;
     padding-top: 20px;
     padding-left: 14px;
-  }
-
-  .howmade-list-item {
-    padding-bottom: 18px;
-    font-size: 14px;
-  }
-  .howmade-container-list {
-    margin-top: 20px;
-    padding: 0px;
   }
 
   .howmade-list {
@@ -92,19 +91,43 @@
 
 /*Мобилка и планшет*/
 @media screen and (max-width: 1199px) {
+  .howmade-list-item {
+    padding-bottom: 18px;
+  }
+  .howmade-container-list {
+    margin-top: 20px;
+    padding: 0px;
+  }
 }
 
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .howmade-container {
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
+  .howmade-container-list {
+    width: 614px;
+    height: 356px;
+  }
+  .howmade-subtitle {
+    padding-right: 232px;
+  }
+  .howmade-list {
+    padding-right: 102px;
+  }
+
   .howmade-container-video {
-    padding: 480px 20px 20px 20px;
+    width: 614px;
+    height: 400px;
 
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url(../images/howmade/howmade-mobile.jpg);
+      url(../images/howmade/howmade-tablet.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -117,7 +140,7 @@
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.4)
         ),
-        url(../images/howmade/howmade-mobile@2x.jpg);
+        url(../images/howmade/howmade-tablet@2x.jpg);
     }
   }
 
@@ -131,17 +154,31 @@
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.4)
         ),
-        url(../images/howmade/howmade-mobile@3x.jpg);
+        url(../images/howmade/howmade-tablet@3x.jpg);
     }
   }
 }
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
+  .howmade-title {
+    padding-bottom: 50px;
+  }
+  .howmade-subtitle {
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+  .howmade-list {
+    padding-top: 28px;
+    padding-left: 48px;
+  }
 }
 
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
+  .howmade-container {
+    display: inline-block;
+  }
   .howmade-container-video {
     padding: 480px 20px 20px 20px;
 
@@ -150,7 +187,7 @@
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url(../images/howmade/howmade-mobile.jpg);
+      url(../images/howmade/howmade-desktop.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -163,7 +200,7 @@
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.4)
         ),
-        url(../images/howmade/howmade-mobile@2x.jpg);
+        url(../images/howmade/howmade-desktop@2x.jpg);
     }
   }
 
@@ -177,7 +214,7 @@
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.4)
         ),
-        url(../images/howmade/howmade-mobile@3x.jpg);
+        url(../images/howmade/howmade-desktop@3x.jpg);
     }
   }
 }
