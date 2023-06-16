@@ -1,10 +1,9 @@
 /* Anastasia */
-
-/*Для всех вьюпортов*/
-
-
+/* Mobile */
 .advantages-section {
 background-color: var(--primary-background-color);
+padding-top: 20px;
+padding-bottom: 20px;
 }
 .advantages-title {
 display: none;
@@ -39,57 +38,66 @@ justify-content: center;
 border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 50%;
 margin-bottom: 22px;
+height: 62px;
+width: 62px;
 }
 .advantages-icon {
 fill: var(--specific-color);
 }
-
-/*Только мобилка*/
-@media screen and (max-width: 767px) {
-    .advantages-section {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .advantages-list {
-        flex-direction: column;
-        gap:20px;
-    }
-}
-
-/*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {
-    .advantages-item {
-        margin-right: 28px;
-    }
-}
-
-
-
-/*Только планшет*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
 .advantages-list {
-    gap: 32px;
+flex-direction: column;
+gap:20px;
 }
 .advantages-item {
-    width: calc((100%-32px)/2);
-}
-
-/*Планшет и десктоп*/
-@media screen and (min-width: 768px) {
-    .advantages-section {
-        padding-top: 50px;
-        padding-bottom: 50px;
+    padding-right: 28px;
     }
-    .advantages-list {
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) {
+.advantages-list {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 32px 32px;
+    }
+.advantages-item {
+    max-width: 336px;
+    height: 244px;
+    }
+.advantages-section-container {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.advantages-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
     }
 }
 
 
-/*Только десктоп*/
+/*Desktop*/
 @media screen and (min-width: 1200px) {
     .advantages-list {
         gap: 70px;
+    }
+    .advantages-item {
+        width: calc((100%-240px) / 3);
+        padding-right: 18px;
+        position: relative;
+    }
+    .advantages-section-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .advantages-list {
+        flex-wrap: nowrap;
+    }
+    .advantages-item:not(:last-child)::before {
+        content: '';
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        right: 0;
+        top: 60px;
+        position: absolute;
+        height: 124px;
     }
 }
