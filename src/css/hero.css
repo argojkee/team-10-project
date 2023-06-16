@@ -202,7 +202,7 @@
 .btn-how-its-made {
   display: inline-block;
 
-  color: var(--icon-dark-theme);
+  color: var(--secondary-text-color);
   background-color: transparent;
   border-radius: 100px;
   border: 1px solid var(--icon-dark-theme);
