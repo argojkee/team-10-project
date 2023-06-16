@@ -4,8 +4,12 @@
 
 
 .advantages-section {
-    background-color: var(#1e1823);
+    background-color: var(--primary-background-color);
 }
+.advantages-title {
+    display: none;
+}
+
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
     .advantages-section {
