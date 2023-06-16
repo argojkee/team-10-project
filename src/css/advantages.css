@@ -3,10 +3,9 @@
 /*Для всех вьюпортов*/
 
 
-.anastasia-example {
-    color: tomato;
+.advantages-section {
+    background-color: var(#1e1823);
 }
-
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
     .advantages-section {
