@@ -88,7 +88,6 @@
     }
 
     .mobile-nav-list {
-
         display: flex;
         flex-direction: column;
         row-gap: 24px;
@@ -106,6 +105,7 @@
     .mobile-menu-link:focus {
         color: var(--specific-color);
     }
+
 
 
     .mobile-social-list {
