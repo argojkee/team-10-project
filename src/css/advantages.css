@@ -3,8 +3,47 @@
 /*Для всех вьюпортов*/
 
 
-.anastasia-example {
-    color: tomato;
+.advantages-section {
+background-color: var(--primary-background-color);
+}
+.advantages-title {
+display: none;
+}
+.advantages-list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+.advantages-section-container {
+display: flex;
+}
+.advantage-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.21;
+letter-spacing: -0.02em;
+color: rgba(255, 255, 255, 0.7);
+}
+.advantage {
+font-weight: 600;
+font-size: 18px;
+line-height: 1.22;
+color: var(--secondary-text-color);
+margin-bottom: 18px;
+}
+.advantages-icon-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 50%;
+margin-bottom: 22px;
+height: 62px;
+width: 62px;
+}
+.advantages-icon {
+fill: var(--specific-color);
 }
 
 /*Только мобилка*/
@@ -13,16 +52,36 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .advantages-list {
+        flex-direction: column;
+        gap:20px;
+    }
 }
 
 /*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1199px) {
+    .advantages-item {
+        padding-right: 28px;
+    }
+}
 
 
 
 /*Только планшет*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .advantages-item {
+        flex-basis: calc(100%/2 - 32px);
+        min-height: 244px;
+    }
+.advantages-list {
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.advantages-section-container {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+}
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
@@ -34,4 +93,28 @@
 
 
 /*Только десктоп*/
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .advantages-list {
+        gap: 70px;
+    }
+    .advantages-item {
+        flex-basis: calc((100%-240px)/3);
+        padding-right: 18px;
+        position: relative;
+    }
+    .advantages-section-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .advantages-list {
+        flex-wrap: nowrap;
+    }
+    .advantages-item:not(:last-child)::before {
+        content: '';
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        right: 0;
+        top: 60px;
+        position: absolute;
+        height: 124px;
+    }
+}
