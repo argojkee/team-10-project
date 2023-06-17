@@ -196,7 +196,7 @@
 .btn-buy-now:hover,
 .btn-buy-now:focus {
   color: var(--specific-color);
-  background-color: #fcf1e0;
+  background-color:  var(--active-modal-button-color);
 }
 
 .btn-how-its-made {
