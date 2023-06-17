@@ -196,7 +196,7 @@
 .btn-buy-now:hover,
 .btn-buy-now:focus {
   color: var(--specific-color);
-  background-color: #fcf1e0;
+  background-color:  var(--active-modal-button-color);
 }
 
 .btn-how-its-made {
@@ -260,6 +260,9 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  .hero-section {
+    padding-bottom: 66px;
+  }
   .hero-title {
     font-size: 20px;
     line-height: 1.2;
@@ -332,5 +335,18 @@
   .icon-arrow-wrapper {
     width: 38px;
     height: 38px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-section {
+    padding-bottom: 59px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .hero-section {
+    padding-bottom: 72px;
   }
 }
