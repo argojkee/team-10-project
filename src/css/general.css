@@ -90,6 +90,11 @@ body {
   border: none;
 }
 
+
+.container {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 376px) {
   /*General*/
   .container {
