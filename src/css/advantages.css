@@ -53,6 +53,9 @@
 .advantages-icon {
     fill: var(--specific-color);
 }
+.advantage-text {
+    max-width: 308px;
+}
 
 .advantage-text {
     max-width: 308px;
@@ -72,6 +75,9 @@
         gap: 20px;
     }
 
+    .advantages-item {
+        width: 100%;
+    }
     .advantages-item {
         width: 100%;
     }
@@ -128,7 +134,6 @@
         flex-basis: calc((100% - 140px) / 3);
         position: relative;
     }
-
     .advantages-item:not(:last-child) {
         padding-right: 18px;
     }
