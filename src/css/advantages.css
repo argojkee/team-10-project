@@ -13,9 +13,7 @@
 }
 
 .advantages-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
     display: flex;
 }
 
@@ -57,9 +55,7 @@
     max-width: 308px;
 }
 
-.advantage-text {
-    max-width: 308px;
-}
+
 
 
 
@@ -78,9 +74,7 @@
     .advantages-item {
         width: 100%;
     }
-    .advantages-item {
-        width: 100%;
-    }
+ 
 }
 
 
@@ -106,10 +100,7 @@
         gap: 32px;
     }
 
-    .advantages-section-container {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+ 
 }
 
 
