@@ -1,9 +1,10 @@
 /* Anastasia */
-/* Mobile */
+
+/*Для всех вьюпортов*/
+
+
 .advantages-section {
 background-color: var(--primary-background-color);
-padding-top: 20px;
-padding-bottom: 20px;
 }
 .advantages-title {
 display: none;
@@ -44,44 +45,60 @@ width: 62px;
 .advantages-icon {
 fill: var(--specific-color);
 }
-.advantages-list {
-flex-direction: column;
-gap:20px;
+
+/*Только мобилка*/
+@media screen and (max-width: 767px) {
+    .advantages-section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .advantages-list {
+        flex-direction: column;
+        gap:20px;
+    }
 }
-.advantages-item {
-    padding-right: 28px;
+
+/*Мобилка и планшет*/
+@media screen and (max-width: 1199px) {
+    .advantages-item {
+        padding-right: 28px;
     }
+}
 
-/*Tablet*/
 
-@media screen and (min-width: 768px) {
+
+/*Только планшет*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .advantages-item {
+        max-width: 336px;
+        height: 244px;
+    }
 .advantages-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px 32px;
-    }
-.advantages-item {
-    max-width: 336px;
-    height: 244px;
-    }
+    flex-wrap: wrap;
+    gap: 32px;
+}
 .advantages-section-container {
     padding-left: 32px;
     padding-right: 32px;
 }
-.advantages-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+
+/*Планшет и десктоп*/
+@media screen and (min-width: 768px) {
+    .advantages-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
 
-/*Desktop*/
+/*Только десктоп*/
 @media screen and (min-width: 1200px) {
     .advantages-list {
         gap: 70px;
     }
     .advantages-item {
-        width: calc((100%-240px) / 3);
+        flex-basis: calc((100%-240px)/3);
         padding-right: 18px;
         position: relative;
     }
