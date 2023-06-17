@@ -72,7 +72,7 @@
         align-items: center;
         background-color: transparent;
         border: none;
-
+        transition: color var(--general-transition);
         position: absolute;
         color: var(--icon-dark-theme);
     }
@@ -99,6 +99,7 @@
         line-height: 1.14;
         letter-spacing: -0.02em;
         color: var(--icon-dark-theme);
+        transition: color var(--general-transition);
     }
 
     .mobile-menu-link:hover,
@@ -107,6 +108,8 @@
     }
 
     
+
+   
 
      .mobile-home-link::after {
     content: "";
