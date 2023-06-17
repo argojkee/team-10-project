@@ -10,7 +10,7 @@
     background-color: rgba(46, 47, 66, 0.4);
 }
 
-.sellers-modal {
+.buy-now-modal {
     background-color: #FAFAFA;
     position: absolute;
     top: 50%;
@@ -19,7 +19,7 @@
     border-radius: 15px;
 }
 
-.sellers-modal-close-btn {
+.buy-now-modal-close-btn {
     position: absolute;
     display: flex;
     align-items: center;
@@ -28,11 +28,11 @@
     border: none;
 }
 
-.sellers-modal-close-icon {
+.buy-now-modal-close-icon {
     stroke: #111111;
 }
 
-.sellers-title {
+.buy-now-title {
     text-align: center;
     margin-bottom: 32px;
 }
@@ -65,26 +65,26 @@
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
-    .sellers-modal {
+    .buy-now-modal {
         width: 311px;
         min-height: 994px;
         padding: 32px 24px;
 
     }
 
-    .sellers-modal-close-btn {
+    .buy-now-modal-close-btn {
         width: 24px;
         height: 24px;
         top: 14px;
         right: 14px;
     }
 
-    .sellers-modal-close-icon {
+    .buy-now-modal-close-icon {
         width: 28px;
         height: 28px;
     }
 
-    .sellers-title {
+    .buy-now-title {
         font-size: 20px;
         line-height: 1.2;
     }
@@ -96,7 +96,7 @@
         align-items: center;
     }
 
-    .sellers-modal-img {
+    .buy-now-modal-img {
         width: 84px;
         height: 69px;
     }
@@ -107,7 +107,7 @@
 
     }
 
-    .sellers-modal-list {
+    .buy-now-modal-list {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -153,20 +153,18 @@
 @media screen and (max-width: 1199px) {}
 
 
-
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {}
 
-
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
-    .sellers-modal {
+    .buy-now-modal {
         width: 609px;
         min-height: 1058px;
         padding: 48px;
     }
 
-    .sellers-modal-close-btn {
+    .buy-now-modal-close-btn {
         width: 28px;
         height: 28px;
         top: 24px;
@@ -174,22 +172,22 @@
 
     }
 
-    .sellers-modal-close-icon {
+    .buy-now-modal-close-icon {
         width: 28px;
         height: 28px;
     }
 
-    .sellers-modal-list {
+    .buy-now-modal-list {
         display: flex;
         gap: 16px;
         margin-bottom: 40px;
     }
 
-    .sellers-modal-item {
+    .buy-now-modal-item {
         width: calc((100% - 32px) / 3);
     }
 
-    .sellers-modal-img {
+    .buy-now-modal-img {
         width: 120px;
         height: 107px;
         margin-right: auto;
@@ -211,12 +209,11 @@
     }
 }
 
-
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
 
-    .sellers-modal-img:hover,
-    .sellers-modal-img:focus {
+    .buy-now-modal-img:hover,
+    .buy-now-modal-img:focus {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 }
