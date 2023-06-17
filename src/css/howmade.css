@@ -23,6 +23,7 @@
 .howmade-container-list {
   background: var(--icon-dark-theme);
   border-radius: 15px;
+  padding: 0px;
 }
 
 .howmade-list {
@@ -96,7 +97,6 @@
   }
   .howmade-container-list {
     margin-top: 20px;
-    padding: 0px;
   }
 }
 
@@ -109,13 +109,13 @@
 
   .howmade-container-list {
     width: 614px;
-    height: 356px;
   }
   .howmade-subtitle {
     padding-right: 232px;
   }
   .howmade-list {
     padding-right: 102px;
+    padding-bottom: 14px;
   }
 
   .howmade-container-video {
@@ -176,15 +176,24 @@
 
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
+  .howmade-container {
+    display: flex;
+  }
   .howmade-container-list {
     width: 516px;
-    height: 400px;
-    display: inline-block;
+  }
+  .howmade-subtitle {
+    padding-right: 134px;
+  }
+  .howmade-list {
+  }
+  .howmade-list-item {
+    padding-bottom: 24px;
   }
   .howmade-container-video {
     width: 600px;
     height: 400px;
-    display: inline-block;
+    margin-right: 20px;
 
     background-image: linear-gradient(
         0deg,
