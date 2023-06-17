@@ -12,9 +12,9 @@
 }
 
 .our-product-list {
-    display: flex;
+  
     align-items: center;
-        width: 100%;
+        
 }
 
 .mobile-products-list {
@@ -65,10 +65,7 @@
     border-radius: 100px;
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
-}
+
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
