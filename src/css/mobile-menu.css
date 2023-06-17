@@ -106,7 +106,14 @@
         color: var(--specific-color);
     }
 
-
+.mobile-home-link::after {
+    content: "";
+    width: 24px;
+    background-color: currentColor;
+    display: block;
+    height: 1px;
+    margin-top: 7px;
+}
 
     .mobile-social-list {
         display: flex;
