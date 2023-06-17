@@ -1,0 +1,33 @@
+/* На кнопку вешаем один из атрибутов: data-first-modal-open, data-second-modal-open, data-third-modal-open */
+/* На бэкрод вешаем один из атрибутов : data-first-modal, data-second-modal, data-third-modal */
+/* На кнопку закрітия вешаем один из атрибутов: data-first-modal-close, data-second-modal-close, data-third-modal-close */
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+    z-index: 2;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
