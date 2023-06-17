@@ -13,6 +13,7 @@
     opacity: 1;
     visibility: visible;
     overflow: auto;
+    z-index: 2;
 }
 
 .modal {
