@@ -1,0 +1,222 @@
+/* Alina */
+
+/*Для всех вьюпортов*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+}
+
+.sellers-modal {
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.sellers-modal-close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+.sellers-modal-close-icon {
+    stroke: #111111;
+}
+
+.sellers-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.chocolate-weight-container {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.chocolate-weight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #111111;
+    background: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/*Только мобилка*/
+@media screen and (max-width: 767px) {
+    .sellers-modal {
+        width: 311px;
+        min-height: 994px;
+        padding: 32px 24px;
+
+    }
+
+    .sellers-modal-close-btn {
+        width: 24px;
+        height: 24px;
+        top: 14px;
+        right: 14px;
+    }
+
+    .sellers-modal-close-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .sellers-title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .chocolate-weight-container {
+        height: 85px;
+        padding: 8px 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sellers-modal-img {
+        width: 84px;
+        height: 69px;
+    }
+
+    .chocolate-weight {
+        width: 70px;
+        height: 29px;
+
+    }
+
+    .sellers-modal-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 32px;
+    }
+
+    .user-name,
+    .user-surname,
+    .user-email,
+    .user-tel,
+    .user-card {
+        width: 100%;
+        height: 45px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+        border-radius: 8px;
+        padding-left: 14px;
+        background-color: transparent;
+        outline: transparent;
+    }
+
+    .user-name {
+        margin-bottom: 14px;
+    }
+
+    .buy-now-form-field-wrapper {
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    .contact-form-field-desk {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+        color: #000000;
+        margin-bottom: 8px;
+    }
+}
+
+/*Мобилка и планшет*/
+@media screen and (max-width: 1199px) {}
+
+
+
+/*Только планшет*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {}
+
+
+/*Планшет и десктоп*/
+@media screen and (min-width: 768px) {
+    .sellers-modal {
+        width: 609px;
+        min-height: 1058px;
+        padding: 48px;
+    }
+
+    .sellers-modal-close-btn {
+        width: 28px;
+        height: 28px;
+        top: 24px;
+        right: 24px;
+
+    }
+
+    .sellers-modal-close-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .sellers-modal-list {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .sellers-modal-item {
+        width: calc((100% - 32px) / 3);
+    }
+
+    .sellers-modal-img {
+        width: 120px;
+        height: 107px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .chocolate-weight-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 14px;
+        height: 196px;
+    }
+
+    .chocolate-weight {
+        width: 96px;
+        height: 33px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+/*Только десктоп*/
+@media screen and (min-width: 1200px) {
+
+    .sellers-modal-img:hover,
+    .sellers-modal-img:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
