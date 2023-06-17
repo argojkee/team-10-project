@@ -36,10 +36,10 @@
     }
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-device-pixel-ratio: 2.99),
-    screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
-    screen and (min-resolution: 192dpi) and (max-resolution: 287dpi),
-    screen and (min-resolution: 2dppx) and (max-resolution: 2.99dppx) {
+  @media screen and (min-device-pixel-ratio: 2) ,
+    screen and (-webkit-min-device-pixel-ratio: 2) ,
+    screen and (min-resolution: 192dpi) ,
+    screen and (min-resolution: 2dppx)  {
     .hero-container {
       background-image: linear-gradient(
           180deg,
@@ -49,7 +49,7 @@
         url('../images/hero/bg-mobile@2x.jpg');
     }
   }
-  @media screen and (min-device-pixel-ratio: 3),
+  /* @media screen and (min-device-pixel-ratio: 3),
     screen and (-webkit-min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
@@ -61,7 +61,7 @@
         ),
         url('../images/hero/bg-mobile@3x.jpg');
     }
-  }
+  } */
 }
 
 /* bg tablet */
@@ -87,10 +87,10 @@
     }
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-device-pixel-ratio: 2.99),
-    screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
-    screen and (min-resolution: 192dpi) and (max-resolution: 287dpi),
-    screen and (min-resolution: 2dppx) and (max-resolution: 2.99dppx) {
+  @media screen and (min-device-pixel-ratio: 2) ,
+    screen and (-webkit-min-device-pixel-ratio: 2) ,
+    screen and (min-resolution: 192dpi) ,
+    screen and (min-resolution: 2dppx)  {
     .hero-container {
       background-image: linear-gradient(
           180deg,
@@ -101,7 +101,7 @@
     }
   }
 
-  @media screen and (min-device-pixel-ratio: 3),
+  /* @media screen and (min-device-pixel-ratio: 3),
     screen and (-webkit-min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
@@ -113,7 +113,7 @@
         ),
         url('../images/hero/bg-tablet@3x.jpg');
     }
-  }
+  } */
 }
 
 /* bg desktop */
@@ -139,10 +139,10 @@
     }
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-device-pixel-ratio: 2.99),
-    screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
-    screen and (min-resolution: 192dpi) and (max-resolution: 287dpi),
-    screen and (min-resolution: 2dppx) and (max-resolution: 2.99dppx) {
+  @media screen and (min-device-pixel-ratio: 2) ,
+    screen and (-webkit-min-device-pixel-ratio: 2) ,
+    screen and (min-resolution: 192dpi) ,
+    screen and (min-resolution: 2dppx)  {
     .hero-container {
       background-image: linear-gradient(
           180deg,
@@ -152,7 +152,7 @@
         url('../images/hero/bg-desktop@2x.jpg');
     }
   }
-
+/* 
   @media screen and (min-device-pixel-ratio: 3),
     screen and (-webkit-min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
@@ -165,7 +165,7 @@
         ),
         url('../images/hero/bg-desktop@3x.jpg');
     }
-  }
+  } */
 }
 
 .hero-title {
