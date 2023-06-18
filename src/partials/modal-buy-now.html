@@ -8,7 +8,36 @@
             </svg>
         </button>
         <h2 class="buy-now-title title">bUY <span class="title-span">nOW</span> </h2>
-        <ul class="buy-now-modal-list">
+
+        <form>
+            <div class="buy-now-modal-chocolate-weight-container">
+                <label class="buy-now-form-chocolate-weight-wrapper">
+                    <input type="checkbox" class="buy-now-modal-checkbox">
+                    <div class="chocolate-weight-container">
+                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-1@2.png"
+                            src="../images/buy-now-modal/buy-now-modal-img-1.png" alt="chocolate">
+                        <p class="chocolate-weight">100 g</p>
+                    </div>
+                </label>
+                <label class="buy-now-form-chocolate-weight-wrapper">
+                    <input type="checkbox" class="buy-now-modal-checkbox">
+                    <div class="chocolate-weight-container">
+                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-2@2.png"
+                            src="../images/buy-now-modal/buy-now-modal-img-2.png" alt="chocolate">
+                        <p class="chocolate-weight">200 g</p>
+                    </div>
+                </label>
+                <label class="buy-now-form-chocolate-weight-wrapper">
+                    <input type="checkbox" class="buy-now-modal-checkbox">
+                    <div class="chocolate-weight-container">
+                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-3@2.png"
+                            src="../images/buy-now-modal/buy-now-modal-img-3.png" alt="chocolate">
+                        <p class="chocolate-weight">300 g</p>
+                    </div>
+                </label>
+            </div>
+        </form>
+        <!-- <ul class="buy-now-modal-list">
             <li class="buy-now-modal-item">
                 <div class="chocolate-weight-container">
                     <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-1@2.png"
@@ -30,7 +59,7 @@
                     <button type="button" class="chocolate-weight">300 g</button>
                 </div>
             </li>
-        </ul>
+        </ul> -->
         <form class="buy-now-modal-form" autocomplete="off">
             <label class="buy-now-form-field-wrapper">
                 <span class="contact-form-field-desk">Personal information
@@ -59,7 +88,7 @@
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Card number</span>
                 <span class="user-card-container">
-                    <input class="user-card" type="tel" name="card" maxlength="16" minlength="16"
+                    <input class="user-card" type="number" name="card" maxlength="16" minlength="16"
                         placeholder="Enter card" required>
                     <svg class="icon-master-card">
                         <use href="./images/sprite.svg#icon-mastercard"></use>
