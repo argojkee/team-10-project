@@ -4,9 +4,9 @@
   --primary-background-color: #1e1823;
   --icon-dark-theme: #ffffff;
   --secondary-text-color: #ffffff;
-      --background-our-product-list: #FFFFFF;
-        --background-price-btn: #FAFAFA;
-        --active-modal-button-color: #FCF1E0;
+  --secondary-background-color: #FFFFFF;
+  --background-price-btn: #FAFAFA;
+  --active-modal-button-color: #FCF1E0;
   --general-transition: 250ms linear;
 }
 
@@ -94,10 +94,25 @@ body {
   border: none;
 }
 
-
-.container {
-  overflow: hidden;
+.flip-card-back-scroll::-webkit-scrollbar {
+  width: 5px;
+  /* ширина всей полосы прокрутки */
 }
+
+.flip-card-back-scroll::-webkit-scrollbar-track {
+  background: var(--background-our-product-list);
+  /* цвет зоны отслеживания */
+}
+
+.flip-card-back-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--specific-color);
+  /* цвет бегунка */
+  border-radius: 20px;
+  /* округлось бегунка */
+  border: 3px solid orange;
+  /* отступ вокруг бегунка */
+}
+
 
 @media screen and (min-width: 376px) {
   /*General*/
@@ -164,3 +179,8 @@ body {
     padding-top: 128px;
   }
 }
+
+
+
+
+
