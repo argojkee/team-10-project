@@ -1,21 +1,10 @@
 /* Alina */
 
 /*Для всех вьюпортов*/
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-}
+
 
 .buy-now-modal {
     background-color: #FAFAFA;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 15px;
 }
 
@@ -63,13 +52,98 @@
     pointer-events: none;
 }
 
+.country-code-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+}
+
+.country-code::after {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 1.5px;
+    background-color: rgba(64, 64, 64, 0.3);
+    position: absolute;
+    color: rgba(64, 64, 64, 0.3);
+    bottom: 0;
+}
+
+.country-code-wrapper,
+.user-card-container {
+    position: relative;
+    display: flex;
+}
+
+.icon-master-card {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user-comment {
+    resize: none;
+}
+
+.user-email,
+.user-tel,
+.user-card,
+.user-comment {
+    width: 100%;
+}
+
+.contact-form-field-desk {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.user-email,
+.user-tel,
+.user-card,
+.user-comment,
+.user-name,
+.user-surname {
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    background-color: transparent;
+    outline: transparent;
+}
+
+.user-name,
+.user-surname,
+.user-email,
+.user-tel,
+.user-card,
+.user-comment {
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.buy-now-form-field-wrapper {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.country-code {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
     .buy-now-modal {
         width: 311px;
         min-height: 994px;
         padding: 32px 24px;
-
     }
 
     .buy-now-modal-close-btn {
@@ -104,7 +178,6 @@
     .chocolate-weight {
         width: 70px;
         height: 29px;
-
     }
 
     .buy-now-modal-list {
@@ -117,35 +190,86 @@
     .user-name,
     .user-surname,
     .user-email,
-    .user-tel,
-    .user-card {
-        width: 100%;
+    .user-card,
+    .user-tel {
+        padding-top: 14px;
+        padding-bottom: 14px;
         height: 45px;
-        border: 1.5px solid rgba(17, 17, 17, 0.05);
-        filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-        border-radius: 8px;
-        padding-left: 14px;
-        background-color: transparent;
-        outline: transparent;
+    }
+
+    .user-name,
+    .user-surname {
+        width: 100%;
+    }
+
+    .user-name,
+    .user-surname,
+    .user-email,
+    .user-card,
+    .user-comment {
+        padding-left: 18px;
+    }
+
+    .user-card {
+        padding-right: 46px;
+    }
+
+    .user-tel {
+        padding-left: 106px;
     }
 
     .user-name {
         margin-bottom: 14px;
     }
 
-    .buy-now-form-field-wrapper {
-        display: block;
+    .contact-form-field-desk {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    .icon-flag {
+        width: 24px;
+        height: 18px;
+    }
+
+    .country-code-container {
+        gap: 8px;
+        left: 18px;
+    }
+
+    .country-code {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    .icon-master-card {
+        width: 32px;
+        height: 21px;
+        right: 14px;
+    }
+
+    .user-comment {
+        height: 91px;
+        padding: 14px 18px;
         margin-bottom: 18px;
     }
 
-    .contact-form-field-desk {
-        display: block;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: -0.02em;
-        color: #000000;
-        margin-bottom: 8px;
+    .buy-now-modal-submit-btn {
+        padding: 12px 28px;
+    }
+
+    .country-code::after {
+        right: -8px;
+    }
+
+    .user-name,
+    .user-surname,
+    .user-email,
+    .user-tel,
+    .user-card,
+    .user-comment {
+        font-size: 14px;
+        line-height: 1.21;
     }
 }
 
@@ -206,6 +330,87 @@
         height: 33px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .contact-form-input-container {
+        display: flex;
+        gap: 21px;
+    }
+
+    .user-name,
+    .user-surname {
+        width: calc((100% - 21px) / 2);
+    }
+
+    .user-name,
+    .user-surname,
+    .user-email,
+    .user-card,
+    .user-tel {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        height: 66px;
+    }
+
+    .user-name,
+    .user-surname,
+    .user-email,
+    .user-card,
+    .user-comment {
+        padding-left: 24px;
+    }
+
+    .user-card {
+        padding-right: 54px;
+    }
+
+    .user-tel {
+        padding-left: 177px;
+    }
+
+    .icon-flag {
+        width: 32px;
+        height: 24px;
+    }
+
+    .country-code-container {
+        gap: 18px;
+        left: 24px;
+    }
+
+    .country-code::after {
+        right: -32px;
+    }
+
+    .country-code {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+
+    .icon-master-card {
+        width: 44px;
+        height: 30px;
+        right: 24px;
+    }
+
+    .user-name,
+    .user-surname,
+    .user-email,
+    .user-tel,
+    .user-card,
+    .user-comment {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+
+    .user-comment {
+        height: 137px;
+        padding: 24px 22px;
+        margin-bottom: 18px;
+    }
+
+    .buy-now-modal-submit-btn {
+        padding: 14px 40px;
     }
 }
 
