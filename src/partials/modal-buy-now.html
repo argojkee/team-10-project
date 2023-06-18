@@ -9,34 +9,6 @@
         </button>
         <h2 class="buy-now-title title">bUY <span class="title-span">nOW</span> </h2>
 
-        <form>
-            <div class="buy-now-modal-chocolate-weight-container">
-                <label class="buy-now-form-chocolate-weight-wrapper">
-                    <input type="checkbox" class="buy-now-modal-checkbox">
-                    <div class="chocolate-weight-container">
-                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-1@2.png"
-                            src="../images/buy-now-modal/buy-now-modal-img-1.png" alt="chocolate">
-                        <p class="chocolate-weight">100 g</p>
-                    </div>
-                </label>
-                <label class="buy-now-form-chocolate-weight-wrapper">
-                    <input type="checkbox" class="buy-now-modal-checkbox">
-                    <div class="chocolate-weight-container">
-                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-2@2.png"
-                            src="../images/buy-now-modal/buy-now-modal-img-2.png" alt="chocolate">
-                        <p class="chocolate-weight">200 g</p>
-                    </div>
-                </label>
-                <label class="buy-now-form-chocolate-weight-wrapper">
-                    <input type="checkbox" class="buy-now-modal-checkbox">
-                    <div class="chocolate-weight-container">
-                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-3@2.png"
-                            src="../images/buy-now-modal/buy-now-modal-img-3.png" alt="chocolate">
-                        <p class="chocolate-weight">300 g</p>
-                    </div>
-                </label>
-            </div>
-        </form>
         <!-- <ul class="buy-now-modal-list">
             <li class="buy-now-modal-item">
                 <div class="chocolate-weight-container">
@@ -61,11 +33,37 @@
             </li>
         </ul> -->
         <form class="buy-now-modal-form" autocomplete="off">
+            <div class="buy-now-modal-chocolate-weight-container">
+                <label class="buy-now-form-chocolate-weight-wrapper">
+                    <input type="radio" name="weight" class="buy-now-modal-radio" checked>
+                    <div class="chocolate-weight-container">
+                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-1@2.png"
+                            src="../images/buy-now-modal/buy-now-modal-img-1.png" alt="chocolate">
+                        <p class="chocolate-weight">100 g</p>
+                    </div>
+                </label>
+                <label class="buy-now-form-chocolate-weight-wrapper">
+                    <input type="radio" name="weight" class="buy-now-modal-radio">
+                    <div class="chocolate-weight-container">
+                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-2@2.png"
+                            src="../images/buy-now-modal/buy-now-modal-img-2.png" alt="chocolate">
+                        <p class="chocolate-weight">200 g</p>
+                    </div>
+                </label>
+                <label class="buy-now-form-chocolate-weight-wrapper">
+                    <input type="radio" name="weight" class="buy-now-modal-radio">
+                    <div class="chocolate-weight-container">
+                        <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-3@2.png"
+                            src="../images/buy-now-modal/buy-now-modal-img-3.png" alt="chocolate">
+                        <p class="chocolate-weight">300 g</p>
+                    </div>
+                </label>
+            </div>
             <label class="buy-now-form-field-wrapper">
                 <span class="contact-form-field-desk">Personal information
                 </span>
                 <span class="contact-form-input-container">
-                    <input class="user-name" autofocus type="text" name="user-name" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+                    <input class="user-name" type="text" name="user-name" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
                         placeholder="Name" required>
                     <input class="user-surname" type="text" name="user-surname" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
                         placeholder="Surname" required>
@@ -88,14 +86,15 @@
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Card number</span>
                 <span class="user-card-container">
-                    <input class="user-card" type="number" name="card" maxlength="16" minlength="16"
+                    <input class="user-card" name="card" type="number" maxlength="16" minlength="16"
                         placeholder="Enter card" required>
                     <svg class="icon-master-card">
                         <use href="./images/sprite.svg#icon-mastercard"></use>
                     </svg>
                 </span>
             </label>
-            <label class="buy-now-form-checkbox-wrapper"> <span class="contact-form-field-desk">Comment</span>
+            <label class="buy-now-form-textarea-wrapper">
+                <span class="contact-form-field-desk">Comment</span>
                 <textarea class="user-comment" name="user-comment" placeholder="Enter text"></textarea>
             </label>
             <button type="submit" class="buy-now-modal-submit-btn button">
