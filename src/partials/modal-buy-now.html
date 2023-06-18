@@ -13,21 +13,21 @@
                 <div class="chocolate-weight-container">
                     <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-1@2.png"
                         src="../images/buy-now-modal/buy-now-modal-img-1.png" alt="chocolate">
-                    <p class="chocolate-weight">100 g</p>
+                    <button type="button" class="chocolate-weight">100 g</button>
                 </div>
             </li>
             <li class="buy-now-modal-item">
                 <div class="chocolate-weight-container">
                     <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-2@2.png"
                         src="../images/buy-now-modal/buy-now-modal-img-2.png" alt="chocolate">
-                    <p class="chocolate-weight">200 g</p>
+                    <button type="button" class="chocolate-weight">200 g</button>
                 </div>
             </li>
             <li class="buy-now-modal-item">
                 <div class="chocolate-weight-container">
                     <img class="buy-now-modal-img" srcset="../images/buy-now-modal/buy-now-modal-img-1@2.png"
                         src="../images/buy-now-modal/buy-now-modal-img-3.png" alt="chocolate">
-                    <p class="chocolate-weight">300 g</p>
+                    <button type="button" class="chocolate-weight">300 g</button>
                 </div>
             </li>
         </ul>
@@ -37,17 +37,18 @@
                 </span>
                 <span class="contact-form-input-container">
                     <input class="user-name" type="text" name="user-name" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
-                        placeholder="Name">
+                        placeholder="Name" required>
                     <input class="user-surname" type="text" name="user-surname" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
-                        placeholder="Surname">
+                        placeholder="Surname" required>
                 </span>
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Email</span>
-                <input class="user-email" type="email" name="user-email" placeholder="Enter your email">
+                <input class="user-email" type="email" name="user-email" placeholder="Enter your email" required>
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Phone number</span>
                 <span class="country-code-wrapper">
-                    <input class="user-tel" type="tel" name="user-tel" maxlength="9" placeholder="Phone number">
+                    <input class="user-tel" type="tel" name="user-tel" maxlength="9" minlength="9"
+                        placeholder="Phone number" required>
                     <div class="country-code-container">
                         <svg class="icon-flag">
                             <use href="./images/sprite.svg#icon-flag"></use>
@@ -58,7 +59,8 @@
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Card number</span>
                 <span class="user-card-container">
-                    <input class="user-card" type="number" name="user-card" maxlength="16" placeholder="Enter card">
+                    <input class="user-card" type="tel" name="user-card" maxlength="16" minlength="16"
+                        placeholder="Enter card" required>
                     <svg class="icon-master-card">
                         <use href="./images/sprite.svg#icon-mastercard"></use>
                     </svg>
@@ -67,10 +69,11 @@
             <label class="buy-now-form-checkbox-wrapper"> <span class="contact-form-field-desk">Comment</span>
                 <textarea class="user-comment" name="user-comment" placeholder="Enter text"></textarea>
             </label>
+            <button type="submit" class="buy-now-modal-submit-btn button">
+                Submit
+            </button>
         </form>
-        <button type="submit" class="buy-now-modal-submit-btn button" data-first-modal-close>
-            Submit
-        </button>
+
     </div>
 </div>
 
