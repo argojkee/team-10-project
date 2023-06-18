@@ -32,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 8px;
+    padding-top: 8px;
 }
 
 .text-main-products {
@@ -70,18 +70,11 @@
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
 
-    .our-products-container {
-        padding-bottom: 33px;
-    }
+ 
 
-    .Our-product-list {
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 364px;
-        overflow: hidden;
-
-    }
+  .our-product-list {
+    padding-bottom: 33px;
+  }
 
     .title-our-product {
 
@@ -112,9 +105,7 @@
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
 
-    .our-products-container {
-        padding-bottom: 45px;
-    }
+  
 
     .title-our-product {
         margin-bottom: 50px;
@@ -128,7 +119,9 @@
         column-gap: 18px;
     }
 
-    .products-list {}
+    .our-product-list {
+        padding-bottom: 45px;
+    }
 }
 
 
@@ -140,3 +133,6 @@
     }
 
 }
+
+
+
