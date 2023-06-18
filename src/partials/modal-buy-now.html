@@ -1,9 +1,8 @@
 <!-- Alina  -->
 
-<div class="backdrop" data-modal>
-    <!-- is-hidden -->
-    <div class="buy-now-modal">
-        <button type="button" class="buy-now-modal-close-btn">
+<div class="backdrop is-hidden" data-first-modal>
+    <div class="buy-now-modal modal">
+        <button type="button" class="buy-now-modal-close-btn" data-first-modal-close>
             <svg class="buy-now-modal-close-icon" data-modal-close>
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
@@ -31,37 +30,45 @@
                     <p class="chocolate-weight">300 g</p>
                 </div>
             </li>
-
         </ul>
         <form class="buy-now-modal-form">
             <label class="buy-now-form-field-wrapper">
                 <span class="contact-form-field-desk">Personal information
                 </span>
-                <input class="user-name" type="text" name="user-name" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
-                    placeholder="Name">
-                <input class="user-surname" type="text" name="user-surname" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
-                    placeholder="Surname">
-                <div>
-                    <svg>
-                        <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                    <p>+380</p>
-                </div>
+                <span class="contact-form-input-container">
+                    <input class="user-name" type="text" name="user-name" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+                        placeholder="Name">
+                    <input class="user-surname" type="text" name="user-surname" pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+                        placeholder="Surname">
+                </span>
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Email</span>
                 <input class="user-email" type="email" name="user-email" placeholder="Enter your email">
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Phone number</span>
-                <input class="user-tel" type="tel" name="user-tel" placeholder="Phone number">
+                <span class="country-code-wrapper">
+                    <input class="user-tel" type="tel" name="user-tel" placeholder="Phone number">
+                    <div class="country-code-container">
+                        <svg class="icon-flag">
+                            <use href="./images/sprite.svg#icon-flag"></use>
+                        </svg>
+                        <p class="country-code">+380</p>
+                    </div>
+                </span>
             </label>
             <label class="buy-now-form-field-wrapper"> <span class="contact-form-field-desk">Card number</span>
-                <input class="user-card" type="number" name="user-card" placeholder="Enter text">
+                <span class="user-card-container">
+                    <input class="user-card" type="number" name="user-card" placeholder="Enter card">
+                    <svg class="icon-master-card">
+                        <use href="./images/sprite.svg#icon-mastercard"></use>
+                    </svg>
+                </span>
             </label>
             <label class="buy-now-form-checkbox-wrapper"> <span class="contact-form-field-desk">Comment</span>
                 <textarea class="user-comment" name="user-comment" placeholder="Enter text"></textarea>
             </label>
         </form>
-        <button type="submit" class="">
+        <button type="submit" class="buy-now-modal-submit-btn button" data-first-modal-close>
             Submit
         </button>
     </div>
