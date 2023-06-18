@@ -1,8 +1,7 @@
 /*General*/
-
 @media screen and (max-width: 767px) {
 
-.close-mobile-menu {
+    .close-mobile-menu {
         top: 20px;
         right: 20px;
 
@@ -30,7 +29,8 @@
 
 
 @media screen and (max-width: 1199px) {
-/*Mobile-menu*/
+
+    /*Mobile-menu*/
     .mobile-menu {
         position: fixed;
         top: 0;
@@ -72,7 +72,7 @@
         align-items: center;
         background-color: transparent;
         border: none;
-
+        transition: color var(--general-transition);
         position: absolute;
         color: var(--icon-dark-theme);
     }
@@ -94,11 +94,12 @@
     }
 
     .mobile-menu-link {
-
+        display: block;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: -0.02em;
         color: var(--icon-dark-theme);
+        transition: color var(--general-transition);
     }
 
     .mobile-menu-link:hover,
@@ -106,7 +107,11 @@
         color: var(--specific-color);
     }
 
-.mobile-home-link::after {
+    
+
+   
+
+     .mobile-home-link::after {
     content: "";
     width: 24px;
     background-color: currentColor;
@@ -114,6 +119,8 @@
     height: 1px;
     margin-top: 7px;
 }
+
+
 
     .mobile-social-list {
         display: flex;
@@ -144,41 +151,41 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .mobile-menu-container {
-            padding-right: 0;
-        }
-    
-        .close-mobile-menu {
-            top: 24px;
-            right: 32px;
-        }
-    
-        .icon-close {
-            width: 32px;
-            height: 32px;
-        }
-    
-        .small-container {
-            padding: 166px 81px 24px 32px;
-            width: 290px;
-        }
-    
-        .mobile-nav-list {
-            margin-left: 53px;
-        }
-    
-        .mobile-menu-link {
-            font-weight: 600;
-        }
-    
-        .mobile-social-icon {
-            width: 24px;
-            height: 24px;
-        }
+        padding-right: 0;
+    }
+
+    .close-mobile-menu {
+        top: 24px;
+        right: 32px;
+    }
+
+    .icon-close {
+        width: 32px;
+        height: 32px;
+    }
+
+    .small-container {
+        padding: 166px 81px 24px 32px;
+        width: 290px;
+    }
+
+    .mobile-nav-list {
+        margin-left: 53px;
+    }
+
+    .mobile-menu-link {
+        font-weight: 500;
+    }
+
+    .mobile-social-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 
 @media screen and (min-width: 1200px) {
     .mobile-menu {
-            display: none;
-        }
+        display: none;
+    }
 }

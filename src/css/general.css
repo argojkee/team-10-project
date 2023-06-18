@@ -6,6 +6,7 @@
   --secondary-text-color: #ffffff;
       --background-our-product-list: #FFFFFF;
         --background-price-btn: #FAFAFA;
+        --active-modal-button-color: #FCF1E0;
   --general-transition: 250ms linear;
   --footer-color-page: #fff;
 }
