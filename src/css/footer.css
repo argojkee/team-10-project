@@ -3,19 +3,13 @@
  /*Для всех вьюпортов*/
 
 .page-footer {
-    background-color: #1e1823;
-    width: auto;
-    height: auto;
+    background-color: var(--primary-background-color);
+
 }
 .footer-up-block {
     border-bottom: 1px solid #FFFFFF1A;
 }
-/*.footer-up-block::after {
-    content: "";
-    background-color: red;
-    width: 100%;
-    height: 0px;
-}*/
+
 
 .footer-container {
     justify-content: space-between;
@@ -26,7 +20,7 @@
     font-weight: 500;
 } 
  .footer-social-link {
-    color: var(--footer-color-page);
+    color: var(--secondary-text-color);
     transition: color var(--general-transition);
     display: flex;
     justify-content: center;
@@ -43,7 +37,7 @@
 }
 
 .footer-nav-link {
-    color: var(--footer-color-page);
+    color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -61,11 +55,11 @@
  }
 
  .footer-slogan {
-    color: var(--footer-color-page);
+    color: var(--secondary-text-color);
  }
 
  .footer-contact {
-    color: var(--footer-color-page);
+    color: var(--secondary-text-color);
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -76,7 +70,7 @@
  }
 
  .footer-contact-link {
-    color: var(--footer-color-page);
+    color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
