@@ -2,6 +2,7 @@
 
 /*Для всех вьюпортов*/
 
+
 .buy-now-modal {
     background-color: var(--background-price-btn);
     border-radius: 15px;
@@ -19,8 +20,14 @@
     border: none;
 }
 
+.buy-now-modal-close-icon:hover,
+.buy-now-modal-close-icon:focus {
+    stroke: var(--specific-color);
+}
+
 .buy-now-modal-close-icon {
     stroke: #111111;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Close btn */
@@ -43,7 +50,7 @@
 
 .buy-now-modal-radio:checked+.chocolate-weight-container>.chocolate-weight {
     background-color: var(--specific-color);
-    color: #ffffff;
+    color: var(--secondary-text-color);
 }
 
 .buy-now-form-chocolate-weight-wrapper {
@@ -57,7 +64,7 @@
 
 .chocolate-weight-container {
     display: flex;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-background-color:);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
 }
@@ -183,6 +190,9 @@
 
 
 /* Form - user information*/
+.buy-now-modal-submit-btn {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .buy-now-modal-submit-btn:hover,
 .buy-now-modal-submit-btn:focus {
@@ -208,17 +218,11 @@
     }
 
     .buy-now-modal-close-icon {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
     }
 
     /* Close btn */
-
-
-    .buy-now-title {
-        font-size: 20px;
-        line-height: 1.2;
-    }
 
 
     /* Form - chokolate weight*/
@@ -244,8 +248,6 @@
         width: 70px;
         height: 29px;
     }
-
-
 
     /* Form - chokolate weight*/
 
@@ -339,7 +341,13 @@
         padding: 12px 28px;
     }
 
+}
 
+/*Мобилка горизонтально*/
+@media screen and (max-height: 520px) {
+    .buy-now-modal {
+        transform: translate(-50%, -20%);
+    }
 }
 
 /*Мобилка и планшет*/
