@@ -148,16 +148,16 @@
     color: #000000;
 }
 
-.buy-now-modal-checkbox:checked+.chocolate-weight-container {
+.buy-now-modal-radio:checked+.chocolate-weight-container {
     border: 3px solid var(--specific-color);
 }
 
-.buy-now-modal-checkbox:checked+.chocolate-weight-container>.chocolate-weight {
+.buy-now-modal-radio:checked+.chocolate-weight-container>.chocolate-weight {
     background-color: var(--specific-color);
     color: #ffffff;
 }
 
-.buy-now-modal-checkbox {
+.buy-now-modal-radio {
     appearance: none;
     position: absolute;
 }
