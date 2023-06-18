@@ -2,7 +2,6 @@
 
 /*Для всех вьюпортов*/
 
-
 .buy-now-modal {
     background-color: var(--background-price-btn);
     border-radius: 15px;
@@ -45,6 +44,10 @@
 .buy-now-modal-radio:checked+.chocolate-weight-container>.chocolate-weight {
     background-color: var(--specific-color);
     color: #ffffff;
+}
+
+.buy-now-form-chocolate-weight-wrapper {
+    cursor: pointer;
 }
 
 .buy-now-modal-radio {
@@ -181,6 +184,11 @@
 
 /* Form - user information*/
 
+.buy-now-modal-submit-btn:hover,
+.buy-now-modal-submit-btn:focus {
+    color: var(--specific-color);
+    background-color: var(--active-modal-button-color);
+}
 
 
 /*Только мобилка*/
@@ -330,6 +338,7 @@
     .buy-now-modal-submit-btn {
         padding: 12px 28px;
     }
+
 
 }
 
