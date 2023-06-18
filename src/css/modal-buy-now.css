@@ -206,6 +206,7 @@
     .user-comment {
         font-size: 14px;
         line-height: 1.21;
+        color: var(--main-color-page);
     }
 
     .user-name,
@@ -350,6 +351,7 @@
     .user-comment {
         font-size: 18px;
         line-height: 1.22;
+        color: var(--main-color-page);
     }
 
     .user-name,
@@ -370,7 +372,6 @@
     .user-name,
     .user-surname,
     .user-email,
-    .user-card,
     .user-comment {
         padding: 24px 22px;
     }
