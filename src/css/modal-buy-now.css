@@ -39,7 +39,7 @@
 }
 
 .buy-now-modal-radio:checked+.chocolate-weight-container {
-    border: 3px solid var(--specific-color);
+    border: 1.5px solid var(--specific-color);
 }
 
 .buy-now-modal-radio:checked+.chocolate-weight-container>.chocolate-weight {
