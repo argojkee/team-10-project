@@ -148,7 +148,19 @@
     color: #000000;
 }
 
+.buy-now-modal-checkbox:checked+.chocolate-weight-container {
+    border: 3px solid var(--specific-color);
+}
 
+.buy-now-modal-checkbox:checked+.chocolate-weight-container>.chocolate-weight {
+    background-color: var(--specific-color);
+    color: #ffffff;
+}
+
+.buy-now-modal-checkbox {
+    appearance: none;
+    position: absolute;
+}
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
@@ -192,7 +204,7 @@
         height: 29px;
     }
 
-    .buy-now-modal-list {
+    .buy-now-modal-chocolate-weight-container {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -308,13 +320,14 @@
         height: 28px;
     }
 
-    .buy-now-modal-list {
+    .buy-now-modal-chocolate-weight-container {
         display: flex;
         gap: 16px;
         margin-bottom: 40px;
+        width: 512px;
     }
 
-    .buy-now-modal-item {
+    .buy-now-form-chocolate-weight-wrapper {
         width: calc((100% - 32px) / 3);
     }
 
