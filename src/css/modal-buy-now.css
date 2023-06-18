@@ -6,7 +6,7 @@
 .buy-now-modal {
     background-color: var(--background-price-btn);
     border-radius: 15px;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -25%);
 }
 
 
@@ -178,8 +178,8 @@
     resize: none;
 }
 
-/* Form - user information*/
 
+/* Form - user information*/
 
 
 
