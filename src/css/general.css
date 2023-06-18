@@ -114,6 +114,14 @@ body {
 }
 
 
+/* Форма */
+/* Маячёк ввода */
+input,
+textarea,
+[contenteditable] {
+  caret-color: var(--specific-color);
+}
+
 @media screen and (min-width: 376px) {
   /*General*/
   .container {
