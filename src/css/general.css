@@ -1,168 +1,194 @@
 :root {
-    --main-color-page: #111111;
-    --specific-color: #FD9222;
-    --primary-background-color: #1E1823;
-    --icon-dark-theme: #FFFFFF;
-    --general-transition: 250ms linear;
+  --main-color-page: #111111;
+  --specific-color: #fd9222;
+  --primary-background-color: #1e1823;
+  --icon-dark-theme: #ffffff;
+  --secondary-text-color: #ffffff;
+  --secondary-background-color: #FFFFFF;
+  --background-price-btn: #FAFAFA;
+  --active-modal-button-color: #FCF1E0;
+  --general-transition: 250ms linear;
 }
-
 
 /* Подключение шрифтов */
 
-
-
 @font-face {
-
-    font-family: 'Montserrat';
-    src: 
-        url('../font/Montserrat-Regular.woff2'),
-        url('../font/Montserrat-Regular.woff');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Regular.woff2'),
+    url('../font/Montserrat-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-
-    font-family: 'Montserrat';
-    src:
-        url('../font/Montserrat-Medium.woff2'),
-        url('../font/Montserrat-Medium.woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Medium.woff2'),
+    url('../font/Montserrat-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-
-    font-family: 'Montserrat';
-    src:
-        url('../font/Montserrat-SemiBold.woff2'),
-        url('../font/Montserrat-SemiBold.woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-SemiBold.woff2'),
+    url('../font/Montserrat-SemiBold.woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-
-    font-family: 'Montserrat';
-    src:
-        url('../font/Montserrat-Bold.woff2'),
-        url('../font/Montserrat-Bold.woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Bold.woff2'), url('../font/Montserrat-Bold.woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-
-    font-family: 'Montserrat';
-    src:
-        url('../font/Montserrat-BoldItalic.woff2'),
-        url('../font/Montserrat-BoldItalic.woff');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-BoldItalic.woff2'),
+    url('../font/Montserrat-BoldItalic.woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
-
 
 /*General*/
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #FAFAFA;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .title {
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--main-color-page);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-color-page);
 }
 
 .title-span {
-    color: var(--specific-color);
+  color: var(--specific-color);
 }
 
+.button {
+  color: var(--icon-dark-theme);
+  background-color: var(--specific-color);
+  border-radius: 100px;
+  border: none;
+}
+
+.flip-card-back-scroll::-webkit-scrollbar {
+  width: 5px;
+  /* ширина всей полосы прокрутки */
+}
+
+.flip-card-back-scroll::-webkit-scrollbar-track {
+  background: var(--background-our-product-list);
+  /* цвет зоны отслеживания */
+}
+
+.flip-card-back-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--specific-color);
+  /* цвет бегунка */
+  border-radius: 20px;
+  /* округлось бегунка */
+  border: 3px solid orange;
+  /* отступ вокруг бегунка */
+}
+
+
+/* Форма */
+/* Маячёк ввода */
+input,
+textarea,
+[contenteditable] {
+  caret-color: var(--specific-color);
+}
 
 @media screen and (min-width: 376px) {
-
-    /*General*/
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /*General*/
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-
-
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
+  /*General*/
+  .container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section {
+    padding-top: 72px;
+  }
 
-    /*General*/
-    .container {
-        max-width: 375px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .section {
-        padding-top: 72px;
-    }
-
-    .title {
-        font-size: 20px;
-        line-height: 1.2;
-    }
+  .title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
-
-
 
 /*Мобилка и планшет*/
 @media screen and (max-width: 1199px) {
-
 }
-
-
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
-    .title {
-        font-size: 24px;
-        line-height: 1.17;
-    }
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
-
-
-
 
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*General*/
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    /*General*/
-    .container {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .section {
-        padding-top: 100px;
-    }
+  .section {
+    padding-top: 100px;
+  }
 }
 
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
+  /*General*/
+  .container {
+    width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    /*General*/
-    .container {
-        width: 1200px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .section {
-        padding-top: 128px;
-    }
+  .section {
+    padding-top: 128px;
+  }
 }
+
+
+
+
+

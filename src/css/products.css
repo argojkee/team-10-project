@@ -4,13 +4,89 @@
 
 /*Для всех вьюпортов*/
 
+.title-our-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.tarasik-example {
-    color: tomato;
 }
 
+.our-product-list {
+  
+    align-items: center;
+        
+}
+
+.mobile-products-list {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.products-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.text-main-products {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.text-minor-products {
+    padding-top: 2px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.price-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 19px;
+    margin-top: 18px;
+    background: var(--background-price-btn);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+}
+
+
+
 /*Только мобилка*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+ 
+
+  .our-product-list {
+    padding-bottom: 33px;
+  }
+
+    .title-our-product {
+
+        margin-bottom: 32px;
+    }
+
+    .mobile-products-list {
+        width: 100%;
+        height: 100%;
+        padding:32px 52px;
+    }
+}
 
 /*Мобилка и планшет*/
 @media screen and (max-width: 1199px) {}
@@ -18,12 +94,45 @@
 
 
 /*Только планшет*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .mobile-products-list{
+        width:calc((100% - 36px) / 2.5);
+    }
+}
 
 
 /*Планшет и десктоп*/
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+  
+
+    .title-our-product {
+        margin-bottom: 50px;
+    }
+        .mobile-products-list {
+        
+            padding: 32px 20px;
+        }
+
+    .our-product-list {
+        column-gap: 18px;
+    }
+
+    .our-product-list {
+        padding-bottom: 45px;
+    }
+}
 
 
 /*Только десктоп*/
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+    .mobile-products-list{
+        width: calc((100% - 54px) / 4);
+    }
+
+}
+
+
+

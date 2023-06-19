@@ -1,0 +1,212 @@
+.backdrop {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: opacity var(--general-transition), visibility var(--general-transition);
+}
+
+.subscribe-modal {
+    position: relative;
+    background-color: var(--background-price-btn);
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+
+
+.subscribe-modal-close-icon {
+    stroke: var(--icon-dark-theme);
+}
+
+.modal-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form {
+    display: flex;
+    align-items: center;
+}
+
+.modal-form-label {
+    width: 100%;
+}
+
+.modal-form-input {
+    width: 100%;
+    background-color: transparent;
+    outline: transparent;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    transition: border-color var(--general-transition);
+}
+
+.modal-form-input:focus {
+    border-color: var(--specific-color);
+}
+
+.modal-form-input::placeholder {
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-form-submit {
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    transition: color var(--general-transition), background-color var(--general-transition);
+}
+
+.modal-form-submit:hover, .modal-form-submit:focus {
+    color: var(--specific-color);
+    background-color: var(--active-modal-button-color);
+}
+
+.subscribe-modal-close-btn:hover .subscribe-modal-close-icon, 
+.subscribe-modal-close-btn:focus .subscribe-modal-close-icon {
+    stroke: var(--specific-color);
+}
+
+
+
+/*Только мобилка*/
+@media screen and (max-width: 767px) {
+    .subscribe-modal {
+       
+        background-size: auto 169px;
+        padding: 201px 24px 32px 24px;
+        max-width: 311px;
+        min-height: 350px;
+    }
+
+
+
+
+    
+    .modal-title {
+        max-width: 263px;
+        margin-bottom: 24px;
+    }
+
+    .modal-form {
+        position: relative;
+    }
+
+    .modal-form-input {
+        height: 45px;
+        border-radius: 25px;
+        padding-left: 18px;
+        padding-right: 103px;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    .modal-form-input::placeholder {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    .modal-form-submit {
+        position: absolute;
+        right: 0px;
+        min-width: 100px;
+        height: 45px;
+        padding: 14px;
+    }
+}
+
+
+
+
+
+/*Планшет и десктоп*/
+@media screen and (min-width: 768px) {
+    .subscribe-modal {
+       
+        background-size: auto 196px;
+        padding: 236px 40px 40px 40px;
+        max-width: 538px;
+        height: 412px;
+    }
+
+
+    .subscribe-modal-close-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .modal-title {
+        max-width: 298px;
+        margin-bottom: 28px;
+    }
+
+    .modal-form-input {
+        height: 52px;
+        border-radius: 30px;
+        padding-left: 24px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+
+    .modal-form-input::placeholder {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+
+    .modal-form-submit {
+        min-width: 137px;
+        height: 52px;
+        padding: 17px 33px 18px 32px;
+        margin-left: 8px;
+    }
+}
+
+
+
+
+
+
+
+   @media screen and (max-device-pixel-ratio: 1.99) and (max-width: 767px),
+   screen and (max-resolution: 191dpi) and (max-width: 767px),
+   screen and (max-resolution: 1.99dppx) and (max-width: 767px) {
+       .subscribe-modal {
+           background-image: url('../images/subscribe/modal-subscribe-mobile.jpg');
+       }
+   }
+
+
+   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+   screen and (min-resolution: 192dpi) and (max-width: 767px),
+   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+       .subscribe-modal {
+           background-image: url('../images/subscribe/modal-subscribe-mobile@2x.jpg');
+       }
+   }
+
+
+@media screen and (max-device-pixel-ratio: 1.99) and (min-width: 768px),
+screen and (max-resolution: 191dpi) and (min-width: 768px),
+screen and (max-resolution: 1.99dppx) and (min-width: 768px) {
+    .subscribe-modal {
+        background-image: url('../images/subscribe/modal-subscribe-tablet-desktop.jpg');
+    }
+}
+
+
+
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .subscribe-modal {
+        background-image: url('../images/subscribe/modal-subscribe-tablet-desktop@2x.jpg');
+    }
+}
+
+
+
+
+

@@ -2,10 +2,104 @@
 
  /*Для всех вьюпортов*/
 
+.page-footer {
+    background-color: var(--primary-background-color);
 
- .vladimir-example {
+}
+.footer-up-block {
+    border-bottom: 1px solid #FFFFFF1A;
+}
+
+
+.footer-container {
+    justify-content: space-between;
+}
+.footer-slogan {
+    max-width: 300px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+} 
+ .footer-social-link {
+    color: var(--secondary-text-color);
+    transition: color var(--general-transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    color: var(--specific-color);
+}
+
+.footer-social-icon {
+    stroke: currentColor;
+    fill: transparent;
+}
+
+.footer-nav-link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    transition: color var(--general-transition);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: var(--specific-color);
+}
+
+ .footer-first-slogan {
      color: tomato;
  }
+
+ .footer-slogan {
+    color: var(--secondary-text-color);
+ }
+
+.footer-contact-container {
+    color: var(--secondary-text-color);
+}
+
+ .footer-contact {
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+ }
+
+ .footer-contact-first {
+    margin-bottom: 14px;
+ }
+
+ .footer-contact-link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    transition: color var(--general-transition);
+ }
+
+ .footer-contact-link:hover,
+ .footer-contact-link:focus {
+     color: var(--specific-color);
+ }
+
+  .footer-social-list {
+      display: flex;
+      column-gap: 24px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+  }
+
+  .footer-up-block-right {
+      display: flex;
+  }
+
 
  /*Только мобилка*/
  @media screen and (max-width: 767px) {
@@ -13,15 +107,42 @@
         padding-top: 32px;
         padding-bottom: 32px;
     }
+
+    .footer-up-block {
+        padding-bottom: 32px;
+    }
+    .footer-nav {
+        padding-top: 32px;
+    }
+    .footer-up-block-right {
+        justify-content: space-between;
+    }
+    .footer-slogan {
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 1.17;
+        }
+    .footer-nav-list {
+        flex-direction: column;
+        row-gap: 18px;
+    }
  }
 
+
  /*Мобилка и планшет*/
- @media screen and (max-width: 1199px) {}
+ @media screen and (max-width: 1199px) {
+    
+ }
 
 
 
  /*Только планшет*/
- @media screen and (min-width: 768px) and (max-width: 1199px) {}
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-up-block {
+        padding-bottom: 50px;
+
+    }
+ }
 
 
  /*Планшет и десктоп*/
@@ -30,8 +151,41 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .footer-nav-list {
+        column-gap: 24px;
+    }
+    .footer-social-list {
+        display: flex;
+        column-gap: 24px;
+    }
+    .footer-up-block {
+        display: flex;
+        column-gap: 24px;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .footer-up-block-right {
+
+        column-gap: 58px;
+    }
+
+    .footer-slogan {
+        font-size: 28px;
+        line-height: 1.21;
+    }
+
+    .footer-nav {
+        padding-top: 24px;
+    }
+   
  }
 
 
  /*Только десктоп*/
- @media screen and (min-width: 1200px) {}
+ @media screen and (min-width: 1200px) {
+
+    .footer-up-block {
+    padding-bottom: 58px;
+}
+ }
