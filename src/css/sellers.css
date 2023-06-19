@@ -1,24 +1,10 @@
 /* Eugen Zarivniy */
 
 /*Для всех вьюпортов*/
-
-.title-orang {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--specific-color);
+.sellers-title {
+  text-align: center;
 }
 
-.title-span-black {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--main-color-page);
-}
 .sellers-image {
   width: 100%;
 }
@@ -33,8 +19,8 @@
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
-  .title {
-    text-align: center;
+  .sellers-title {
+   
     margin-bottom: 32px;
   }
   .img-list {
@@ -112,8 +98,8 @@
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
-  .title {
-    text-align: center;
+  .sellers-title {
+    
     margin-bottom: 50px;
   }
   .img-list {
