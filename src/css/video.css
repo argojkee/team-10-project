@@ -1,0 +1,56 @@
+.plyr {
+ 
+    --plyr-color-main: #fd9222;
+    /*  Скруглені кути рамки для відео  */
+    border-radius: 15px;
+}
+
+.features-video {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.plyr__poster {
+    /*  Регулюємо розмір постера  */
+    background-size: cover;
+    
+}
+
+.plyr__control--overlaid {
+    /*  Встановлюємо стилі для кнопки play  */
+    --plyr-control-spacing: 5px;
+    --plyr-video-control-background-hover: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+}
+
+.plyr--paused.plyr__control--overlaid {
+    opacity: 0;
+}
+
+.plyr--paused.plyr--stopped .plyr__controls {
+    opacity: 0;
+}
+@media screen and (max-width: 767px) {
+    .plyr__video-wrapper {
+        width: 335px;
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .plyr__video-wrapper {
+        height: 400px;;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .plyr__video-wrapper {
+    width: 614px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+.plyr__video-wrapper {
+    width: 600px;
+}
+}
