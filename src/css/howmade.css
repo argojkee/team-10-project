@@ -18,13 +18,15 @@
   line-height: 24px;
 }
 .howmade-container-list {
-  background: var(--icon-dark-theme);
+  background: var(--secondary-background-color);
   border-radius: 15px;
-  padding: 0px;
 }
 
 .howmade-list {
   list-style: disc;
+  display: flex;
+  flex-direction: column;
+
 }
 .howmade-list-item {
   font-size: 14px;
@@ -34,17 +36,22 @@
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
   .howmade-subtitle {
-    padding-top: 20px;
-    padding-left: 14px;
+    margin-top: 20px;
+  
   }
 
+  .howmade-container-list {
+    padding: 20px 14px;
+  }
+
+  
   .howmade-list {
-    padding-top: 20px;
-    padding-left: 30px;
+    margin-top: 20px;
+   
   }
 
   .howmade-title {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
 
   .howmade-container-img {
@@ -89,11 +96,13 @@
 
 /*Мобилка и планшет*/
 @media screen and (max-width: 1199px) {
-  .howmade-list-item {
-    padding-bottom: 18px;
-  }
+ 
   .howmade-container-list {
     margin-top: 20px;
+  }
+
+  .howmade-list {
+    row-gap: 18px;
   }
 }
 
@@ -104,16 +113,13 @@
     padding-right: 77px;
   }
 
-  .howmade-container-list {
-    width: 614px;
-  }
+ 
   .howmade-subtitle {
-    padding-right: 232px;
+    max-width: 350px;
   }
-  .howmade-list {
-    padding-right: 102px;
-    padding-bottom: 14px;
-  }
+.howmade-list {
+  padding-right: 70px;
+}
 
   .howmade-container-img {
     width: 614px;
@@ -159,16 +165,19 @@
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
   .howmade-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
-  .howmade-subtitle {
-    padding-top: 32px;
-    padding-left: 32px;
-  }
-  .howmade-list {
-    padding-top: 28px;
-    padding-left: 48px;
-  }
+    .howmade-container-list {
+      padding: 32px;
+    }
+
+    .howmade-list {
+      padding-left: 16px;
+    }
+    .howmade-subtitle {
+      margin-bottom: 28px;
+    }
+
 }
 
 /*Только десктоп*/
@@ -176,16 +185,13 @@
   .howmade-container {
     display: flex;
   }
-  .howmade-container-list {
-    width: 516px;
-  }
-  .howmade-subtitle {
-    padding-right: 134px;
-  }
+
+ 
   .howmade-list {
+    row-gap: 24px;
   }
   .howmade-list-item {
-    padding-bottom: 24px;
+    padding-right: 27px;
   }
   .howmade-container-img {
     width: 600px;
