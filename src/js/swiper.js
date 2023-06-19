@@ -19,6 +19,7 @@ var sliderSelector = '.products-swiper',
     slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: true,
+    slideToClickedSlide: true,
     effect: 'coverflow',
     coverflowEffect: {
       rotate: 50,
