@@ -134,6 +134,9 @@
 .dark-card-style {
     background-color: var(--primary-background-color);
 }
+.flip-card-back-scroll {
+    overflow: auto;
+}
 
 @media screen and (max-width: 375px) {
     
@@ -233,9 +236,6 @@
     padding: 20px;
 }
 
-.flip-card-back-scroll {
-    overflow: auto;
-}
 
 .components-flip-card {
     width: calc((100% - 57px) / 4);

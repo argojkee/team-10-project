@@ -189,3 +189,12 @@
         display: none;
     }
 }
+
+
+
+
+@media (orientation: landscape) {
+    .small-container {
+        padding-top: 60px;
+    }
+}

@@ -31,3 +31,28 @@
     visibility: hidden;
     pointer-events: none;
 }
+
+
+.modal-close-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-close-btn {
+      top: 15px;
+      right: 14px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+.modal-close-btn {
+    top: 24px;
+    right: 24px;
+}
+}
