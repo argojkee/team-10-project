@@ -1,27 +1,141 @@
 /* Eugen Zarivniy */
 
- /*Для всех вьюпортов*/
+/*Для всех вьюпортов*/
 
+.title-orang {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--specific-color);
+}
 
- .eugene-example {
-     color: tomato;
- }
+.title-span-black {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-color-page);
+}
 
- /*Только мобилка*/
- @media screen and (max-width: 767px) {}
+/*Только мобилка*/
+@media screen and (max-width: 767px) {
+  .title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 20px;
+  }
 
- /*Мобилка и планшет*/
- @media screen and (max-width: 1199px) {}
+  .pic1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
 
+  .text-2 {
+    display: none;
+  }
 
- /*Только планшет*/
- @media screen and (min-width: 768px) and (max-width: 1199px) {}
+  .button {
+    display: flex;
+    padding: 12px 28px;
+    margin: 0 auto;
+  }
+}
 
+/*Мобилка и планшет*/
+@media screen and (max-width: 1199px) {
+  .pic3 {
+    display: none;
+  }
+}
 
- /*Планшет и десктоп*/
- @media screen and (min-width: 768px) {}
+/*Только планшет*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .img-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .img-item {
+    width: 344px;
+  }
+  .text-button {
+    display: flex;
+    gap: 236px;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .button {
+    height: 50px;
+    width: 162px;
+  }
+  .text-2 {
+    width: 306px;
+  }
 
+}
 
- /*Только десктоп*/
- @media screen and (min-width: 1200px) {}
+/*Планшет и десктоп*/
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .img-list {
+    margin-bottom: 32px;
+  }
+  .text {
+    display: none;
+  }
+  .text-2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .button {
+    padding: 14px 40px;
+    height: 50px;
+    width: 162px;
+  }
+}
+
+/*Только десктоп*/
+@media screen and (min-width: 1200px) {
+  .img-list {
+    display: flex;
+    gap: 16px;
+  }
+  .img-item {
+    width: 368px;
+  }
+  .text-button {
+    display: flex;
+    gap: 567px;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .text-2 {
+    width: 407px;
+  }
+
+}
