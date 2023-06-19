@@ -19,8 +19,16 @@
   text-transform: uppercase;
   color: var(--main-color-page);
 }
-.image {
+.sellers-image {
   width: 100%;
+}
+
+
+.subscribe-button {
+    font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+
 }
 
 /*Только мобилка*/
@@ -36,6 +44,9 @@
     margin-bottom: 20px;
   }
 
+  .img-item {
+    width: 100%;
+  }
   .pic1 {
     display: flex;
     flex-direction: column;
@@ -52,10 +63,12 @@
     display: none;
   }
 
-  .button {
+  .subscribe-button {
     display: flex;
     padding: 12px 28px;
     margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.2;
   }
 }
 
@@ -63,6 +76,12 @@
 @media screen and (max-width: 1199px) {
   .pic3 {
     display: none;
+  }
+
+  .subscribe-button {
+    font-size: 18px;
+      line-height: 1.22;
+
   }
 }
 
@@ -75,24 +94,18 @@
     gap: 16px;
   }
   .img-item {
-    width: 344px;
+    
     width: calc((100% - 16px)/2)
   }
-  .text-button {
-    display: flex;
-    gap: 236px;
-  }
+
   .text {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
   }
-  .button {
-    height: 50px;
-    width: 162px;
-  }
+
   .text-2 {
-    width: 306px;
+    max-width: 306px;
   }
 
 }
@@ -113,10 +126,15 @@
     font-size: 14px;
     line-height: 18px;
   }
-  .button {
+  .subscribe-button {
     padding: 14px 40px;
-    height: 50px;
-    width: 162px;
+
+  }
+
+  .sellers-text-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -127,20 +145,17 @@
     gap: 16px;
   }
   .img-item {
-    width: 368px;
+  
     width: calc((100% - 32px)/3)
   }
-  .text-button {
-    display: flex;
-    gap: 567px;
-  }
+
   .text {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
   }
   .text-2 {
-    width: 407px;
+    max-width: 407px;
   }
 
 }
