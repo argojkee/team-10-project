@@ -32,16 +32,31 @@ var sliderSelector = '.products-swiper',
     pagination: {
       el: '.products-pagination',
       clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
     },
 
     breakpoints: {
       1200: {
-        slidesPerView: 5,
+        slidesPerView: 3,
       },
       768: {
         slidesPerView: 2.5,
-        spaceBetween: -80,
       },
+    },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: true,
+    },
+    keyboard: {
+      enabled: true,
+      onluInViewport: true,
+      pageUpDown: true,
+    },
+    mousewheel: {
+      sensitivity: 1,
+      eventsTarget: '.products-swiper',
     },
   };
 var mySwiper = new Swiper(sliderSelector, options);
