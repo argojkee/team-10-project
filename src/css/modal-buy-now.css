@@ -11,15 +11,6 @@
 
 
 /* Close btn */
-.buy-now-modal-close-btn {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-}
-
 .buy-now-modal-close-icon:hover,
 .buy-now-modal-close-icon:focus {
     stroke: var(--specific-color);
@@ -32,11 +23,6 @@
 
 /* Close btn */
 
-
-.buy-now-title {
-    text-align: center;
-    margin-bottom: 32px;
-}
 
 
 /* Form - chokolate weight*/
@@ -64,7 +50,7 @@
 
 .chocolate-weight-container {
     display: flex;
-    background-color: var(--secondary-background-color:);
+    background-color: var(--secondary-background-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
 }
@@ -92,11 +78,17 @@
     margin-bottom: 18px;
 }
 
+.buy-now-form-wrapper-for-user-name {
+    display: block;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
 .contact-form-field-desk {
     display: block;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
     letter-spacing: -0.02em;
     color: #000000;
     margin-bottom: 8px;
@@ -146,36 +138,35 @@
     width: 100%;
 }
 
-.country-code-container {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    align-items: center;
-}
-
 .country-code-wrapper,
 .user-card-container {
     position: relative;
     display: flex;
 }
 
-.country-code {
+.icon-flag {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.country-code-wrapper::before {
+    display: block;
+    content: '+380';
+    position: absolute;
     font-weight: 500;
     letter-spacing: -0.02em;
     color: #000000;
 }
 
-.country-code::after {
+.country-code-wrapper::after {
     display: block;
     content: '';
-    height: 100%;
-    width: 1.5px;
     background-color: rgba(64, 64, 64, 0.3);
     position: absolute;
-    color: rgba(64, 64, 64, 0.3);
-    bottom: 0;
 }
+
 
 .icon-master-card {
     display: flex;
@@ -213,8 +204,6 @@
     .buy-now-modal-close-btn {
         width: 24px;
         height: 24px;
-        top: 14px;
-        right: 14px;
     }
 
     .buy-now-modal-close-icon {
@@ -253,7 +242,8 @@
 
 
     /* Form - user information*/
-    .contact-form-field-desk {
+
+    .buy-now-form-wrapper-for-user-name {
         font-size: 12px;
         line-height: 1.17;
     }
@@ -267,6 +257,15 @@
         margin-bottom: 14px;
     }
 
+    .user-surname {
+        margin-bottom: 18px;
+    }
+
+    .contact-form-field-desk {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
     .user-name,
     .user-surname,
     .user-email,
@@ -275,7 +274,6 @@
     .user-comment {
         font-size: 14px;
         line-height: 1.21;
-        color: var(--main-color-page);
     }
 
     .user-name,
@@ -303,22 +301,23 @@
         padding: 14px 18px 14px 106px;
     }
 
-    .country-code-container {
-        gap: 8px;
-        left: 18px;
-    }
-
-    .country-code {
+    .country-code-wrapper::before {
         font-size: 14px;
+        left: 50px;
+        top: 14.5px;
     }
 
-    .country-code::after {
-        right: -8px;
+    .country-code-wrapper::after {
+        left: 92px;
+        top: 10px;
+        height: 25px;
+        width: 1.5px;
     }
 
     .icon-flag {
         width: 24px;
-        height: 18px;
+        height: 24px;
+        left: 18px;
     }
 
     .user-card {
@@ -346,16 +345,9 @@
 /*Мобилка горизонтально*/
 @media screen and (max-height: 520px) {
     .buy-now-modal {
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -10%);
     }
 }
-
-/*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {}
-
-
-/*Только планшет*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
@@ -370,8 +362,6 @@
     .buy-now-modal-close-btn {
         width: 28px;
         height: 28px;
-        top: 24px;
-        right: 24px;
     }
 
     .buy-now-modal-close-icon {
@@ -421,11 +411,23 @@
     .contact-form-input-container {
         display: flex;
         gap: 21px;
+        width: 513px;
+        margin-bottom: 18px;
+    }
+
+    .buy-now-form-wrapper-for-user-name {
+        font-size: 14px;
+        line-height: 1.29;
     }
 
     .user-name,
     .user-surname {
         width: calc((100% - 21px) / 2);
+    }
+
+    .contact-form-field-desk {
+        font-size: 14px;
+        line-height: 1.29;
     }
 
     .user-name,
@@ -461,17 +463,19 @@
         padding: 24px 22px;
     }
 
-    .country-code-container {
-        gap: 18px;
-        left: 24px;
-    }
 
-    .country-code {
+
+    .country-code-wrapper::before {
         font-size: 18px;
+        left: 74px;
+        top: 24px;
     }
 
-    .country-code::after {
-        right: -32px;
+    .country-code-wrapper::after {
+        left: 149px;
+        top: 18px;
+        height: 32px;
+        width: 2.5px;
     }
 
     .user-tel {
@@ -480,7 +484,8 @@
 
     .icon-flag {
         width: 32px;
-        height: 24px;
+        height: 32px;
+        left: 24px;
     }
 
     .user-card {
