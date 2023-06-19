@@ -3,6 +3,15 @@
 /*Для всех вьюпортов*/
 .sellers-title {
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  
+  color: var(--specific-color);
+}
+
+.sellers-span {
+  color: var(--main-color-page);
 }
 
 .sellers-image {
@@ -20,7 +29,8 @@
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
   .sellers-title {
-   
+  font-size: 20px;
+  line-height: 1.2;
     margin-bottom: 32px;
   }
   .img-list {
@@ -99,7 +109,8 @@
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
   .sellers-title {
-    
+    font-size: 24px;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
   .img-list {

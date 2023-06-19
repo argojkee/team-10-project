@@ -51,7 +51,7 @@
 }
 
  .footer-first-slogan {
-     color: tomato;
+     color: var(--specific-color);
  }
 
  .footer-slogan {

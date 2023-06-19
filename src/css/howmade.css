@@ -15,7 +15,7 @@
 .howmade-subtitle {
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
 }
 .howmade-container-list {
   background: var(--secondary-background-color);
@@ -31,7 +31,8 @@
 }
 .howmade-list-item {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 /*Только мобилка*/
@@ -58,18 +59,24 @@
   .howmade-container-img {
     padding: 480px 20px 20px 20px;
 
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ),
-      url(../images/howmade/howmade-mobile.jpg);
+
   }
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+ @media(min-device-pixel-ratio: 1) and (max-divice-pixel-ratio: 1.99),
+ (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 1.99),
+ (min-resolution: 96dpi) and (max-resolutin: 191dpi),
+ (min-resolution: 1dppx) and (max-resolutin: 1.99dppx) {
+  .howmade-container-img {
+        background-image: linear-gradient(0deg,
+              rgba(0, 0, 0, 0.4),
+              rgba(0, 0, 0, 0.4)),
+            url(../images/howmade/howmade-mobile.jpg);
+  }
+}
+  @media(min-device-pixel-ratio: 2) and (max-divice-pixel-ratio: 2.99),
+   (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
+  (min-resolution: 192dpi) and (max-resolutin: 287dpi),
+  (min-resolution: 2dppx) and (max-resolutin: 2.99dppx) {
     .howmade-container-img {
       background-image: linear-gradient(
           0deg,
@@ -109,11 +116,11 @@
 
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .howmade-container {
-    padding-left: 77px;
-    padding-right: 77px;
-  }
 
+  .howmade-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
  
   .howmade-subtitle {
     max-width: 350px;
@@ -122,45 +129,41 @@
   padding-right: 70px;
 }
 
-  .howmade-container-img {
-    width: 614px;
-    height: 400px;
+ @media(min-device-pixel-ratio: 1) and (max-divice-pixel-ratio: 1.99),
+ (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 1.99),
+ (min-resolution: 96dpi) and (max-resolutin: 191dpi),
+ (min-resolution: 1dppx) and (max-resolutin: 1.99dppx) {
+   .howmade-container-img {
+     background-image: linear-gradient(0deg,
+         rgba(0, 0, 0, 0.4),
+         rgba(0, 0, 0, 0.4)),
+       url(../images/howmade/howmade-tablet.jpg);
+   }
+ }
 
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ),
-      url(../images/howmade/howmade-tablet.jpg);
-  }
+ @media(min-device-pixel-ratio: 2) and (max-divice-pixel-ratio: 2.99),
+ (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.99),
+ (min-resolution: 192dpi) and (max-resolutin: 287dpi),
+ (min-resolution: 2dppx) and (max-resolutin: 2.99dppx) {
+   .howmade-container-img {
+     background-image: linear-gradient(0deg,
+         rgba(0, 0, 0, 0.4),
+         rgba(0, 0, 0, 0.4)),
+       url(../images/howmade/howmade-tablet@2x.jpg);
+   }
+ }
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .howmade-container-img {
-      background-image: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 0.4)
-        ),
-        url(../images/howmade/howmade-tablet@2x.jpg);
-    }
-  }
-
-  @media (min-device-pixel-ratio: 3),
-    (-webkit-min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    .howmade-container-img {
-      background-image: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 0.4)
-        ),
-        url(../images/howmade/howmade-tablet@3x.jpg);
-    }
-  }
+ @media (min-device-pixel-ratio: 3),
+ (-webkit-min-device-pixel-ratio: 3),
+ (min-resolution: 288dpi),
+ (min-resolution: 3dppx) {
+   .howmade-container-img {
+     background-image: linear-gradient(0deg,
+         rgba(0, 0, 0, 0.4),
+         rgba(0, 0, 0, 0.4)),
+       url(../images/howmade/howmade-tablet@3x.jpg);
+   }
+ }
 }
 
 /*Планшет и десктоп*/
@@ -171,7 +174,9 @@
     .howmade-container-list {
       padding: 32px;
     }
-
+    .howmade-container-img {
+      height: 400px;
+    }
    
     .howmade-subtitle {
       margin-bottom: 28px;
@@ -183,19 +188,27 @@
 @media screen and (min-width: 1200px) {
   .howmade-container {
     display: flex;
+    column-gap: 20px;
   }
 
+  .howmade-container-list {
+    max-width: 516px;
+  }
  
+.howmade-subtitle {
+  max-width: 350px;
+}
+
   .howmade-list {
     row-gap: 24px;
   }
+
   .howmade-list-item {
-    padding-right: 27px;
+    max-width: 425px;
   }
   .howmade-container-img {
     width: 600px;
-    height: 400px;
-    margin-right: 20px;
+    
 
     background-image: linear-gradient(
         0deg,
