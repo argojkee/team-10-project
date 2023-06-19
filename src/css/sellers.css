@@ -19,6 +19,9 @@
   text-transform: uppercase;
   color: var(--main-color-page);
 }
+.image {
+  width: 100%;
+}
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
@@ -73,6 +76,7 @@
   }
   .img-item {
     width: 344px;
+    width: calc((100% - 16px)/2)
   }
   .text-button {
     display: flex;
@@ -124,6 +128,7 @@
   }
   .img-item {
     width: 368px;
+    width: calc((100% - 32px)/3)
   }
   .text-button {
     display: flex;
