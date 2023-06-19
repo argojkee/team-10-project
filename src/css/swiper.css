@@ -9,9 +9,10 @@
     height: 13px;
 }
 
+
 .swiper-pagination-bullet-active {
     width: 28px;
-    background-color: orange;
+    background-color: var(--specific-color);
     border-radius: 25px;
 }
 

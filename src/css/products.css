@@ -68,12 +68,14 @@
 
 .swiper-pagination-bullet {
     color: var(--secondary-text-color);
-    font-size: 9px;
+    font-size: 8px;
     line-height: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .price-btn:hover,
 .price-brn:focus  {
