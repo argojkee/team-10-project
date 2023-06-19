@@ -2,26 +2,104 @@
 
  /*Для всех вьюпортов*/
 
+.subscribe-section {
+    background-color: var(--primary-background-color);
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
- .matveev-example {
-     color: tomato;
+.subscribe-section-title {
+    color: var(--secondary-text-color);
+    text-align: center;
+    max-width: 291px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
  }
 
- /*Только мобилка*/
+.subscribe-text {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    max-width: 326px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.subscribe-modal-btn {
+    display: block;
+    padding: 12px 28px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 128px;
+    font-size: 14px;
+    line-height: 1.21;
+    transition: color var(--general-transition), background-color var(--general-transition);
+}
+
+.subscribe-modal-btn:hover, .subscribe-modal-btn:focus {
+    color: var(--specific-color);
+    background-color: var(--active-modal-button-color);
+}
+
+
+
+ /*Только мобилка*/ 
  @media screen and (max-width: 767px) {
     .subscribe-section {
         padding-bottom: 63px;
         padding-top: 62px;
+        max-width: 375px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-mobile.jpg');       
+        }
     }
+
+ @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+ screen and (min-resolution: 192dpi) and (max-width: 767px),
+ screen and (min-resolution: 2dppx) and (max-width: 767px) {
+     .subscribe-section {
+         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-mobile@2x.jpg');
+     }
  }
+
+
+
+
+
 
  /*Мобилка и планшет*/
  @media screen and (max-width: 1199px) {}
 
 
 
+
+
+
+
  /*Только планшет*/
- @media screen and (min-width: 768px) and (max-width: 1199px) {}
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .subscribe-section {
+        width: 768px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-tablet.jpg');
+    }
+ }
+
+ @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+ screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+     .subscribe-section {
+         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-tablet@2x.jpg');
+     }
+ }
+
+
+
 
 
  /*Планшет и десктоп*/
@@ -30,8 +108,34 @@
         padding-top: 72px;
         padding-bottom: 72px;
     }
+
+    .subscribe-text {
+        max-width: 467px;
+    }
+
+    .subscribe-modal-btn {
+        padding: 14px 40px;
+        font-size: 18px;
+        line-height: 1.23;
+    }
  }
 
 
+
+
+
  /*Только десктоп*/
- @media screen and (min-width: 1200px) {}
+ @media screen and (min-width: 1200px) {
+    .subscribe-section {
+        width: 1200px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-desktop.jpg');
+    }
+ }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      .subscribe-section {
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-desktop@2x.jpg');
+      }
+  }
