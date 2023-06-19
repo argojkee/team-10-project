@@ -26,6 +26,7 @@
   list-style: disc;
   display: flex;
   flex-direction: column;
+  padding-left: 16px;
 
 }
 .howmade-list-item {
@@ -171,9 +172,7 @@
       padding: 32px;
     }
 
-    .howmade-list {
-      padding-left: 16px;
-    }
+   
     .howmade-subtitle {
       margin-bottom: 28px;
     }
