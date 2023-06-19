@@ -9,6 +9,10 @@
     transform: translate(-50%, -25%);
 }
 
+.buy-now-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
 
 /* Close btn */
 .buy-now-modal-close-icon:hover,
@@ -21,7 +25,7 @@
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Close btn */
+
 
 
 
