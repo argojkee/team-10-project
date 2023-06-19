@@ -75,6 +75,12 @@
     align-items: center;
 }
 
+.price-btn:hover,
+.price-brn:focus  {
+    color: var(--secondary-text-color);
+    background-color: var(--specific-color);
+}
+
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
 
@@ -123,9 +129,9 @@
             padding: 32px 20px;
         }
 
-    .our-product-list {
+    /* .our-product-list {
         column-gap: 18px;
-    }
+    } */
 
     .our-product-list {
         padding-bottom: 45px;

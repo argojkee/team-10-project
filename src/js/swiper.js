@@ -40,14 +40,15 @@ var sliderSelector = '.products-swiper',
 
     breakpoints: {
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
       768: {
         slidesPerView: 2.5,
+        spaceBetween: 18,
       },
     },
     autoplay: {
-      delay: 1500,
+      delay: 3000,
       disableOnInteraction: true,
     },
     keyboard: {
