@@ -58,6 +58,10 @@
     color: var(--secondary-text-color);
  }
 
+.footer-contact-container {
+    color: var(--secondary-text-color);
+}
+
  .footer-contact {
     color: var(--secondary-text-color);
     display: flex;
