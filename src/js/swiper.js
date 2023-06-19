@@ -1,12 +1,48 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+// const swiper = new Swiper('.swiper', {
+// Optional parameters
+// direction: 'horizontal',
+// loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  // slidesPerGroup: 4,
-  slidesPerView: 'auto',
-});
+// If we need pagination
+// pagination: {
+// el: '.swiper-pagination',
+// },
+// slidesPerGroup: 4,
+// slidesPerView: 'auto',
+// });
+
+var sliderSelector = '.products-swiper',
+  options = {
+    init: false,
+    loop: true,
+    speed: 800,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 60,
+      modifier: 1,
+      slideShadows: true,
+    },
+    grabCursor: true,
+    parallax: true,
+    pagination: {
+      el: '.products-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      1200: {
+        slidesPerView: 5,
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: -80,
+      },
+    },
+  };
+var mySwiper = new Swiper(sliderSelector, options);
+mySwiper.init();
