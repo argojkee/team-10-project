@@ -18,30 +18,22 @@
 }
 
 .subscribe-text {
-  color: var(--secondary-text-color);
-
-  text-align: center;
-  letter-spacing: -0.02em;
   max-width: 326px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
+
+  color: var(--secondary-text-color);
+  text-align: center;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 .subscribe-modal-btn {
   display: block;
-
+  min-width: 128px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 128px;
-  transition: color var(--general-transition),
-    background-color var(--general-transition);
-}
-
-.subscribe-modal-btn:hover,
-.subscribe-modal-btn:focus {
-  color: var(--specific-color);
-  background-color: var(--active-modal-button-color);
 }
 
 /*Только мобилка*/
@@ -50,11 +42,6 @@
     padding-bottom: 63px;
     padding-top: 62px;
     max-width: 375px;
-  }
-  .subscribe-modal-btn {
-    padding: 12px 28px;
-    font-size: 14px;
-    line-height: 1.21;
   }
 }
 
@@ -81,12 +68,6 @@
 
   .subscribe-text {
     max-width: 467px;
-  }
-
-  .subscribe-modal-btn {
-    padding: 14px 40px;
-    font-size: 18px;
-    line-height: 1.23;
   }
 }
 

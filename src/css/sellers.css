@@ -6,17 +6,12 @@
   width: 100%;
 }
 
-.subscribe-button {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-}
-
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
   .sellers-title {
     margin-bottom: 32px;
   }
+
   .img-list {
     display: flex;
     flex-direction: column;
@@ -45,10 +40,7 @@
 
   .subscribe-button {
     display: flex;
-    padding: 12px 28px;
     margin: 0 auto;
-    font-size: 14px;
-    line-height: 1.2;
   }
 }
 
@@ -56,11 +48,6 @@
 @media screen and (max-width: 1199px) {
   .pic3 {
     display: none;
-  }
-
-  .subscribe-button {
-    font-size: 18px;
-    line-height: 1.22;
   }
 }
 
@@ -101,9 +88,6 @@
   .text-2 {
     font-size: 14px;
     line-height: 18px;
-  }
-  .subscribe-button {
-    padding: 14px 40px;
   }
 
   .sellers-text-button {

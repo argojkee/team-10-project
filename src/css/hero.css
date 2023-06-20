@@ -182,31 +182,12 @@
   align-items: center;
 }
 
-.btn-buy-now,
-.btn-how-its-made {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.btn-buy-now {
-  transition: color var(--general-transition),
-    background-color var(--general-transition);
-}
-
-.btn-buy-now:hover,
-.btn-buy-now:focus {
-  color: var(--specific-color);
-  background-color: var(--active-modal-button-color);
-}
-
 .btn-how-its-made {
   display: inline-block;
 
   color: var(--secondary-text-color);
-  background-color: transparent;
-  border-radius: 100px;
   border: 1px solid var(--icon-dark-theme);
+  background-color: transparent;
 
   transition: color var(--general-transition),
     background-color var(--general-transition),
@@ -272,14 +253,6 @@
     row-gap: 32px;
   }
 
-  .btn-buy-now {
-    padding: 12px 28px;
-  }
-
-  .btn-how-its-made {
-    padding: 11px 27px;
-  }
-
   .btn-scroll-down {
     gap: 12px;
 
@@ -313,14 +286,6 @@
 
   .hero-nav-list-item:last-child {
     margin-left: auto;
-  }
-
-  .btn-buy-now {
-    padding: 14px 40px;
-  }
-
-  .btn-how-its-made {
-    padding: 13px 39px;
   }
 
   .btn-scroll-down {

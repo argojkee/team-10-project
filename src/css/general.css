@@ -80,27 +80,6 @@ body {
   overflow: hidden;
 }
 
-.section-title {
-  margin-left: auto;
-  margin-right: auto;
-
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.title-span {
-  color: var(--specific-color);
-}
-
-.button {
-  color: var(--icon-dark-theme);
-  background-color: var(--specific-color);
-  border-radius: 100px;
-  border: none;
-}
-
 body::-webkit-scrollbar {
   width: 20px;
 }
@@ -137,6 +116,60 @@ textarea,
   caret-color: var(--specific-color);
 }
 
+/* Section utilities */
+
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-span {
+  color: var(--specific-color);
+}
+
+/* Button utilities */
+
+.button {
+  font-weight: 600;
+  border-radius: 100px;
+}
+
+.modal-button,
+.small-text-button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+}
+
+.accent-button {
+  color: var(--icon-dark-theme);
+  background-color: var(--specific-color);
+  border: none;
+
+  transition: color var(--general-transition),
+    background-color var(--general-transition);
+}
+
+.accent-button:hover,
+.accent-button:focus {
+  color: var(--specific-color);
+  background-color: var(--active-modal-button-color);
+}
+
+.transparent-button {
+  background-color: transparent;
+
+  transition: color var(--general-transition),
+    background-color var(--general-transition),
+    border-color var(--general-transition);
+}
+
 @media screen and (min-width: 376px) {
   /*General*/
   .container {
@@ -165,6 +198,19 @@ textarea,
     font-size: 20px;
     line-height: 1.2;
   }
+
+  .button {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .accent-button {
+    padding: 12px 28px;
+  }
+
+  .transparent-button {
+    padding: 11px 27px;
+  }
 }
 
 /*Планшет и десктоп*/
@@ -172,6 +218,19 @@ textarea,
   .section-title {
     font-size: 24px;
     line-height: 1.17;
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .accent-button {
+    padding: 14px 40px;
+  }
+
+  .transparent-button {
+    padding: 13px 39px;
   }
 }
 
