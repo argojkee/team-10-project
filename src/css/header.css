@@ -128,6 +128,7 @@
     .header-nav {
         display: flex;
         column-gap: 188px;
+        align-items: center;
     }
 
     .header-nav-list {
