@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.review-subtitle-name {
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--specific-color);
+}
 
 
 .reviews-list-item {
