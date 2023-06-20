@@ -1,16 +1,13 @@
 /* Reiterovich Andrii */
 
 /*Для всех 3х вьюпортов*/
-.reiterovich-example {
-  color: tomato;
-}
 
-.title {
+
+.review-title {
   text-align: center;
 }
 
-.reviews-list {
-}
+
 
 .reviews-list-item {
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -46,57 +43,36 @@
   color: rgba(17, 17, 17, 0.7);
 }
 
-.review-button-block {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 
 .review-button {
-  border: 1px solid #fd9222;
+  border: 1px solid var(--specific-color);
   border-radius: 100px;
   background-color: transparent;
   cursor: pointer;
   transition: var(--general-transition);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: var(--main-color-page);
+  text-align: center;
 }
 
 .review-button:hover,
 .review-button:focus {
-  background-color: #fd9222;
-  color: #ffffff;
+  background-color: var(--specific-color);
+  color: var(--secondary-text-color);
 }
 
-.review-modal-background {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  transition: var(--general-transition);
-}
 
-.review-modal-window {
-  background-color: #fafafa;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 15px;
-  transition: var(--general-transition);
-}
 
-.review-button-close {
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
-}
 
-.review-close-icon {
-  stroke: #111111;
-}
+
+
+
+
 
 .review-modal-title {
   text-align: start;
@@ -143,147 +119,56 @@
 /*Только мобилка*/
 
 @media screen and (max-width: 767px) {
-  .review-button-block {
-    margin-top: 32px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .reviews-list {
-    margin-top: 74px;
-    padding-bottom: 33px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .section-reviews {
+ 
+     .reviews-list {
+       margin-top: 74px;
+       padding-bottom: 33px;
+     }
+      .section-reviews {
     padding-bottom: 72px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .reviews-list-item {
+    .reviews-list-item {
     margin-right: 20px;
     max-width: 335px;
     padding-left: 18px;
     padding-right: 18px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .review-button {
-    width: 165px;
-    height: 41px;
-    font-weight: 600;
+    .review-button {
+      padding: 12px 28px;
     font-size: 14px;
     line-height: 1.21;
-    text-align: center;
-    color: #111111;
+    margin-top: 32px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .review-modal-window {
-    max-width: 311px;
-    padding: 32px 24px 32px 24px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-close-icon {
-    top: 14px;
-    right: 14px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-button-close {
-    top: 14px;
-    right: 14px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-modal-title {
-    margin-bottom: 32px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-input-item {
-    width: 263px;
-    height: 45px;
-    margin-bottom: 14px;
-    padding-left: 18px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .spaces-number {
-    padding-left: 106px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-textarea {
-    width: 263px;
-    height: 91px;
-    padding-left: 18px;
-    padding-top: 14px;
-    margin-bottom: 18px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-button-send {
-    width: 93px;
-    height: 41px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-flag-after::after {
-    margin-left: 8px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-flag-after {
-    margin-left: 8px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .review-flag-block {
-    left: 18px;
-    top: 10px;
-  }
-}
 
-/*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {
-}
 
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-reviews {
     padding-bottom: 100px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .reviews-list-item {
-    margin-right: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .reviews-list-item {
+        .reviews-list-item {
+          margin-right: 16px;
+        }
+          .reviews-list-item {
     width: 344px;
     padding-left: 16px;
     padding-right: 16px;
   }
 }
+
+
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
@@ -291,98 +176,29 @@
     margin-top: 91px;
     padding-bottom: 44px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .review-button {
-    width: 222px;
-    height: 50px;
-    font-weight: 600;
+    .review-button {
     font-size: 18px;
     line-height: 1.22;
-    color: #111111;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .review-button-block {
     margin-top: 50px;
   }
+
 }
 
 @media screen and (min-width: 768px) {
-  .review-modal-window {
-    width: 517px;
-    padding: 40px;
-  }
+
 }
 
 @media screen and (min-width: 768px) {
-  .review-button-send {
-    width: 117px;
-    height: 45px;
-  }
+
 }
 
-@media screen and (min-width: 768px) {
-  .review-button-close {
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .review-input-item {
-    width: 437px;
-    height: 66px;
-    margin-bottom: 18px;
-    padding-left: 24px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .spaces-number {
-    padding-left: 177px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .review-flag-block {
-    left: 24px;
-    top: 20px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .review-flag-after::after {
-    margin-left: 32px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .review-flag-after {
-    margin-left: 18px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .review-textarea {
-    width: 437px;
-    height: 137px;
-    padding-left: 24px;
-    padding-top: 20px;
-    margin-bottom: 18px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .review-modal-title {
-    width: 298px;
-    margin-bottom: 40px;
-  }
-}
 
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
