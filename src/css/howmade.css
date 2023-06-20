@@ -29,12 +29,12 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
-.howmade-container-img {
+/* .howmade-container-img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 15px;
-}
+} */
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
@@ -57,12 +57,12 @@
     margin-bottom: 32px;
   }
 
- .howmade-container-img {
+ /* .howmade-container-img {
    
    height: 500px;
- }
+ } */
 
-        @media screen and (max-device-pixel-ratio: 1.99),
+        /* @media screen and (max-device-pixel-ratio: 1.99),
         screen and (-webkit-max-device-pixel-ratio: 1.99),
         screen and (max-resolution: 191dpi),
         screen and (max-resolution: 1.99dppx) {
@@ -96,7 +96,7 @@
                 rgba(0, 0, 0, 0.4) 100%),
               url('../images/howmade/howmade-mobile@3x.jpg');
           }
-        }
+        } */
 
 
 
@@ -114,9 +114,9 @@
     row-gap: 18px;
   }
 
-  .howmade-container-img {
+  /* .howmade-container-img {
     width: 100%;
-  }
+  } */
 }
 
 /*Только планшет*/
@@ -133,7 +133,7 @@
 .howmade-list {
   padding-right: 70px;
 }
-            @media screen and (max-device-pixel-ratio: 1.99),
+            /* @media screen and (max-device-pixel-ratio: 1.99),
     screen and (-webkit-max-device-pixel-ratio: 1.99),
     screen and (max-resolution: 191dpi),
     screen and (max-resolution: 1.99dppx) {
@@ -167,7 +167,7 @@
             rgba(0, 0, 0, 0.4) 100%),
           url('../images/howmade/howmade-tablet@3x.jpg');
       }
-    }
+    } */
 
 
 
@@ -186,9 +186,9 @@
     .howmade-subtitle {
       margin-bottom: 28px;
     }
-     .howmade-container-img {
+     /* .howmade-container-img {
        height: 400px;
-     }
+     } */
 }
 
 /*Только десктоп*/
@@ -213,10 +213,10 @@
   .howmade-list-item {
     max-width: 425px;
   }
- .howmade-container-img {
+ /* .howmade-container-img {
    width: 600px;
- }
-             @media screen and (max-device-pixel-ratio: 1.99),
+ } */
+             /* @media screen and (max-device-pixel-ratio: 1.99),
         screen and (-webkit-max-device-pixel-ratio: 1.99),
         screen and (max-resolution: 191dpi),
         screen and (max-resolution: 1.99dppx) {
@@ -251,7 +251,7 @@
                 rgba(0, 0, 0, 0.4) 100%),
               url('../images/howmade/howmade-desktop@3x.jpg');
           }
-        }
+        } */
 
 }
 
