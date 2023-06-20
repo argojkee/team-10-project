@@ -11,6 +11,9 @@
         letter-spacing: -0.02em;
 }
 
+.review-button-close {
+  transition: var(--general-transition);
+}
 .review-button-close:hover .review-close-icon,
 .review-button-close:focus .reciew-close-icon{
     stroke: var(--specific-color);

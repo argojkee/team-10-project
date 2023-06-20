@@ -112,8 +112,8 @@
 
 .button:hover,
 .button:focus {
-  background: #fcf1e0;
-  color: #fd9222;
+  background: var(--active-modal-button-color);
+  color: var(--specific-color);
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
