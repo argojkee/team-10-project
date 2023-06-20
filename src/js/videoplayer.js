@@ -1,5 +1,5 @@
 // Інінціалізація програвача
-const player = new Plyr('#features-player');
+// const player = new Plyr('#features-player');
 
 // if (window.innerWidth >= 1200 && window.devicePixelRatio >= 3) {
 //   player.poster = '../images/howmade/howmade-desktop@3x.jpg';
@@ -21,10 +21,10 @@ const player = new Plyr('#features-player');
 //   player.poster = '../images/howmade/howmade-mobile.jpg';
 // }
 
-if (window.innerWidth > 1199) {
-  player.poster = '../images/howmade/howmade-desktop.jpg';
-} else if (window.innerWidth > 767) {
-  player.poster = '../images/howmade/howmade-tablet.jpg';
-} else {
-  player.poster = '../images/howmade/howmade-mobile.jpg';
-}
+// if (window.innerWidth > 1199) {
+//   player.poster = '../images/howmade/howmade-desktop.jpg';
+// } else if (window.innerWidth > 767) {
+//   player.poster = '../images/howmade/howmade-tablet.jpg';
+// } else {
+//   player.poster = '../images/howmade/howmade-mobile.jpg';
+// }
