@@ -261,10 +261,6 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
-  .hero-section {
-    padding-bottom: 72px;
-  }
-
   .hero-title {
     font-size: 20px;
     line-height: 1.2;
@@ -337,17 +333,5 @@
   .icon-arrow-wrapper {
     width: 38px;
     height: 38px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero-section {
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (min-width: 1199px) {
-  .hero-section {
-    padding-bottom: 72px;
   }
 }

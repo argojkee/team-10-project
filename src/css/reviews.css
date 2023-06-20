@@ -2,12 +2,9 @@
 
 /*Для всех 3х вьюпортов*/
 
-
 .review-title {
   text-align: center;
 }
-
-
 
 .reviews-list-item {
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -43,8 +40,6 @@
   color: rgba(17, 17, 17, 0.7);
 }
 
-
-
 .review-button {
   border: 1px solid var(--specific-color);
   border-radius: 100px;
@@ -65,14 +60,6 @@
   background-color: var(--specific-color);
   color: var(--secondary-text-color);
 }
-
-
-
-
-
-
-
-
 
 .review-modal-title {
   text-align: start;
@@ -106,8 +93,6 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
 }
 
-
-
 .button:hover,
 .button:focus {
   background: var(--active-modal-button-color);
@@ -118,58 +103,35 @@
   background-color: var(--specific-color);
 }
 
-
 /*Только мобилка*/
 
 @media screen and (max-width: 767px) {
- 
-     .reviews-list {
-       margin-top: 74px;
-       padding-bottom: 33px;
-     }
-      .section-reviews {
-    padding-bottom: 72px;
+  .reviews-list {
+    margin-top: 74px;
+    padding-bottom: 33px;
   }
-    .reviews-list-item {
-    
+
+  .reviews-list-item {
     max-width: 335px;
     padding-left: 18px;
     padding-right: 18px;
   }
-    .review-button {
-      padding: 12px 28px;
+
+  .review-button {
+    padding: 12px 28px;
     font-size: 14px;
     line-height: 1.21;
     margin-top: 32px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-reviews {
-    padding-bottom: 100px;
-  }
-       
-          .reviews-list-item {
- 
+  .reviews-list-item {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
-
-
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
@@ -177,43 +139,17 @@
     margin-top: 91px;
     padding-bottom: 44px;
   }
-    .review-button {
+  .review-button {
     font-size: 18px;
     line-height: 1.22;
     margin-top: 50px;
     padding: 14px 40px;
   }
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-
-
-
-
-
-
-
-
-/*Только десктоп*/
-@media screen and (min-width: 1200px) {
-  .section-reviews {
-    padding-bottom: 128px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .reviews-list-item {
-    
     padding-left: 24px;
     padding-right: 24px;
-   
   }
 }
