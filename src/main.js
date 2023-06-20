@@ -3,3 +3,4 @@ import './js/modal-menu';
 import './js/swiper';
 import './js/videoplayer';
 import './js/form';
+import './js/scroll-to-top';

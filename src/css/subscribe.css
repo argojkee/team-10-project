@@ -53,7 +53,6 @@
     .subscribe-section {
             padding-bottom: 63px;
             padding-top: 62px;
-            max-width: 375px;
  }
  .subscribe-modal-btn {
     padding: 12px 28px;
@@ -62,23 +61,6 @@
  }
 
  }
-
-
-
- /*Только планшет*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .subscribe-section {
-        width: 768px;
-    }
-}
-
- /*Только десктоп*/
- @media screen and (min-width: 1200px) {
-    .subscribe-section {
-        width: 1200px;
-    }
- }
-
 
 
  /*Планшет и десктоп*/

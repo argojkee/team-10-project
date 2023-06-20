@@ -220,20 +220,54 @@
   border-color: var(--specific-color);
 }
 
-.btn-scroll-down {
+.btn-scroll {
   display: flex;
   align-items: center;
-
   padding: 0;
-
   font-weight: 500;
   letter-spacing: -0.03em;
-  color: var(--icon-dark-theme);
-
   background-color: transparent;
   border: none;
-
   transition: color var(--general-transition);
+}
+
+.btn-scroll-down {
+  color: var(--secondary-text-color);
+}
+
+.btn-scroll-top{
+  color: var(--specific-color);
+}
+.isShowBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 999;
+}
+
+.isShowBtn {
+  opacity: 1;
+  transition: opacity var(--general-transition);
+}
+
+.isShowBtn.isShowBtn-hide {
+  opacity: 0;
+  visibility: hidden;
+    pointer-events: none;
+}
+
+
+.icon-arrow-top {
+  transform: rotate(180deg);
+}
+
+.icon-arrow-wrapper-down {
+  background-color: currentColor;
+}
+
+.icon-arrow-wrapper-top {
+  background-color: var(--specific-color);
+  transition: background-color var(--general-transition);
 }
 
 .icon-arrow-wrapper {
@@ -242,10 +276,13 @@
   align-items: center;
 
   border-radius: 50%;
-  background-color: currentColor;
+ 
 }
-
-.icon-arrow {
+.icon-arrow-top {
+  fill: var(--icon-dark-theme);
+  transition: fill var(--general-transition);
+}
+.icon-arrow-down {
   fill: var(--specific-color);
 }
 
@@ -254,9 +291,18 @@
   color: var(--specific-color);
 }
 
-.btn-scroll-down:hover .icon-arrow,
-.btn-scroll-down:focus .icon-arrow {
+.btn-scroll:hover .icon-arrow-down,
+.btn-scroll:focus .icon-arrow-down {
   fill: var(--icon-dark-theme);
+}
+
+.btn-scroll-top:hover .icon-arrow-wrapper-top,
+.btn-scroll-top:focus .icon-arrow-wrapper-top {
+  background-color: var(--icon-dark-theme);
+}
+.btn-scroll:hover .icon-arrow-top,
+.btn-scroll:focus .icon-arrow-top {
+  fill: var(--specific-color);
 }
 
 /* mobile */
@@ -284,7 +330,7 @@
     padding: 11px 27px;
   }
 
-  .btn-scroll-down {
+  .btn-scroll {
     gap: 12px;
 
     font-size: 12px;
@@ -327,7 +373,7 @@
     padding: 13px 39px;
   }
 
-  .btn-scroll-down {
+  .btn-scroll {
     gap: 14px;
 
     font-size: 14px;
