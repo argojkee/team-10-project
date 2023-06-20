@@ -21,6 +21,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: var(--background-modal-window);
+    border-radius: 15px;
 
 }
 
@@ -30,4 +32,29 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+
+.modal-close-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-close-btn {
+      top: 15px;
+      right: 14px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+.modal-close-btn {
+    top: 24px;
+    right: 24px;
+}
 }

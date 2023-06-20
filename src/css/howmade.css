@@ -1,28 +1,137 @@
 /* Alexander Chenykh */
 
-
 /*Для всех вьюпортов*/
 
 
-.chernykh-example {
-    color: tomato;
+
+.howmade-title {
+  text-align: center;
+}
+.howmade-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.howmade-container-list {
+  background: var(--secondary-background-color);
+  border-radius: 15px;
+}
+
+.howmade-list {
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+
+}
+.howmade-list-item {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 /*Только мобилка*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .howmade-subtitle {
+    margin-top: 20px;
+  
+  }
+
+  .howmade-container-list {
+    padding: 20px 14px;
+  }
+
+  
+  .howmade-list {
+    margin-top: 20px;
+   
+  }
+
+  .howmade-title {
+    margin-bottom: 32px;
+  }
+
+
+
+
+
+
+}
 
 /*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1199px) {
+ 
+  .howmade-container-list {
+    margin-top: 20px;
+  }
 
-
+  .howmade-list {
+    row-gap: 18px;
+  }
+}
 
 /*Только планшет*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
+  .howmade-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+ 
+  .howmade-subtitle {
+    max-width: 350px;
+  }
+.howmade-list {
+  padding-right: 70px;
+}
+
+
+}
 
 /*Планшет и десктоп*/
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+  .howmade-title {
+    margin-bottom: 50px;
+  }
+    .howmade-container-list {
+      padding: 32px;
+    }
+   
+   
+    .howmade-subtitle {
+      margin-bottom: 28px;
+    }
 
+}
 
 /*Только десктоп*/
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+  .howmade-container {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .howmade-container-list {
+    max-width: 516px;
+  }
+ 
+.howmade-subtitle {
+  max-width: 350px;
+}
+
+  .howmade-list {
+    row-gap: 24px;
+  }
+
+  .howmade-list-item {
+    max-width: 425px;
+  }
+
+
+
+
+}
+
+
+
+

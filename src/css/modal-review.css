@@ -1,0 +1,127 @@
+
+
+.review-modal-window {
+    transition: var(--general-transition);
+}
+
+.review-flag-after::after {
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: -0.02em;
+}
+
+.review-button-close:hover .review-close-icon,
+.review-button-close:focus .reciew-close-icon{
+    stroke: var(--specific-color);
+}
+.review-close-icon {
+    stroke: var(--main-color-page);
+}
+
+
+@media screen and (max-width: 767px) {
+.review-modal-window {
+        max-width: 311px;
+        padding: 32px 24px 32px 24px;
+    }
+      .review-modal-title {
+    margin-bottom: 32px;
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+    .review-input-item {
+    width: 263px;
+    height: 45px;
+    margin-bottom: 14px;
+    padding-left: 18px;
+  }
+    .spaces-number {
+    padding-left: 106px;
+  }
+    .review-textarea {
+    width: 263px;
+    height: 91px;
+    padding-left: 18px;
+    padding-top: 14px;
+    margin-bottom: 18px;
+  }
+    .review-button-send {
+   padding: 12px 28px;
+   color: var(--secondary-text-color);
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.21;
+  }
+    .review-flag-after::after {
+    margin-left: 8px;
+ 
+  }
+    .review-flag-after {
+    margin-left: 8px;
+  }
+   .review-flag-block {
+    left: 18px;
+    top: 10px;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .review-modal-window {
+        width: 517px;
+        padding: 40px;
+    }
+
+         .review-button-send {
+             padding: 14px 40px;
+         }
+
+    .review-button-close {
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+    }
+    .review-input-item {
+    width: 437px;
+    height: 66px;
+    margin-bottom: 18px;
+    padding-left: 24px;
+  }
+   .spaces-number {
+       padding-left: 177px;
+   }
+
+     .review-flag-block {
+    left: 24px;
+    top: 20px;
+  }
+    .review-flag-after::after {
+    margin-left: 32px;
+  }
+    .review-flag-after {
+    margin-left: 18px;
+  }
+    .review-textarea {
+    width: 437px;
+    height: 137px;
+    padding-left: 24px;
+    padding-top: 20px;
+    margin-bottom: 18px;
+  }
+   .review-modal-title {
+       width: 298px;
+       margin-bottom: 40px;
+   }
+}
+
+

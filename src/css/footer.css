@@ -51,12 +51,16 @@
 }
 
  .footer-first-slogan {
-     color: tomato;
+     color: var(--specific-color);
  }
 
  .footer-slogan {
     color: var(--secondary-text-color);
  }
+
+.footer-contact-container {
+    color: var(--secondary-text-color);
+}
 
  .footer-contact {
     color: var(--secondary-text-color);
