@@ -106,9 +106,7 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
 }
 
-.button {
-  transition: var(--general-transition);
-}
+
 
 .button:hover,
 .button:focus {

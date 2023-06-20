@@ -71,12 +71,15 @@
         align-items: center;
         background-color: transparent;
         border: none;
-
-    }
-
-    .icon-burger {
         stroke: var(--main-color-page);
+        transition: stroke var(--general-transition);
+
     }
+.burger-button:hover,
+.burger-button:focus {
+    stroke: var(--specific-color);
+}
+
 
     
 }

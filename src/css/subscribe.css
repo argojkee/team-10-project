@@ -22,8 +22,7 @@
 
 .subscribe-text {
     color: var(--secondary-text-color);
-    font-size: 14px;
-    line-height: 1.29;
+
     text-align: center;
     letter-spacing: -0.02em;
     max-width: 326px;
@@ -34,12 +33,10 @@
 
 .subscribe-modal-btn {
     display: block;
-    padding: 12px 28px;
+    
     margin-left: auto;
     margin-right: auto;
     min-width: 128px;
-    font-size: 14px;
-    line-height: 1.21;
     transition: color var(--general-transition), background-color var(--general-transition);
 }
 
@@ -57,6 +54,11 @@
             padding-bottom: 63px;
             padding-top: 62px;
             max-width: 375px;
+ }
+ .subscribe-modal-btn {
+    padding: 12px 28px;
+        font-size: 14px;
+            line-height: 1.21;
  }
 
  }
