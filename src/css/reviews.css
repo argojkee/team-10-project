@@ -116,6 +116,11 @@
   color: #fd9222;
 }
 
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: var(--specific-color);
+}
+
+
 /*Только мобилка*/
 
 @media screen and (max-width: 767px) {
@@ -128,7 +133,7 @@
     padding-bottom: 72px;
   }
     .reviews-list-item {
-    margin-right: 20px;
+    
     max-width: 335px;
     padding-left: 18px;
     padding-right: 18px;
@@ -158,11 +163,9 @@
   .section-reviews {
     padding-bottom: 100px;
   }
-        .reviews-list-item {
-          margin-right: 16px;
-        }
+       
           .reviews-list-item {
-    width: 344px;
+ 
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -210,9 +213,9 @@
 
 @media screen and (min-width: 1200px) {
   .reviews-list-item {
-    width: 360px;
+    
     padding-left: 24px;
     padding-right: 24px;
-    margin-right: 28px;
+   
   }
 }

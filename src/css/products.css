@@ -21,6 +21,7 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
+     align-items: center;
 
     background: var(--secondary-background-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -65,7 +66,22 @@
     border-radius: 100px;
 }
 
+.swiper-pagination-bullet {
+    color: var(--secondary-text-color);
+    font-size: 8px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+
+.price-btn:hover,
+.price-brn:focus  {
+    color: var(--secondary-text-color);
+    background-color: var(--specific-color);
+}
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
@@ -115,9 +131,7 @@
             padding: 32px 20px;
         }
 
-    .our-product-list {
-        column-gap: 18px;
-    }
+ 
 
     .our-product-list {
         padding-bottom: 45px;
