@@ -28,6 +28,12 @@
     opacity: 0;
 }
 
+
+.plyr__control.plyr__control--overlaid:hover {
+    color: var(--specific-color);
+    border-color: var(--specific-color);
+}
+
 .plyr--paused.plyr--stopped .plyr__controls {
     opacity: 0;
 }
