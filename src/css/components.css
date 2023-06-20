@@ -2,12 +2,6 @@
 
 /*Для всех 3х вьюпортов*/
 
-.components-title {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .card-back-description,
 .components-description {
   font-size: 14px;
@@ -148,8 +142,6 @@
 @media screen and (max-width: 767px) {
   .components-title {
     max-width: 283px;
-    font-size: 20px;
-    line-height: 1.2;
     margin-bottom: 24px;
   }
 

@@ -6,10 +6,6 @@
   background-color: var(--primary-background-color);
 }
 
-.advantages-title {
-  display: none;
-}
-
 .advantages-list {
   display: flex;
 }

@@ -2,10 +2,6 @@
 
 /*Для всех 3х вьюпортов*/
 
-.review-title {
-  text-align: center;
-}
-
 .reviews-list-item {
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);

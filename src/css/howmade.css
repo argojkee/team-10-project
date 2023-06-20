@@ -2,14 +2,12 @@
 
 /*Для всех вьюпортов*/
 
-.howmade-title {
-  text-align: center;
-}
 .howmade-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
 }
+
 .howmade-container-list {
   background: var(--secondary-background-color);
   border-radius: 15px;

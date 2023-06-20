@@ -63,7 +63,7 @@
 /*General*/
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  color: var(--main-color-page);
   background-color: #fafafa;
 }
 
@@ -80,11 +80,14 @@ body {
   overflow: hidden;
 }
 
-.title {
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 600;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--main-color-page);
+  text-align: center;
 }
 
 .title-span {
@@ -158,19 +161,15 @@ textarea,
     padding-bottom: 36px;
   }
 
-  .title {
+  .section-title {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
-/*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {
-}
-
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
-  .title {
+  .section-title {
     font-size: 24px;
     line-height: 1.17;
   }

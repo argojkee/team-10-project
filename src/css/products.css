@@ -2,12 +2,6 @@
 
 /*Для всех вьюпортов*/
 
-.title-our-product {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .our-product-list {
   align-items: center;
 }
@@ -91,10 +85,6 @@
     height: 100%;
     padding: 32px 52px;
   }
-}
-
-/*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {
 }
 
 /*Только планшет*/
