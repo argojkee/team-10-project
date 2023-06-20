@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         
     <script type="module" crossorigin src="/team-10-project/assets/index-459e2734.js"></script>
-    <link rel="stylesheet" href="/team-10-project/assets/index-d78f6745.css">
+    <link rel="stylesheet" href="/team-10-project/assets/index-1f015f9c.css">
   </head>
   <body>
 
@@ -458,7 +458,7 @@
 <section class="section section-reviews">
   <div class="container">
     <!-- <h2 class="title reiterovich-example">Hello my dear friend</h2> -->
-    <h2 id="chocolate-love" class="title">
+    <h2 id="chocolate-love" class="title review-title">
       chocolate<span class="title-span"> is loved</span>
     </h2>
     <div class="swiper">
@@ -565,62 +565,12 @@
     </div>
   </div>
 
-  <div class="review-button-block">
-    <button class="review-button" type="button">Leave a review</button>
-  </div>
+ 
+    <button class="review-button" type="button" data-second-modal-open>Leave a review</button>
+  
 
   <!-- модальне вікно -->
-  <div class="review-modal-background">
-    <div class="review-modal-window">
-      <button type="button" class="review-button-close">
-        <svg class="review-close-icon" width="24" height="24">
-          <use href="../images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h2 class="title review-modal-title">
-        leave a review about <span class="title-span">our chocolate</span>
-      </h2>
-      <form class="review-input-list">
-        <input
-          class="review-input-item"
-          placeholder="Name"
-          type="text"
-          name="user-name"
-          required
-        />
-        <input
-          class="review-input-item"
-          placeholder="Enter your email"
-          type="email"
-          name="user-mail"
-          required
-        />
-        <div class="review-input-item-flag">
-          <input
-            required
-            class="review-input-item spaces-number"
-            placeholder="Phone number"
-            type="tel"
-            name="user-namber"
-          />
-          <div class="review-flag-block">
-            <svg width="24" height="24">
-              <use href="../images/sprite.svg#icon-flag"></use>
-            </svg>
-            <p class="review-flag-after">+380</p>
-          </div>
-        </div>
-
-        <textarea
-          class="review-textarea"
-          name="user-comment"
-          id=""
-          placeholder="Enter text"
-        ></textarea>
-        <button class="button review-button-send" type="submit">Send</button>
-      </form>
-    </div>
-  </div>
+ 
 </section>
 
 <!-- Обрати внимание, что стили на контейнер и на класс title приходят из файла стилей general.css  -->
@@ -853,7 +803,35 @@
 <!-- Если я забыл указать какой-то общий сброс или есть идея по поводу общей переменной в руте - сообщи мне. Удачи =) -->
 
 <!-- Reiterovich Andrii -->
+<div class="backdrop is-hidden" data-second-modal>
+    <div class="review-modal-window modal">
+        <button type="button" class="review-button-close modal-close-btn" data-second-modal-close>
+            <svg class="review-close-icon" width="24" height="24">
+                <use href="../images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="title review-modal-title">
+            leave a review <span class="span-to-enter">about <span class="title-span">our chocolate</span></span>
+        </h2>
+        <form class="review-input-list" autocomplete="off">
+            <input class="review-input-item" placeholder="Name" type="text" name="user-name" required />
+            <input class="review-input-item" placeholder="Enter your email" type="email" name="user-mail" required />
+            <div class="review-input-item-flag">
+                <input required class="review-input-item spaces-number" placeholder="Phone number" type="tel"
+                    name="phone" />
+                <div class="review-flag-block">
+                    <svg width="24" height="24">
+                        <use href="../images/sprite.svg#icon-flag"></use>
+                    </svg>
+                    <p class="review-flag-after">+380</p>
+                </div>
+            </div>
 
+            <textarea class="review-textarea" name="user-comment" id="" placeholder="Enter text"></textarea>
+            <button class="button review-button-send" type="submit">Send</button>
+        </form>
+    </div>
+</div>
 
 <!-- Egor Matveev -->
 <div class="backdrop is-hidden" data-third-modal>
