@@ -23,6 +23,18 @@
 }
 
 
+.review-input-item,
+.review-textarea {
+  transition: var(--general-transition);
+}
+.review-input-item:focus,
+.review-textarea:focus {
+  border-color: var(--specific-color);
+  outline: none;
+}
+
+
+
 @media screen and (max-width: 767px) {
 .review-modal-window {
         max-width: 311px;
