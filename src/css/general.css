@@ -1,13 +1,16 @@
 :root {
   --main-color-page: #111111;
-  --specific-color: #fd9222;
-  --primary-background-color: #1e1823;
-  --icon-dark-theme: #ffffff;
   --secondary-text-color: #ffffff;
-  --secondary-background-color: #FFFFFF;
-  --background-price-btn: #FAFAFA;
-  --background-modal-window: #FAFAFA;
-  --active-modal-button-color: #FCF1E0;
+  --specific-color: #fd9222;
+
+  --primary-background-color: #1e1823;
+  --secondary-background-color: #ffffff;
+
+  --icon-dark-theme: #ffffff;
+  --background-price-btn: #fafafa;
+  --background-modal-window: #fafafa;
+  --active-modal-button-color: #fcf1e0;
+
   --general-transition: 250ms linear;
 }
 
@@ -64,8 +67,8 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  background-color: #FAFAFA;
+  color: var(--main-color-page);
+  background-color: #fafafa;
 }
 
 .visually-hidden {
@@ -81,25 +84,6 @@ body {
   overflow: hidden;
 }
 
-.title {
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--main-color-page);
-}
-
-.title-span {
-  color: var(--specific-color);
-}
-
-.button {
-  color: var(--icon-dark-theme);
-  background-color: var(--specific-color);
-  border-radius: 100px;
-  border: none;
-}
-
-
 body::-webkit-scrollbar {
   width: 20px;
 }
@@ -110,8 +94,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--specific-color);
-    border-radius: 20px;
-    border: 3px solid orange;
+  border-radius: 20px;
+  border: 3px solid orange;
 }
 
 .flip-card-back-scroll::-webkit-scrollbar {
@@ -128,13 +112,72 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid orange;
 }
 
-
 /* Форма */
 /* Маячёк ввода */
 input,
 textarea,
 [contenteditable] {
   caret-color: var(--specific-color);
+}
+
+/* Section utilities */
+
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-span {
+  color: var(--specific-color);
+}
+
+.modal-window-title {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* Button utilities */
+
+.button {
+  font-weight: 600;
+  border-radius: 100px;
+}
+
+.modal-button,
+.small-text-button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+}
+
+.accent-button {
+  color: var(--icon-dark-theme);
+  background-color: var(--specific-color);
+  border: none;
+
+  transition: color var(--general-transition),
+    background-color var(--general-transition);
+}
+
+.accent-button:hover,
+.accent-button:focus {
+  color: var(--specific-color);
+  background-color: var(--active-modal-button-color);
+}
+
+.transparent-button {
+  background-color: transparent;
+
+  transition: color var(--general-transition),
+    background-color var(--general-transition),
+    border-color var(--general-transition);
 }
 
 @media screen and (min-width: 376px) {
@@ -153,25 +196,53 @@ textarea,
     padding-left: 20px;
     padding-right: 20px;
   }
-  .section {
-    padding-top: 72px;
+
+  .section:not(:first-child) {
+    padding-top: 36px;
+  }
+  .section:not(:last-child) {
+    padding-bottom: 36px;
   }
 
-  .title {
+  .section-title,
+  .modal-window-title {
     font-size: 20px;
     line-height: 1.2;
   }
-}
 
-/*Мобилка и планшет*/
-@media screen and (max-width: 1199px) {
+  .button {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .accent-button {
+    padding: 12px 28px;
+  }
+
+  .transparent-button {
+    padding: 11px 27px;
+  }
 }
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
-  .title {
+  .section-title,
+  .modal-window-title {
     font-size: 24px;
     line-height: 1.17;
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .accent-button {
+    padding: 14px 40px;
+  }
+
+  .transparent-button {
+    padding: 13px 39px;
   }
 }
 
@@ -184,8 +255,11 @@ textarea,
     padding-right: 32px;
   }
 
-  .section {
-    padding-top: 100px;
+  .section:not(:first-child) {
+    padding-top: 50px;
+  }
+  .section:not(:last-child) {
+    padding-bottom: 50px;
   }
 }
 
@@ -198,12 +272,17 @@ textarea,
     padding-right: 32px;
   }
 
-  .section {
-    padding-top: 128px;
+  .section:not(:first-child) {
+    padding-top: 64px;
+  }
+  .section:not(:last-child) {
+    padding-bottom: 64px;
+  }
+
+  .section:first-child {
+    padding-bottom: 36px;
+  }
+  .section:nth-child(2) {
+    padding-top: 36px;
   }
 }
-
-
-
-
-

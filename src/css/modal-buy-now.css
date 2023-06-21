@@ -2,105 +2,98 @@
 
 /*Для всех вьюпортов*/
 
-
 .buy-now-modal {
-    background-color: var(--background-price-btn);
-    border-radius: 15px;
-    transform: translate(-50%, -25%);
+  background-color: var(--background-price-btn);
+  border-radius: 15px;
+  transform: translate(-50%, -25%);
 }
 
-.buy-now-title {
-    text-align: center;
-    margin-bottom: 32px;
+.modal-buy-now-title {
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 /* Close btn */
 .buy-now-modal-close-icon:hover,
 .buy-now-modal-close-icon:focus {
-    stroke: var(--specific-color);
+  stroke: var(--specific-color);
 }
 
 .buy-now-modal-close-icon {
-    stroke: #111111;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  stroke: #111111;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
 
 /* Form - chokolate weight*/
 .buy-now-modal-chocolate-weight-container {
-    display: flex;
+  display: flex;
 }
 
-.buy-now-modal-radio:checked+.chocolate-weight-container {
-    border: 1.5px solid var(--specific-color);
+.buy-now-modal-radio:checked + .chocolate-weight-container {
+  border: 1.5px solid var(--specific-color);
 }
 
-.buy-now-modal-radio:checked+.chocolate-weight-container>.chocolate-weight {
-    background-color: var(--specific-color);
-    color: var(--secondary-text-color);
+.buy-now-modal-radio:checked + .chocolate-weight-container > .chocolate-weight {
+  background-color: var(--specific-color);
+  color: var(--secondary-text-color);
 }
 
 .buy-now-form-chocolate-weight-wrapper {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .buy-now-modal-radio {
-    appearance: none;
-    position: absolute;
+  appearance: none;
+  position: absolute;
 }
 
 .chocolate-weight-container {
-    display: flex;
-    background-color: var(--secondary-background-color);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
+  display: flex;
+  background-color: var(--secondary-background-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 }
 
 .chocolate-weight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    color: var(--main-color-page);
-    background: var(--background-price-btn);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--main-color-page);
+  background: var(--background-price-btn);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
 }
-
 
 /* Form - chokolate weight*/
 
-
 /* Form - user information*/
 .buy-now-form-field-wrapper {
-    display: block;
-    margin-bottom: 18px;
+  display: block;
+  margin-bottom: 18px;
 }
 
 .buy-now-form-wrapper-for-user-name {
-    display: block;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: #000000;
-    margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 8px;
 }
 
 .contact-form-field-desk {
-    display: block;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: #000000;
-    margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 8px;
 }
 
 .user-name,
 .user-surname {
-    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
 }
 
 .user-name,
@@ -109,10 +102,10 @@
 .user-tel,
 .user-card,
 .user-comment {
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    border-radius: 8px;
-    background-color: transparent;
-    outline: transparent;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  background-color: transparent;
+  outline: transparent;
 }
 
 .user-name,
@@ -121,9 +114,9 @@
 .user-tel,
 .user-card,
 .user-comment {
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
-    transition: border-color;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  transition: border-color;
 }
 
 .user-name:focus,
@@ -132,395 +125,365 @@
 .user-tel:focus,
 .user-card:focus,
 .user-comment:focus {
-    border-color: var(--specific-color);
+  border-color: var(--specific-color);
 }
 
 .user-email,
 .user-tel,
 .user-card,
 .user-comment {
-    width: 100%;
+  width: 100%;
 }
 
 .country-code-wrapper,
 .user-card-container {
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
 
 .icon-flag {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .country-code-wrapper::before {
-    display: block;
-    content: '+380';
-    position: absolute;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: #000000;
+  display: block;
+  content: '+380';
+  position: absolute;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .country-code-wrapper::after {
-    display: block;
-    content: '';
-    background-color: rgba(64, 64, 64, 0.3);
-    position: absolute;
+  display: block;
+  content: '';
+  background-color: rgba(64, 64, 64, 0.3);
+  position: absolute;
 }
 
-
 .icon-master-card {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .user-comment {
-    resize: none;
+  resize: none;
 }
-
 
 /* Form - user information*/
-.buy-now-modal-submit-btn {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buy-now-modal-submit-btn:hover,
-.buy-now-modal-submit-btn:focus {
-    color: var(--specific-color);
-    background-color: var(--active-modal-button-color);
-}
-
-
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
-    .buy-now-modal {
-        width: 311px;
-        min-height: 994px;
-        padding: 32px 24px;
-    }
+  .buy-now-modal {
+    width: 311px;
+    min-height: 994px;
+    padding: 32px 24px;
+  }
 
-    /* Close btn */
-    .buy-now-modal-close-btn {
-        width: 24px;
-        height: 24px;
-    }
+  /* Close btn */
+  .close-btn {
+    width: 24px;
+    height: 24px;
+  }
 
-    .buy-now-modal-close-icon {
-        width: 24px;
-        height: 24px;
-    }
+  .buy-now-modal-close-icon {
+    width: 24px;
+    height: 24px;
+  }
 
-    /* Close btn */
+  /* Close btn */
 
+  /* Form - chokolate weight*/
+  .buy-now-modal-chocolate-weight-container {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
 
-    /* Form - chokolate weight*/
-    .buy-now-modal-chocolate-weight-container {
-        flex-direction: column;
-        gap: 8px;
-        margin-bottom: 32px;
-    }
+  .chocolate-weight-container {
+    height: 85px;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .chocolate-weight-container {
-        height: 85px;
-        padding: 8px 16px;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .buy-now-modal-img {
+    width: 84px;
+    height: 69px;
+  }
 
-    .buy-now-modal-img {
-        width: 84px;
-        height: 69px;
-    }
+  .chocolate-weight {
+    width: 70px;
+    height: 29px;
+  }
 
-    .chocolate-weight {
-        width: 70px;
-        height: 29px;
-    }
+  /* Form - chokolate weight*/
 
-    /* Form - chokolate weight*/
+  /* Form - user information*/
 
+  .buy-now-form-wrapper-for-user-name {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 
-    /* Form - user information*/
+  .user-name,
+  .user-surname {
+    width: 100%;
+  }
 
-    .buy-now-form-wrapper-for-user-name {
-        font-size: 12px;
-        line-height: 1.17;
-    }
+  .user-name {
+    margin-bottom: 14px;
+  }
 
-    .user-name,
-    .user-surname {
-        width: 100%;
-    }
+  .user-surname {
+    margin-bottom: 18px;
+  }
 
-    .user-name {
-        margin-bottom: 14px;
-    }
+  .contact-form-field-desk {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 
-    .user-surname {
-        margin-bottom: 18px;
-    }
+  .user-name,
+  .user-surname,
+  .user-email,
+  .user-tel,
+  .user-card,
+  .user-comment {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 
-    .contact-form-field-desk {
-        font-size: 12px;
-        line-height: 1.17;
-    }
+  .user-name,
+  .user-surname,
+  .user-email,
+  .user-tel,
+  .user-card {
+    height: 45px;
+  }
 
-    .user-name,
-    .user-surname,
-    .user-email,
-    .user-tel,
-    .user-card,
-    .user-comment {
-        font-size: 14px;
-        line-height: 1.21;
-    }
+  .user-name,
+  .user-surname,
+  .user-email,
+  .user-comment {
+    padding: 14px 18px;
+  }
 
-    .user-name,
-    .user-surname,
-    .user-email,
-    .user-tel,
-    .user-card {
-        height: 45px;
-    }
+  .user-email,
+  .user-card,
+  .user-comment {
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  }
 
-    .user-name,
-    .user-surname,
-    .user-email,
-    .user-comment {
-        padding: 14px 18px;
-    }
+  .user-tel {
+    padding: 14px 18px 14px 106px;
+  }
 
-    .user-email,
-    .user-card,
-    .user-comment {
-        filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-    }
+  .country-code-wrapper::before {
+    font-size: 14px;
+    left: 50px;
+    top: 14.5px;
+  }
 
-    .user-tel {
-        padding: 14px 18px 14px 106px;
-    }
+  .country-code-wrapper::after {
+    left: 92px;
+    top: 10px;
+    height: 25px;
+    width: 1.5px;
+  }
 
-    .country-code-wrapper::before {
-        font-size: 14px;
-        left: 50px;
-        top: 14.5px;
-    }
+  .icon-flag {
+    width: 24px;
+    height: 24px;
+    left: 18px;
+  }
 
-    .country-code-wrapper::after {
-        left: 92px;
-        top: 10px;
-        height: 25px;
-        width: 1.5px;
-    }
+  .user-card {
+    padding: 14px 46px 14px 18px;
+  }
 
-    .icon-flag {
-        width: 24px;
-        height: 24px;
-        left: 18px;
-    }
+  .icon-master-card {
+    width: 32px;
+    height: 21px;
+    right: 14px;
+  }
 
-    .user-card {
-        padding: 14px 46px 14px 18px;
-    }
+  .user-comment {
+    height: 91px;
+    margin-bottom: 18px;
+  }
 
-    .icon-master-card {
-        width: 32px;
-        height: 21px;
-        right: 14px;
-    }
-
-    .user-comment {
-        height: 91px;
-        margin-bottom: 18px;
-    }
-
-    /* Form - user information*/
-    .buy-now-modal-submit-btn {
-        padding: 12px 28px;
-    }
-
+  /* Form - user information*/
 }
 
 /*Мобилка горизонтально*/
 @media screen and (max-height: 520px) {
-    .buy-now-modal {
-        transform: translate(-50%, -10%);
-    }
+  .buy-now-modal {
+    transform: translate(-50%, -10%);
+  }
 }
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
+  .buy-now-modal {
+    width: 609px;
+    min-height: 1058px;
+    padding: 48px;
+  }
 
-    .buy-now-modal {
-        width: 609px;
-        min-height: 1058px;
-        padding: 48px;
-    }
+  /* Close btn */
+  .buy-now-modal-close-btn {
+    width: 28px;
+    height: 28px;
+  }
 
-    /* Close btn */
-    .buy-now-modal-close-btn {
-        width: 28px;
-        height: 28px;
-    }
+  .buy-now-modal-close-icon {
+    width: 28px;
+    height: 28px;
+  }
 
-    .buy-now-modal-close-icon {
-        width: 28px;
-        height: 28px;
-    }
+  /* Close btn */
 
-    /* Close btn */
+  /* Form - chokolate weight*/
+  .buy-now-modal-chocolate-weight-container {
+    gap: 16px;
+    margin-bottom: 40px;
+    width: 512px;
+  }
 
+  .buy-now-form-chocolate-weight-wrapper {
+    width: calc((100% - 32px) / 3);
+  }
 
-    /* Form - chokolate weight*/
-    .buy-now-modal-chocolate-weight-container {
-        gap: 16px;
-        margin-bottom: 40px;
-        width: 512px;
-    }
+  .chocolate-weight-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    height: 196px;
+  }
 
-    .buy-now-form-chocolate-weight-wrapper {
-        width: calc((100% - 32px) / 3);
-    }
+  .buy-now-modal-img {
+    width: 120px;
+    height: 107px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    .chocolate-weight-container {
-        flex-direction: column;
-        justify-content: center;
-        gap: 14px;
-        height: 196px;
-    }
+  .chocolate-weight {
+    width: 96px;
+    height: 33px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    .buy-now-modal-img {
-        width: 120px;
-        height: 107px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+  /* Form - chokolate weight*/
 
-    .chocolate-weight {
-        width: 96px;
-        height: 33px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+  /* Form - user information*/
+  .contact-form-input-container {
+    display: flex;
+    gap: 21px;
+    width: 513px;
+    margin-bottom: 18px;
+  }
 
+  .buy-now-form-wrapper-for-user-name {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 
-    /* Form - chokolate weight*/
+  .user-name,
+  .user-surname {
+    width: calc((100% - 21px) / 2);
+  }
 
-    /* Form - user information*/
-    .contact-form-input-container {
-        display: flex;
-        gap: 21px;
-        width: 513px;
-        margin-bottom: 18px;
-    }
+  .contact-form-field-desk {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 
-    .buy-now-form-wrapper-for-user-name {
-        font-size: 14px;
-        line-height: 1.29;
-    }
+  .user-name,
+  .user-surname,
+  .user-email,
+  .user-tel,
+  .user-card,
+  .user-comment {
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--main-color-page);
+  }
 
-    .user-name,
-    .user-surname {
-        width: calc((100% - 21px) / 2);
-    }
+  .user-name,
+  .user-surname,
+  .user-email,
+  .user-tel,
+  .user-card {
+    height: 66px;
+  }
 
-    .contact-form-field-desk {
-        font-size: 14px;
-        line-height: 1.29;
-    }
+  .user-name,
+  .user-surname,
+  .user-email,
+  .user-comment {
+    padding: 14px 18px;
+  }
 
-    .user-name,
-    .user-surname,
-    .user-email,
-    .user-tel,
-    .user-card,
-    .user-comment {
-        font-size: 18px;
-        line-height: 1.22;
-        color: var(--main-color-page);
-    }
+  .user-name,
+  .user-surname,
+  .user-email,
+  .user-comment {
+    padding: 24px 22px;
+  }
 
-    .user-name,
-    .user-surname,
-    .user-email,
-    .user-tel,
-    .user-card {
-        height: 66px;
-    }
+  .country-code-wrapper::before {
+    font-size: 18px;
+    left: 74px;
+    top: 24px;
+  }
 
-    .user-name,
-    .user-surname,
-    .user-email,
-    .user-comment {
-        padding: 14px 18px;
-    }
+  .country-code-wrapper::after {
+    left: 149px;
+    top: 18px;
+    height: 32px;
+    width: 2.5px;
+  }
 
-    .user-name,
-    .user-surname,
-    .user-email,
-    .user-comment {
-        padding: 24px 22px;
-    }
+  .user-tel {
+    padding: 24px 22px 24px 177px;
+  }
 
+  .icon-flag {
+    width: 32px;
+    height: 32px;
+    left: 24px;
+  }
 
+  .user-card {
+    padding: 24px 54px 24px 22px;
+  }
 
-    .country-code-wrapper::before {
-        font-size: 18px;
-        left: 74px;
-        top: 24px;
-    }
+  .icon-master-card {
+    width: 44px;
+    height: 30px;
+    right: 24px;
+  }
 
-    .country-code-wrapper::after {
-        left: 149px;
-        top: 18px;
-        height: 32px;
-        width: 2.5px;
-    }
+  .user-comment {
+    height: 137px;
+    margin-bottom: 18px;
+  }
 
-    .user-tel {
-        padding: 24px 22px 24px 177px;
-    }
-
-    .icon-flag {
-        width: 32px;
-        height: 32px;
-        left: 24px;
-    }
-
-    .user-card {
-        padding: 24px 54px 24px 22px;
-    }
-
-    .icon-master-card {
-        width: 44px;
-        height: 30px;
-        right: 24px;
-    }
-
-    .user-comment {
-        height: 137px;
-        margin-bottom: 18px;
-    }
-
-    /* Form - user information*/
-
-    .buy-now-modal-submit-btn {
-        padding: 14px 40px;
-    }
-
+  /* Form - user information*/
 }
 
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
-
-    .buy-now-modal-img:hover,
-    .buy-now-modal-img:focus {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
+  .buy-now-modal-img:hover,
+  .buy-now-modal-img:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }

@@ -1,146 +1,124 @@
 /* Anastasia */
 
-
 /*Для всех вьюпортов*/
 
-
 .advantages-section {
-    background-color: var(--primary-background-color);
-}
-
-.advantages-title {
-    display: none;
+  background-color: var(--primary-background-color);
 }
 
 .advantages-list {
-
-    display: flex;
+  display: flex;
 }
 
 .advantages-section-container {
-    display: flex;
+  display: flex;
 }
 
 .advantage-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
-    color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .advantage {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22;
-    color: var(--secondary-text-color);
-    margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--secondary-text-color);
+  margin-bottom: 18px;
 }
 
 .advantages-icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    margin-bottom: 22px;
-    height: 62px;
-    width: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-bottom: 22px;
+  height: 62px;
+  width: 62px;
 }
 
 .advantages-icon {
-    fill: var(--specific-color);
+  fill: var(--specific-color);
 }
 .advantage-text {
-    max-width: 308px;
+  max-width: 308px;
 }
-
-
-
-
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
-    .advantages-section {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+  .advantages-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-    .advantages-list {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .advantages-list {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .advantages-item {
-        width: 100%;
-    }
- 
+  .advantages-item {
+    width: 100%;
+  }
 }
-
-
 
 /*Мобилка и планшет*/
 @media screen and (max-width: 1199px) {
-    .advantages-item {
-        padding-right: 28px;
-    }
+  .advantages-item {
+    padding-right: 28px;
+  }
 }
-
-
 
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .advantages-item {
-        flex-basis: calc((100% - 32px) / 2);
-        min-height: 244px;
-    }
+  .advantages-item {
+    flex-basis: calc((100% - 32px) / 2);
+    min-height: 244px;
+  }
 
-    .advantages-list {
-        flex-wrap: wrap;
-        gap: 32px;
-    }
-
- 
+  .advantages-list {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
 }
-
-
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
-    .advantages-section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+  .advantages-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
-
-
 
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
-    .advantages-list {
-        gap: 70px;
-    }
+  .advantages-list {
+    gap: 70px;
+  }
 
-    .advantages-item {
-        flex-basis: calc((100% - 140px) / 3);
-        position: relative;
-    }
-    .advantages-item:not(:last-child) {
-        padding-right: 18px;
-    }
+  .advantages-item {
+    flex-basis: calc((100% - 140px) / 3);
+    position: relative;
+  }
+  .advantages-item:not(:last-child) {
+    padding-right: 18px;
+  }
 
-    .advantages-list {
-        flex-wrap: nowrap;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
+  .advantages-list {
+    flex-wrap: nowrap;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
-    .advantages-item:not(:last-child)::before {
-        content: '';
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        right: 0;
-        top: 60px;
-        position: absolute;
-        height: 124px;
-    }
+  .advantages-item:not(:last-child)::before {
+    content: '';
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    right: 0;
+    top: 60px;
+    position: absolute;
+    height: 124px;
+  }
 }

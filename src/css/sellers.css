@@ -1,38 +1,17 @@
 /* Eugen Zarivniy */
 
 /*Для всех вьюпортов*/
-.sellers-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  
-  color: var(--specific-color);
-}
-
-.sellers-span {
-  color: var(--main-color-page);
-}
 
 .sellers-image {
   width: 100%;
 }
 
-
-.subscribe-button {
-    font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-
-}
-
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
   .sellers-title {
-  font-size: 20px;
-  line-height: 1.2;
     margin-bottom: 32px;
   }
+
   .img-list {
     display: flex;
     flex-direction: column;
@@ -61,10 +40,7 @@
 
   .subscribe-button {
     display: flex;
-    padding: 12px 28px;
     margin: 0 auto;
-      font-size: 14px;
-      line-height: 1.2;
   }
 }
 
@@ -72,12 +48,6 @@
 @media screen and (max-width: 1199px) {
   .pic3 {
     display: none;
-  }
-
-  .subscribe-button {
-    font-size: 18px;
-      line-height: 1.22;
-
   }
 }
 
@@ -90,8 +60,7 @@
     gap: 16px;
   }
   .img-item {
-    
-    width: calc((100% - 16px)/2)
+    width: calc((100% - 16px) / 2);
   }
 
   .text {
@@ -103,14 +72,11 @@
   .text-2 {
     max-width: 306px;
   }
-
 }
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
   .sellers-title {
-    font-size: 24px;
-    line-height: 1.17;
     margin-bottom: 50px;
   }
   .img-list {
@@ -122,10 +88,6 @@
   .text-2 {
     font-size: 14px;
     line-height: 18px;
-  }
-  .subscribe-button {
-    padding: 14px 40px;
-
   }
 
   .sellers-text-button {
@@ -142,8 +104,7 @@
     gap: 16px;
   }
   .img-item {
-  
-    width: calc((100% - 32px)/3)
+    width: calc((100% - 32px) / 3);
   }
 
   .text {
@@ -154,5 +115,4 @@
   .text-2 {
     max-width: 407px;
   }
-
 }
