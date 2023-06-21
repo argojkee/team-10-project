@@ -1,9 +1,4 @@
-.backdrop {
-  padding-left: 20px;
-  padding-right: 20px;
-  transition: opacity var(--general-transition),
-    visibility var(--general-transition);
-}
+
 
 .subscribe-modal {
   position: relative;
