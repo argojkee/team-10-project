@@ -30,15 +30,24 @@
 // }
 
 const player = new Plyr('#features-player');
-import mobileImage from '../images/howmade/howmade-mobile.jpg';
-import mobileImage2x from '../images/howmade/howmade-mobile@2x.jpg';
-import mobileImage3x from '../images/howmade/howmade-mobile@3x.jpg';
-import tabletImage from '../images/howmade/howmade-tablet.jpg';
-import tabletImage2x from '../images/howmade/howmade-tablet@2x.jpg';
-import tabletImage3x from '../images/howmade/howmade-tablet@3x.jpg';
-import desktopImage from '../images/howmade/howmade-desktop.jpg';
-import desktopImage2x from '../images/howmade/howmade-desktop@2x.jpg';
-import desktopImage3x from '../images/howmade/howmade-desktop@3x.jpg';
+// import mobileImage from '../images/howmade/howmade-mobile.jpg';
+// import mobileImage2x from '../images/howmade/howmade-mobile@2x.jpg';
+// import mobileImage3x from '../images/howmade/howmade-mobile@3x.jpg';
+// import tabletImage from '../images/howmade/howmade-tablet.jpg';
+// import tabletImage2x from '../images/howmade/howmade-tablet@2x.jpg';
+// import tabletImage3x from '../images/howmade/howmade-tablet@3x.jpg';
+// import desktopImage from '../images/howmade/howmade-desktop.jpg';
+// import desktopImage2x from '../images/howmade/howmade-desktop@2x.jpg';
+// import desktopImage3x from '../images/howmade/howmade-desktop@3x.jpg';
+import mobileImage from '../images/howmade/howmade-mobile.webp';
+import mobileImage2x from '../images/howmade/howmade-mobile@2x.webp';
+import mobileImage3x from '../images/howmade/howmade-mobile@3x.webp';
+import tabletImage from '../images/howmade/howmade-tablet.webp';
+import tabletImage2x from '../images/howmade/howmade-tablet@2x.webp';
+import tabletImage3x from '../images/howmade/howmade-tablet@3x.webp';
+import desktopImage from '../images/howmade/howmade-desktop.webp';
+import desktopImage2x from '../images/howmade/howmade-desktop@2x.webp';
+import desktopImage3x from '../images/howmade/howmade-desktop@3x.webp';
 if (window.innerWidth >= 1200 && window.devicePixelRatio >= 3) {
   player.poster = desktopImage3x;
 } else if (window.innerWidth >= 1200 && window.devicePixelRatio >= 2) {
@@ -58,10 +67,3 @@ if (window.innerWidth >= 1200 && window.devicePixelRatio >= 3) {
 } else {
   player.poster = mobileImage;
 }
-// if (window.innerWidth > 1199) {
-//   player.poster = desktopImage;
-// } else if (window.innerWidth > 767) {
-//   player.poster = tabletImage;
-// } else {
-//   player.poster = mobileImage;
-// }

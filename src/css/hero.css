@@ -32,7 +32,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-mobile.jpg');
+        url('../images/hero/bg-mobile.webp');
     }
   }
 
@@ -46,7 +46,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-mobile@2x.jpg');
+        url('../images/hero/bg-mobile@2x.webp');
     }
   }
 
@@ -60,7 +60,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-mobile@3x.jpg');
+        url('../images/hero/bg-mobile@3x.webp');
     }
   }
 }
@@ -84,7 +84,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-tablet.jpg');
+        url('../images/hero/bg-tablet.webp');
     }
   }
 
@@ -98,7 +98,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-tablet@2x.jpg');
+        url('../images/hero/bg-tablet@2x.webp');
     }
   }
 
@@ -112,7 +112,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-tablet@3x.jpg');
+        url('../images/hero/bg-tablet@3x.webp');
     }
   }
 }
@@ -136,7 +136,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-desktop.jpg');
+        url('../images/hero/bg-desktop.webp');
     }
   }
 
@@ -150,7 +150,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-desktop@2x.jpg');
+        url('../images/hero/bg-desktop@2x.webp');
     }
   }
 
@@ -164,7 +164,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('../images/hero/bg-desktop@3x.jpg');
+        url('../images/hero/bg-desktop@3x.webp');
     }
   }
 }
