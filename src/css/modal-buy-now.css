@@ -127,8 +127,16 @@
 .user-card,
 .user-comment {
   letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
   transition: border-color;
+}
+
+.user-name::placeholder,
+.user-surname::placeholder,
+.user-email::placeholder,
+.user-tel::placeholder,
+.user-card::placeholder,
+.user-comment::placeholder {
+  color: rgba(64, 64, 64, 0.3);
 }
 
 .user-name:focus,
