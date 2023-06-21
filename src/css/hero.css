@@ -215,6 +215,7 @@
 .btn-scroll-top {
   color: var(--specific-color);
 }
+
 .isShowBtn {
   position: fixed;
   bottom: 50px;
