@@ -1,62 +1,56 @@
 .plyr {
- 
-    --plyr-color-main: #fd9222;
-    
-    border-radius: 15px;
+  --plyr-color-main: #fd9222;
+
+  border-radius: 15px;
 }
 
 .features-video {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .plyr__poster {
- 
-    background-size: cover;
-    
+  background-size: cover;
 }
 
 .plyr__control--overlaid {
-    
-    --plyr-control-spacing: 5px;
-    --plyr-video-control-background-hover: rgba(0, 0, 0, 0);
-    border: 1px solid #fff;
+  --plyr-control-spacing: 5px;
+  --plyr-video-control-background-hover: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
 }
 
 .plyr--paused.plyr__control--overlaid {
-    opacity: 0;
+  opacity: 0;
 }
 
-
 .plyr__control.plyr__control--overlaid:hover {
-    color: var(--specific-color);
-    border-color: var(--specific-color);
+  color: var(--specific-color);
+  border-color: var(--specific-color);
 }
 
 .plyr--paused.plyr--stopped .plyr__controls {
-    opacity: 0;
+  opacity: 0;
 }
 @media screen and (max-width: 767px) {
-    .plyr__video-wrapper {
-        min-width: 335px;
-        min-height: 500px;
-    }
+  .plyr__video-wrapper {
+    min-width: 335px;
+    min-height: 500px;
+  }
 }
 @media screen and (min-width: 768px) {
-    .plyr__video-wrapper {
-        min-height: 400px;;
-    }
+  .plyr__video-wrapper {
+    min-height: 400px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-   .plyr__video-wrapper {
+  .plyr__video-wrapper {
     min-width: 614px;
-   }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-.plyr__video-wrapper {
-    min-wwidth: 600px;
-}
+  .plyr__video-wrapper {
+    min-width: 600px;
+  }
 }
