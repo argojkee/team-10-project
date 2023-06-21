@@ -8,9 +8,9 @@
   transform: translate(-50%, -25%);
 }
 
-.buy-now-title {
-  text-align: center;
+.modal-buy-now-title {
   margin-bottom: 32px;
+  text-align: center;
 }
 
 /* Close btn */
@@ -176,7 +176,6 @@
 }
 
 /* Form - user information*/
-
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {

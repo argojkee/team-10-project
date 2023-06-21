@@ -17,7 +17,7 @@
   stroke: var(--icon-dark-theme);
 }
 
-.modal-title {
+.modal-subscribe-title {
   display: flex;
   flex-direction: column;
 }
@@ -64,7 +64,7 @@
     min-height: 350px;
   }
 
-  .modal-title {
+  .modal-subscribe-title {
     max-width: 263px;
     margin-bottom: 24px;
   }
@@ -110,7 +110,7 @@
     height: 28px;
   }
 
-  .modal-title {
+  .modal-subscribe-title {
     max-width: 298px;
     margin-bottom: 28px;
   }

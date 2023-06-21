@@ -216,7 +216,7 @@
   color: var(--secondary-text-color);
 }
 
-.btn-scroll-top{
+.btn-scroll-top {
   color: var(--specific-color);
 }
 .isShowBtn {
@@ -234,9 +234,8 @@
 .isShowBtn.isShowBtn-hide {
   opacity: 0;
   visibility: hidden;
-    pointer-events: none;
+  pointer-events: none;
 }
-
 
 .icon-arrow-top {
   transform: rotate(180deg);
@@ -257,7 +256,6 @@
   align-items: center;
 
   border-radius: 50%;
- 
 }
 .icon-arrow-top {
   fill: var(--icon-dark-theme);

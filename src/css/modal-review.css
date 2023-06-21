@@ -36,7 +36,7 @@
     padding: 32px 24px 32px 24px;
   }
 
-  .review-modal-title {
+  .modal-reviews-title {
     margin-bottom: 32px;
     max-width: 255px;
     display: flex;
@@ -121,7 +121,7 @@
     margin-bottom: 18px;
   }
 
-  .review-modal-title {
+  .modal-reviews-title {
     width: 298px;
     margin-bottom: 40px;
   }

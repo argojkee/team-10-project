@@ -136,6 +136,12 @@ textarea,
   color: var(--specific-color);
 }
 
+.modal-window-title {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
 /* Button utilities */
 
 .button {
@@ -198,7 +204,8 @@ textarea,
     padding-bottom: 36px;
   }
 
-  .section-title {
+  .section-title,
+  .modal-window-title {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -219,7 +226,8 @@ textarea,
 
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
-  .section-title {
+  .section-title,
+  .modal-window-title {
     font-size: 24px;
     line-height: 1.17;
   }
