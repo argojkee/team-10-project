@@ -67,3 +67,19 @@ if (window.innerWidth >= 1200 && window.devicePixelRatio >= 3) {
 } else {
   player.poster = mobileImage;
 }
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request).then(function (response) {
+      if (response) {
+        return response;
+      } else {
+        return fetch(event.request).then(function (response) {
+          return caches.open('my-cache').then(function (cache) {
+            cache.put(event.request, response.clone());
+            return response;
+          });
+        });
+      }
+    })
+  );
+});
