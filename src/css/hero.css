@@ -2,6 +2,10 @@
 
 /* Hero */
 
+.hero-section {
+  color: var(--secondary-text-color);
+}
+
 .hero-container {
   margin-left: auto;
   margin-right: auto;
@@ -174,7 +178,6 @@
 
   font-weight: 500;
   letter-spacing: -0.03em;
-  color: var(--secondary-text-color);
 }
 
 .hero-nav-list {
@@ -185,13 +188,7 @@
 .btn-how-its-made {
   display: inline-block;
 
-  color: var(--secondary-text-color);
   border: 1px solid var(--icon-dark-theme);
-  background-color: transparent;
-
-  transition: color var(--general-transition),
-    background-color var(--general-transition),
-    border-color var(--general-transition);
 }
 
 .btn-how-its-made:hover,
@@ -205,20 +202,20 @@
   display: flex;
   align-items: center;
   padding: 0;
+
   font-weight: 500;
   letter-spacing: -0.03em;
+
   background-color: transparent;
   border: none;
-  transition: color var(--general-transition);
-}
 
-.btn-scroll-down {
-  color: var(--secondary-text-color);
+  transition: color var(--general-transition);
 }
 
 .btn-scroll-top {
   color: var(--specific-color);
 }
+
 .isShowBtn {
   position: fixed;
   bottom: 50px;
