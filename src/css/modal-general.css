@@ -12,7 +12,14 @@
   opacity: 1;
   visibility: visible;
   overflow: auto;
-  z-index: 2;
+  z-index: 1000;
+    transition: opacity var(--general-transition),
+        visibility var(--general-transition);
+}
+
+.backdrop.is-hidden {
+  transition: none;
+ 
 }
 
 .modal {
