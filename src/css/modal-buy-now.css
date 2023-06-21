@@ -5,7 +5,19 @@
 .buy-now-modal {
   background-color: var(--background-price-btn);
   border-radius: 15px;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px) and (max-height: 1020px) {
+  .buy-now-modal {
+    top: 510px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 1080px) {
+  .buy-now-modal {
+    top: 540px;
+  }
 }
 
 .modal-buy-now-title {
@@ -212,8 +224,6 @@
     align-items: center;
   }
 
-
-
   .chocolate-weight {
     width: 70px;
     height: 29px;
@@ -316,13 +326,6 @@
   }
 
   /* Form - user information*/
-}
-
-/*Мобилка горизонтально*/
-@media screen and (max-height: 520px) {
-  .buy-now-modal {
-    transform: translate(-50%, -10%);
-  }
 }
 
 /*Планшет и десктоп*/
