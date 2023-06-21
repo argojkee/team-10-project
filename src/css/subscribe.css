@@ -87,7 +87,7 @@
  screen and (max-resolution: 191dpi) and (max-width: 767px),
  screen and (max-resolution: 1.99dppx) and (max-width: 767px) {
      .subscribe-section {
-         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-mobile.webp');
+         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-mobile.jpg');
      }
  }
 
@@ -95,7 +95,7 @@
  screen and (min-resolution: 192dpi) and (max-width: 767px),
  screen and (min-resolution: 2dppx) and (max-width: 767px) {
      .subscribe-section {
-         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-mobile@2x.webp');
+         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-mobile@2x.jpg');
      }
  }
 
@@ -104,7 +104,7 @@
   screen and (min-width: 768px) and (max-width: 1199px) and (max-resolution: 191dpi),
   screen and (max-resolution: 1.99dppx) and (min-width: 768px) and (max-width: 1199px) {
       .subscribe-section {
-          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-tablet.webp');
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-tablet.jpg');
       }
   }
 
@@ -112,7 +112,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
       .subscribe-section {
-          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-tablet@2x.webp');
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-tablet@2x.jpg');
       }
   }
 
@@ -120,7 +120,7 @@
    screen and (max-resolution: 191dpi) and (min-width: 1200px),
    screen and (max-resolution: 1.99dppx) and (min-width: 1200px) {
        .subscribe-section {
-           background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-desktop.webp');
+           background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-desktop.jpg');
        }
    }
 
@@ -128,7 +128,7 @@
    screen and (min-resolution: 192dpi) and (min-width: 1200px),
    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
        .subscribe-section {
-           background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-desktop@2x.webp');
+           background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/subscribe/subscribe-desktop@2x.jpg');
        }
    }
  

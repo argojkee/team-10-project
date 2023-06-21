@@ -172,7 +172,7 @@
    screen and (max-resolution: 191dpi) and (max-width: 767px),
    screen and (max-resolution: 1.99dppx) and (max-width: 767px) {
        .subscribe-modal {
-           background-image: url('../images/subscribe/modal-subscribe-mobile.webp');
+           background-image: url('../images/subscribe/modal-subscribe-mobile.jpg');
        }
    }
 
@@ -181,7 +181,7 @@
    screen and (min-resolution: 192dpi) and (max-width: 767px),
    screen and (min-resolution: 2dppx) and (max-width: 767px) {
        .subscribe-modal {
-           background-image: url('../images/subscribe/modal-subscribe-mobile@2x.webp');
+           background-image: url('../images/subscribe/modal-subscribe-mobile@2x.jpg');
        }
    }
 
@@ -190,7 +190,7 @@
 screen and (max-resolution: 191dpi) and (min-width: 768px),
 screen and (max-resolution: 1.99dppx) and (min-width: 768px) {
     .subscribe-modal {
-        background-image: url('../images/subscribe/modal-subscribe-tablet-desktop.webp');
+        background-image: url('../images/subscribe/modal-subscribe-tablet-desktop.jpg');
     }
 }
 
@@ -202,7 +202,7 @@ screen and (max-resolution: 1.99dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .subscribe-modal {
-        background-image: url('../images/subscribe/modal-subscribe-tablet-desktop@2x.webp');
+        background-image: url('../images/subscribe/modal-subscribe-tablet-desktop@2x.jpg');
     }
 }
 
