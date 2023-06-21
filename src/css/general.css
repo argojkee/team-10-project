@@ -69,7 +69,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: var(--main-color-page);
   background-color: #fafafa;
+  
 }
+body.modal-open {
+  overflow: hidden;
+  padding-right: 20px;
+  
+}
+
+
+
+
 
 .visually-hidden {
   position: absolute;
@@ -84,8 +94,22 @@ body {
   overflow: hidden;
 }
 
+.backdrop::-webkit-scrollbar {
+  width: 20px;
+}
+
 body::-webkit-scrollbar {
   width: 20px;
+}
+
+.backdrop::-webkit-scrollbar-track {
+  background-color: var(--background-our-product-list);
+}
+
+.backdrop::-webkit-scrollbar-thumb {
+  background-color: var(--specific-color);
+  border-radius: 20px;
+  border: 3px solid orange;
 }
 
 body::-webkit-scrollbar-track {
