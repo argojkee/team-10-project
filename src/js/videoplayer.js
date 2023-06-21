@@ -39,6 +39,7 @@ import tabletImage3x from '../images/howmade/howmade-tablet@3x.jpg';
 import desktopImage from '../images/howmade/howmade-desktop.jpg';
 import desktopImage2x from '../images/howmade/howmade-desktop@2x.jpg';
 import desktopImage3x from '../images/howmade/howmade-desktop@3x.jpg';
+
 if (window.innerWidth >= 1200 && window.devicePixelRatio >= 3) {
   player.poster = desktopImage3x;
 } else if (window.innerWidth >= 1200 && window.devicePixelRatio >= 2) {
@@ -58,10 +59,36 @@ if (window.innerWidth >= 1200 && window.devicePixelRatio >= 3) {
 } else {
   player.poster = mobileImage;
 }
-// if (window.innerWidth > 1199) {
-//   player.poster = desktopImage;
-// } else if (window.innerWidth > 767) {
-//   player.poster = tabletImage;
-// } else {
-//   player.poster = mobileImage;
-// }
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request).then(function (response) {
+      if (response) {
+        return response;
+      } else {
+        return fetch(event.request).then(function (response) {
+          return caches.open('my-cache').then(function (cache) {
+            cache.put(event.request, response.clone());
+            return response;
+          });
+        });
+      }
+    })
+  );
+});
+
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request).then(function (response) {
+      if (response) {
+        return response;
+      } else {
+        return fetch(event.request).then(function (response) {
+          return caches.open('my-cache').then(function (cache) {
+            cache.put(event.request, response.clone());
+            return response;
+          });
+        });
+      }
+    })
+  );
+});

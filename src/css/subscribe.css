@@ -36,35 +36,24 @@
   margin-right: auto;
 }
 
-/*Только мобилка*/
-@media screen and (max-width: 767px) {
-  .subscribe-section {
-    padding-bottom: 63px;
-    padding-top: 62px;
-    max-width: 375px;
-  }
-}
 
-/*Только планшет*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .subscribe-section {
-    width: 768px;
-  }
-}
 
-/*Только десктоп*/
-@media screen and (min-width: 1200px) {
-  .subscribe-section {
-    width: 1200px;
-  }
-}
 
-/*Планшет и десктоп*/
-@media screen and (min-width: 768px) {
-  .subscribe-section {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
+ /*Только мобилка*/ 
+ @media screen and (max-width: 767px) {
+    .subscribe-section {
+            padding-bottom: 63px;
+            padding-top: 62px;
+ }
+ }
+
+
+ /*Планшет и десктоп*/
+ @media screen and (min-width: 768px) {
+    .subscribe-section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
 
   .subscribe-text {
     max-width: 467px;
