@@ -136,10 +136,7 @@ input,
 textarea,
 [contenteditable] {
   caret-color: var(--specific-color);
- 
 }
-
-
 
 /* Section utilities */
 
