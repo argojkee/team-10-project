@@ -72,3 +72,38 @@
             column-gap: 64px;
         }
 }
+
+
+
+
+
+.password {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-control,
+.password-control-repit,
+.password-control-login {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+
+.password-control.view,
+.password-control-repit.view,
+.password-control-login.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+   
+}
+
+
+
+
+
