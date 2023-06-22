@@ -10,14 +10,14 @@
 
 @media screen and (max-width: 767px) and (max-height: 1080px) {
   .buy-now-modal {
-    height: 96vh;
+    height: 96%;
     overflow: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 1125px) {
   .buy-now-modal {
-    max-height: 96vh;
+    max-height: 96%;
     overflow: auto;
   }
 }
