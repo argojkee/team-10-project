@@ -17,11 +17,6 @@
         visibility var(--general-transition);
 }
 
-.backdrop.is-hidden {
-  transition: none;
- 
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -44,6 +39,26 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+}
+
+.modal {
+  overflow: hidden;
+}
+
+.modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+
+.modal::-webkit-scrollbar-track {
+  background-color: var(--background-our-product-list);
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: rgba(253,146,34, 0.7);
+  border-radius: 25px;
+  
 }
 
 @media screen and (max-width: 767px) {

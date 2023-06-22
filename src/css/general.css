@@ -1,7 +1,7 @@
 :root {
   --main-color-page: #111111;
   --secondary-text-color: #ffffff;
-  --specific-color: #fd9222;
+  --specific-color: rgb(253, 146, 34);
 
   --primary-background-color: #1e1823;
   --secondary-background-color: #ffffff;
@@ -72,7 +72,7 @@ body {
 }
 body.modal-open {
   overflow: hidden;
-  padding-right: 20px;
+ 
 }
 
 .visually-hidden {
@@ -88,15 +88,13 @@ body.modal-open {
   overflow: hidden;
 }
 
-.backdrop::-webkit-scrollbar {
+/* .backdrop::-webkit-scrollbar {
   width: 20px;
-}
+} */
 
-body::-webkit-scrollbar {
-  width: 20px;
-}
 
-.backdrop::-webkit-scrollbar-track {
+
+/* .backdrop::-webkit-scrollbar-track {
   background-color: var(--background-our-product-list);
 }
 
@@ -104,6 +102,9 @@ body::-webkit-scrollbar {
   background-color: var(--specific-color);
   border-radius: 20px;
   border: 3px solid orange;
+} */
+body::-webkit-scrollbar {
+  width: 20px;
 }
 
 body::-webkit-scrollbar-track {
