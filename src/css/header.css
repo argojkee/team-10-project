@@ -24,6 +24,11 @@
   fill: transparent;
   stroke: var(--specific-color);
 }
+    .button-registration {
+      background-color: transparent;
+      border: none;
+      text-align: start;
+    }
 
 /* Только мобилка */
 
@@ -103,9 +108,10 @@
     padding-bottom: 32px;
   }
 
+
   .header-nav {
     display: flex;
-    column-gap: 188px;
+    column-gap: 60px;
     align-items: center;
   }
 
