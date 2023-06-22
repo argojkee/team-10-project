@@ -79,6 +79,10 @@
   color: var(--specific-color);
 }
 
+
+.button-registration-footer {
+  color: var(--secondary-text-color);
+}
 .footer-social-list {
   display: flex;
   column-gap: 24px;
