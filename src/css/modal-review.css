@@ -9,15 +9,15 @@
 
 @media screen and (max-width: 767px) and (max-height: 500px) {
   .review-modal-window {
-    height: 96vh;
-    overflow: auto;
+    transform: translate(-50%);
+    top: 10px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 652px) {
   .review-modal-window {
-    height: 96vh;
-    overflow: auto;
+    transform: translate(-50%);
+    top: 10px;
   }
 }
 
