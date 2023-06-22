@@ -1,0 +1,137 @@
+<!-- Maksym Haidabura  -->
+
+
+
+<!-- Registration form  -->
+<div class="backdrop is-hidden" data-fourth-modal>
+    <div class="buy-now-modal modal registration-form">
+        <button type="button" class="buy-now-modal-close-btn modal-close-btn" aria-label="close modal window"
+            data-fourth-modal-close>
+            <svg class="buy-now-modal-close-icon" >
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="modal-window-title modal-buy-now-title">
+            Registration <span class="title-span">Form</span>
+        </h2>
+        <form class="buy-now-modal-form" autocomplete="off">
+
+
+
+            <label class="buy-now-form-wrapper-for-user-name" for="user-name">Personal information</label>
+            <label class="" for="user-surname"></label>
+            <span class="contact-form-input-container">
+                <input class="user-name" id="user-name" type="text" name="user-name" pattern="[a-zA-za-яА-ЯіІїЇєЄ']+"
+                    placeholder="Name" required />
+                <input class="user-surname" id="user-surname" type="text" name="user-surname"
+                    pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+" placeholder="Surname" required />
+            </span>
+            <label class="buy-now-form-field-wrapper">
+                <span class="contact-form-field-desk">Email</span>
+                <input class="user-email" type="email" name="user-email" placeholder="Enter your email" required />
+            </label>
+
+            <label class="buy-now-form-field-wrapper">
+                <span class="contact-form-field-desk">Phone number</span>
+                <span class="country-code-wrapper">
+                    <input class="user-tel" type="tel" name="phone" maxlength="9" minlength="9"
+                        placeholder="Phone number" required />
+                    <svg class="icon-flag">
+                        <use class="flag" href="./images/sprite.svg#icon-flag"></use>
+                    </svg>
+                </span>
+            </label>
+
+            
+
+
+
+            <label class="buy-now-form-field-wrapper">
+                <span class="contact-form-field-desk">Login</span>
+                <input class="user-email" type="text" name="user-login" placeholder="Enter your login" pattern="[a-zA-zа]+" required />
+            </label>
+                <label class="buy-now-form-field-wrapper">
+                    <span class="contact-form-field-desk">Password</span>
+                    <input class="user-email" type="password" name="user-password" placeholder="Enter your password" required />
+                </label>
+                    <label class="buy-now-form-field-wrapper">
+                
+                <input class="user-email" type="password" name="user-password-repit" placeholder="Confirm your password" required />
+            </label>
+
+                <label class="policy-label">
+                    <input type="checkbox" name="policy" class="checkbox visually-hidden">
+                    <span class="input-checkbox-wrapper">
+                        <span class="checkbox-wrapper checkbox-wrapper-registration">
+                            <svg width="10" height="8" class="accept-icon">
+                                <use href="./images/sprite.svg#icon-accept-form"></use>
+                            </svg>
+                        </span>
+                        <span class="policy-text contact-form-field-desk">I accept the terms and conditions of the <a href="" class="link-policy">Privacy
+                            Policy</a></span>
+                    </span>
+                </label>
+                <span class="registration-login-button-container">
+            <button type="submit" class="modal-button accent-button buy-now-modal-submit-btn login-registration-button registration-button">
+                Registration
+            </button>
+            <button type="submit" class="modal-button accent-button buy-now-modal-submit-btn login-registration-button">
+                Log in
+            </button>
+            </span>
+        </form>
+    </div>
+</div>
+
+
+
+
+<!-- Login form  -->
+<div class="backdrop is-hidden" data-fifth-modal>
+    <div class="buy-now-modal modal login-form">
+        <button type="button" class="buy-now-modal-close-btn modal-close-btn" aria-label="close modal window"
+            data-fifth-modal-close>
+            <svg class="buy-now-modal-close-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="modal-window-title modal-buy-now-title">
+            Log <span class="title-span">in</span>
+        </h2>
+        <form class="buy-now-modal-form" autocomplete="off">
+
+
+
+            <label class="buy-now-form-field-wrapper">
+                <span class="contact-form-field-desk">Login</span>
+                <input class="user-email" type="text" name="user-login" placeholder="Enter your login"
+                    pattern="[a-zA-za]+" required />
+            </label>
+            <label class="buy-now-form-field-wrapper">
+                <span class="contact-form-field-desk">Password</span>
+                <input class="user-email" type="password" name="user-password" placeholder="Enter your password" required />
+            </label>
+            
+            <label class="policy-label">
+                <input type="checkbox" name="policy" class="checkbox visually-hidden">
+                <span class="input-checkbox-wrapper">
+                <span class="checkbox-wrapper checkbox-wrapper-login">
+                <svg width="10" height="8" class="accept-icon">
+                    <use href="./images/sprite.svg#icon-accept-form"></use>
+                </svg>
+                </span>
+                <span class="policy-text contact-form-field-desk">Remember me</span>
+                </span>
+            </label>
+            <span class="registration-login-button-container">
+            <button type="submit" class="modal-button accent-button buy-now-modal-submit-btn login-registration-button">
+                Log in
+            </button>
+            <button type="submit" class="modal-button accent-button buy-now-modal-submit-btn login-registration-button" data-fourth-modal-open data-fifth-modal-close>
+                Registration
+            </button>
+            
+            </span>
+        </form>
+    </div>
+</div>

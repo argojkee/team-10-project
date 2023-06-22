@@ -1,0 +1,74 @@
+.registration-form {
+    min-height: 700px;
+}
+
+.login-form {
+    min-height: 500px;
+}
+.registration-login-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    
+}
+
+.login-registration-button {
+
+    display: block;
+}
+
+.input-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+.checkbox-wrapper {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(17,17,17, 0.5);
+    border-radius: 4px;
+}
+
+.checkbox-wrapper-registration {
+    margin-right: 14px;
+}
+
+.checkbox-wrapper-login {
+    margin-right: 8px;
+}
+.accept-icon {
+    stroke: transparent;
+}
+
+.checkbox:checked + .input-checkbox-wrapper .checkbox-wrapper {
+    border: none;
+    background-color: var(--specific-color);
+}
+
+.checkbox:checked + .input-checkbox-wrapper .accept-icon {
+    stroke: var(--icon-dark-theme);
+}
+
+.policy-text {
+    margin-bottom: 0;
+}
+
+.link-policy {
+    /* display: block; */
+    color: var(--specific-color);
+}
+
+@media screen and (max-width: 767px) {
+.registration-login-button-container {
+    column-gap: 12px;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .registration-login-button-container {
+            column-gap: 64px;
+        }
+}

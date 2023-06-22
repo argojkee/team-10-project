@@ -195,6 +195,16 @@
   resize: none;
 }
 
+.buy-now-register-link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  background-color: transparent;
+  border: none;
+  color: var(--specific-color);
+}
+
 /* Form - user information*/
 
 /*Только мобилка*/
