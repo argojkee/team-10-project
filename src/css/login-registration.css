@@ -78,7 +78,8 @@
   align-items: center;
 }
 .checkbox-wrapper {
-  width: 16px;
+  width: 12px;
+  height: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
