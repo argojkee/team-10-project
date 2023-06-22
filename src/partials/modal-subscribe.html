@@ -1,35 +1,37 @@
 <div class="backdrop is-hidden" data-third-modal>
   <div class="modal subscribe-modal">
-    <button
-      class="subscribe-modal-close-btn modal-close-btn"
-      type="button"
-      aria-label="close modal window"
-      data-third-modal-close
-    >
-      <svg class="subscribe-modal-close-icon" width="24" height="24">
-        <use href="/images/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal-window-title modal-subscribe-title">
-      Explore our
-      <span> <span class="title-span">new chocolate </span>first! </span>
-    </h2>
-    <form class="modal-form" autocomplete="off">
-      <label class="modal-form-label" >
-        <input
-          class="modal-form-input"
-          type="email"
-          name="user-email"
-          placeholder="Enter your email"
-          required
-        />
-      </label>
+    <div class="subscribe-modal-container">
       <button
-        class="modal-button accent-button modal-form-submit"
-        type="submit"
+        class="subscribe-modal-close-btn modal-close-btn"
+        type="button"
+        aria-label="close modal window"
+        data-third-modal-close
       >
-        Subscribe
+        <svg class="subscribe-modal-close-icon" width="24" height="24">
+          <use href="/images/sprite.svg#icon-close"></use>
+        </svg>
       </button>
-    </form>
+      <h2 class="modal-window-title modal-subscribe-title">
+        Explore our
+        <span> <span class="title-span">new chocolate </span>first! </span>
+      </h2>
+      <form class="modal-form" autocomplete="off">
+        <label class="modal-form-label">
+          <input
+            class="modal-form-input"
+            type="email"
+            name="user-email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <button
+          class="modal-button accent-button modal-form-submit"
+          type="submit"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
   </div>
 </div>

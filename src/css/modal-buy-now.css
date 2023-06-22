@@ -10,15 +10,15 @@
 
 @media screen and (max-width: 767px) and (max-height: 1080px) {
   .buy-now-modal {
-    transform: translate(-50%);
-    top: 10px;
+    height: 96vh;
+    overflow: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 1125px) {
   .buy-now-modal {
-    transform: translate(-50%);
-    top: 10px;
+    max-height: 96vh;
+    overflow: auto;
   }
 }
 
@@ -213,7 +213,6 @@
 @media screen and (max-width: 767px) {
   .buy-now-modal {
     width: 311px;
-    min-height: 994px;
     padding: 32px 24px;
   }
 
@@ -352,7 +351,6 @@
 @media screen and (min-width: 768px) {
   .buy-now-modal {
     width: 609px;
-    min-height: 1058px;
     padding: 48px;
   }
 

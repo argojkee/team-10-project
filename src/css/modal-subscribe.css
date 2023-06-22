@@ -1,6 +1,10 @@
 .subscribe-modal {
   position: relative;
   background-color: var(--background-price-btn);
+  border-radius: 15px;
+}
+
+.subscribe-modal-container {
   background-position: top;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -8,15 +12,15 @@
 
 @media screen and (max-width: 767px) and (max-height: 370px) {
   .subscribe-modal {
-    transform: translate(-50%);
-    top: 10px;
+    height: 96vh;
+    overflow: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 430px) {
   .subscribe-modal {
-    transform: translate(-50%);
-    top: 10px;
+    height: 96vh;
+    overflow: auto;
   }
 }
 
@@ -65,10 +69,12 @@
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
   .subscribe-modal {
-    background-size: auto 169px;
-    padding: 201px 24px 32px 24px;
     max-width: 311px;
-    min-height: 350px;
+  }
+
+  .subscribe-modal-container {
+    padding: 201px 24px 32px 24px;
+    background-size: auto 169px;
   }
 
   .modal-subscribe-title {
@@ -106,10 +112,12 @@
 /*Планшет и десктоп*/
 @media screen and (min-width: 768px) {
   .subscribe-modal {
-    background-size: auto 196px;
-    padding: 236px 40px 40px 40px;
     max-width: 538px;
-    height: 412px;
+  }
+
+  .subscribe-modal-container {
+    padding: 236px 40px 40px 40px;
+    background-size: auto 196px;
   }
 
   .subscribe-modal-close-icon {
@@ -146,7 +154,7 @@
 @media screen and (max-device-pixel-ratio: 1.99) and (max-width: 767px),
   screen and (max-resolution: 191dpi) and (max-width: 767px),
   screen and (max-resolution: 1.99dppx) and (max-width: 767px) {
-  .subscribe-modal {
+  .subscribe-modal-container {
     background-image: url('../images/subscribe/modal-subscribe-mobile.jpg');
   }
 }
@@ -154,7 +162,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .subscribe-modal {
+  .subscribe-modal-container {
     background-image: url('../images/subscribe/modal-subscribe-mobile@2x.jpg');
   }
 }
@@ -162,7 +170,7 @@
 @media screen and (max-device-pixel-ratio: 1.99) and (min-width: 768px),
   screen and (max-resolution: 191dpi) and (min-width: 768px),
   screen and (max-resolution: 1.99dppx) and (min-width: 768px) {
-  .subscribe-modal {
+  .subscribe-modal-container {
     background-image: url('../images/subscribe/modal-subscribe-tablet-desktop.jpg');
   }
 }
@@ -170,7 +178,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .subscribe-modal {
+  .subscribe-modal-container {
     background-image: url('../images/subscribe/modal-subscribe-tablet-desktop@2x.jpg');
   }
 }
