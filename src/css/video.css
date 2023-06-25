@@ -9,6 +9,7 @@
   border-radius: 15px;
   overflow: hidden;
 }
+
 .plyr__poster {
   background-size: cover;
 }
@@ -24,19 +25,21 @@
 }
 
 .plyr__control.plyr__control--overlaid:hover {
-  color: var(--specific-color);
-  border-color: var(--specific-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .plyr--paused.plyr--stopped .plyr__controls {
   opacity: 0;
 }
+
 @media screen and (max-width: 767px) {
   .plyr__video-wrapper {
     min-width: 335px;
     min-height: 500px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .plyr__video-wrapper {
     min-height: 400px;

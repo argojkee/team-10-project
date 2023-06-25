@@ -1,12 +1,12 @@
 <div class="backdrop is-hidden" data-second-modal>
-  <div class="review-modal-window modal">
+  <div class="modal review-modal">
     <button
       type="button"
-      class="review-button-close modal-close-btn"
+      class="modal-close-btn"
       aria-label="close modal window"
       data-second-modal-close
     >
-      <svg class="review-close-icon" width="24" height="24">
+      <svg class="modal-close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
@@ -23,7 +23,6 @@
         type="text"
         name="user-name"
         required
-       
       />
       <input
         class="review-input-item"
@@ -32,7 +31,7 @@
         name="user-mail"
         required
       />
-      
+
       <!-- <div class="review-input-item-flag">
         <input
           required
@@ -49,10 +48,17 @@
         </div>
       </div> -->
 
-
       <label class="buy-now-form-field-wrapper">
         <span class="country-code-wrapper">
-          <input class="user-tel" type="tel" name="phone" maxlength="9" minlength="9" placeholder="Phone number" required />
+          <input
+            class="user-tel"
+            type="tel"
+            name="phone"
+            maxlength="9"
+            minlength="9"
+            placeholder="Phone number"
+            required
+          />
           <svg class="icon-flag">
             <use class="flag" href="./images/sprite.svg#icon-flag"></use>
           </svg>

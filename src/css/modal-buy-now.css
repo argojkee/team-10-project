@@ -2,12 +2,6 @@
 
 /*Для всех вьюпортов*/
 
-.buy-now-modal {
-  background-color: var(--background-price-btn);
-  border-radius: 15px;
-  transform: translate(-50%, -50%);
-}
-
 @media screen and (max-width: 767px) and (max-height: 1080px) {
   .buy-now-modal {
     height: 96%;
@@ -17,7 +11,7 @@
 
 @media screen and (min-width: 768px) and (max-height: 1125px) {
   .buy-now-modal {
-    max-height: 96%;
+    height: 96%;
     overflow: auto;
   }
 }
@@ -27,28 +21,21 @@
   text-align: center;
 }
 
-/* Close btn */
-.buy-now-modal-close-icon:hover,
-.buy-now-modal-close-icon:focus {
-  stroke: var(--specific-color);
-}
-
-.buy-now-modal-close-icon {
-  stroke: #111111;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* Form - chokolate weight*/
 .buy-now-modal-chocolate-weight-container {
   display: flex;
 }
 
+.buy-now-modal-chocolate-weight-container * {
+  color: var(--primary-text-color);
+}
+
 .buy-now-modal-radio:checked + .chocolate-weight-container {
-  border: 1.5px solid var(--specific-color);
+  border: 1.5px solid var(--accent-color);
 }
 
 .buy-now-modal-radio:checked + .chocolate-weight-container > .chocolate-weight {
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
   color: var(--secondary-text-color);
 }
 
@@ -63,7 +50,7 @@
 
 .chocolate-weight-container {
   display: flex;
-  background-color: var(--secondary-background-color);
+  background-color: var(--additional-bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
@@ -75,8 +62,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: var(--main-color-page);
-  background: var(--background-price-btn);
+  background-color: var(--primary-bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
@@ -93,7 +79,6 @@
   display: block;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #000000;
   margin-bottom: 8px;
 }
 
@@ -101,13 +86,7 @@
   display: block;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #000000;
   margin-bottom: 8px;
-}
-
-.user-name,
-.user-surname {
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
 }
 
 .user-name,
@@ -129,25 +108,6 @@
 .user-card,
 .user-comment {
   letter-spacing: -0.02em;
-  transition: border-color;
-}
-
-.user-name::placeholder,
-.user-surname::placeholder,
-.user-email::placeholder,
-.user-tel::placeholder,
-.user-card::placeholder,
-.user-comment::placeholder {
-  color: rgba(64, 64, 64, 0.3);
-}
-
-.user-name:focus,
-.user-surname:focus,
-.user-email:focus,
-.user-tel:focus,
-.user-card:focus,
-.user-comment:focus {
-  border-color: var(--specific-color);
 }
 
 .user-email,
@@ -176,13 +136,12 @@
   position: absolute;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #000000;
 }
 
 .country-code-wrapper::after {
   display: block;
   content: '';
-  background-color: rgba(64, 64, 64, 0.3);
+  background-color: var(--field-placeholder-color);
   position: absolute;
 }
 
@@ -204,7 +163,7 @@
   margin-top: 24px;
   background-color: transparent;
   border: none;
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 /* Form - user information*/
@@ -215,19 +174,6 @@
     width: 311px;
     padding: 32px 24px;
   }
-
-  /* Close btn */
-  .close-btn {
-    width: 24px;
-    height: 24px;
-  }
-
-  .buy-now-modal-close-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  /* Close btn */
 
   /* Form - chokolate weight*/
   .buy-now-modal-chocolate-weight-container {
@@ -354,19 +300,6 @@
     padding: 48px;
   }
 
-  /* Close btn */
-  .buy-now-modal-close-btn {
-    width: 28px;
-    height: 28px;
-  }
-
-  .buy-now-modal-close-icon {
-    width: 28px;
-    height: 28px;
-  }
-
-  /* Close btn */
-
   /* Form - chokolate weight*/
   .buy-now-modal-chocolate-weight-container {
     gap: 16px;
@@ -432,7 +365,6 @@
   .user-comment {
     font-size: 18px;
     line-height: 1.22;
-    color: var(--main-color-page);
   }
 
   .user-name,

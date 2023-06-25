@@ -1,28 +1,28 @@
 /* Registration Modal Window */
 
 @media screen and (max-width: 767px) {
-  .registration-modal-window {
+  .registration-modal {
     width: 311px;
     padding: 32px 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .registration-modal-window {
+  .registration-modal {
     width: 517px;
     padding: 48px;
   }
 }
 
 @media screen and (max-width: 767px) and (max-height: 805px) {
-  .registration-modal-window {
+  .registration-modal {
     height: 96%;
     overflow: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 920px) {
-  .registration-modal-window {
+  .registration-modal {
     height: 96%;
     overflow: auto;
   }
@@ -31,28 +31,28 @@
 /* Login Modal Window */
 
 @media screen and (max-width: 767px) {
-  .login-modal-window {
+  .login-modal {
     width: 311px;
     padding: 32px 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .login-modal-window {
+  .login-modal {
     width: 517px;
     padding: 48px;
   }
 }
 
 @media screen and (max-width: 767px) and (max-height: 413px) {
-  .login-modal-window {
+  .login-modal {
     height: 96%;
     overflow: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 527px) {
-  .login-modal-window {
+  .login-modal {
     height: 96%;
     overflow: auto;
   }
@@ -96,11 +96,11 @@
 
 .checkbox:checked + .input-checkbox-wrapper .checkbox-wrapper {
   border: none;
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
 }
 
 .checkbox:checked + .input-checkbox-wrapper .accept-icon {
-  stroke: var(--icon-dark-theme);
+  stroke: var(--secondary-text-color);
 }
 
 .policy-text {
@@ -109,7 +109,7 @@
 
 .link-policy {
   /* display: block; */
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {

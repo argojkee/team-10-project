@@ -1,7 +1,5 @@
 .subscribe-modal {
   position: relative;
-  background-color: var(--background-price-btn);
-  border-radius: 15px;
 }
 
 .subscribe-modal-container {
@@ -25,7 +23,7 @@
 }
 
 .subscribe-modal-close-icon {
-  stroke: var(--icon-dark-theme);
+  stroke: var(--additional-bg-color);
 }
 
 .modal-subscribe-title {
@@ -48,22 +46,11 @@
   outline: transparent;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  transition: border-color var(--general-transition);
-}
-
-.modal-form-input:focus {
-  border-color: var(--specific-color);
 }
 
 .modal-form-input::placeholder {
   align-items: center;
   letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-}
-
-.subscribe-modal-close-btn:hover .subscribe-modal-close-icon,
-.subscribe-modal-close-btn:focus .subscribe-modal-close-icon {
-  stroke: var(--specific-color);
 }
 
 /*Только мобилка*/
@@ -118,11 +105,6 @@
   .subscribe-modal-container {
     padding: 236px 40px 40px 40px;
     background-size: auto 196px;
-  }
-
-  .subscribe-modal-close-icon {
-    width: 28px;
-    height: 28px;
   }
 
   .modal-subscribe-title {
