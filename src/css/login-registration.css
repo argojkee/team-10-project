@@ -62,13 +62,13 @@
   text-align: center;
 }
 
-.registration-login-button-container {
+.auth-btn-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.login-registration-button {
+.log-reg-btn {
   display: block;
 }
 
