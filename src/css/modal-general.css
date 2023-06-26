@@ -135,7 +135,7 @@
 
   background-color: transparent;
   outline: transparent;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid var(--field-placeholder-color);
 
   transition: border-color var(--general-transition);
 }
