@@ -11,7 +11,7 @@
   --field-text-color: #000000;
   --field-placeholder-color: rgba(64, 64, 64, 0.3);
 
-  --general-transition: 500ms linear;
+  --general-transition: 250ms linear;
 }
 
 /* Fonts */

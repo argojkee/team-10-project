@@ -2,7 +2,6 @@
 
 @media screen and (max-width: 767px) {
   .registration-modal {
-    width: 311px;
     padding: 32px 24px;
   }
 }
@@ -32,7 +31,6 @@
 
 @media screen and (max-width: 767px) {
   .login-modal {
-    width: 311px;
     padding: 32px 24px;
   }
 }
@@ -58,11 +56,16 @@
   }
 }
 
+.modal-reg-title,
+.modal-log-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .registration-login-button-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 48px;
+  justify-content: space-around;
 }
 
 .login-registration-button {
@@ -87,6 +90,16 @@
   margin-right: 14px;
 }
 
+.policy-wrapper,
+.remember-me-wrapper {
+  margin-bottom: 48px;
+}
+
+.policy-label,
+.remember-me-label {
+  margin-bottom: 0;
+}
+
 .checkbox-wrapper-login {
   margin-right: 8px;
 }
@@ -103,48 +116,39 @@
   stroke: var(--secondary-text-color);
 }
 
-.policy-text {
-  margin-bottom: 0;
-}
-
 .link-policy {
   /* display: block; */
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
-  .registration-login-button-container {
-    column-gap: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .registration-login-button-container {
-    column-gap: 64px;
-  }
-}
-
-.password {
+.password-input {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.password-control,
-.password-control-repit,
-.password-control-login {
+.password-input:first-child {
+  margin-bottom: 14px;
+}
+
+.reg-password-control,
+.reg-password-control-confirm,
+.log-password-control {
   position: absolute;
   top: 50%;
   right: 6px;
+
   display: inline-block;
-  transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
+
   background: url(../images/eye.svg) 0 0 no-repeat;
+  border: none;
+  transform: translate(-50%, -50%);
 }
 
-.password-control.view,
-.password-control-repit.view,
-.password-control-login.view {
+.reg-password-control.view,
+.reg-password-control-confirm.view,
+.log-password-control.view {
   background: url(../images/eye-blocked.svg) 0 0 no-repeat;
 }

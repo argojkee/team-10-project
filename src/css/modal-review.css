@@ -1,3 +1,5 @@
+/* Position */
+
 @media screen and (max-width: 767px) and (max-height: 500px) {
   .review-modal {
     height: 96%;
@@ -12,61 +14,24 @@
   }
 }
 
-.review-flag-after::after {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-}
-
-.review-input-item,
-.review-textarea {
-  background-color: transparent;
-}
-
 @media screen and (max-width: 767px) {
   .review-modal {
-    max-width: 311px;
     padding: 32px 24px 32px 24px;
   }
 
-  .modal-reviews-title {
+  .modal-review-title {
     margin-bottom: 32px;
     max-width: 255px;
     display: flex;
     flex-direction: column;
   }
 
-  .review-input-item {
-    width: 263px;
-    height: 45px;
+  .review-form-field-wrapper {
     margin-bottom: 14px;
-    padding-left: 18px;
   }
 
-  .spaces-number {
-    padding-left: 106px;
-  }
-
-  .review-textarea {
-    width: 263px;
-    height: 91px;
-    padding-left: 18px;
-    padding-top: 14px;
+  .review-form-field-wrapper:last-of-type {
     margin-bottom: 18px;
-  }
-
-  .review-flag-after::after {
-    margin-left: 8px;
-  }
-
-  .review-flag-after {
-    margin-left: 8px;
-  }
-
-  .review-flag-block {
-    left: 18px;
-    top: 10px;
   }
 }
 
@@ -76,47 +41,12 @@
     padding: 40px;
   }
 
-  .review-button-close {
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-  }
-
-  .review-input-item {
-    width: 437px;
-    height: 66px;
-    margin-bottom: 18px;
-    padding-left: 24px;
-  }
-
-  .spaces-number {
-    padding-left: 177px;
-  }
-
-  .review-flag-block {
-    left: 24px;
-    top: 20px;
-  }
-
-  .review-flag-after::after {
-    margin-left: 32px;
-  }
-
-  .review-flag-after {
-    margin-left: 18px;
-  }
-
-  .review-textarea {
-    width: 437px;
-    height: 137px;
-    padding-left: 24px;
-    padding-top: 20px;
-    margin-bottom: 18px;
-  }
-
-  .modal-reviews-title {
+  .modal-review-title {
     width: 298px;
     margin-bottom: 40px;
+  }
+
+  .review-form-field-wrapper {
+    margin-bottom: 18px;
   }
 }

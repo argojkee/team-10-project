@@ -1,32 +1,32 @@
-$('body').on('click', '.password-control', function () {
-  if ($('#password-input').attr('type') == 'password') {
+$('body').on('click', '.reg-password-control', function () {
+  if ($('#reg-user-password').attr('type') == 'password') {
     $(this).addClass('view');
-    $('#password-input').attr('type', 'text');
+    $('#reg-user-password').attr('type', 'text');
   } else {
     $(this).removeClass('view');
-    $('#password-input').attr('type', 'password');
+    $('#reg-user-password').attr('type', 'password');
   }
   return false;
 });
 
-$('body').on('click', '.password-control-repit', function () {
-  if ($('#password-input-repit').attr('type') == 'password') {
+$('body').on('click', '.reg-password-control-confirm', function () {
+  if ($('#reg-user-password-confirm').attr('type') == 'password') {
     $(this).addClass('view');
-    $('#password-input-repit').attr('type', 'text');
+    $('#reg-user-password-confirm').attr('type', 'text');
   } else {
     $(this).removeClass('view');
-    $('#password-input-repit').attr('type', 'password');
+    $('#reg-user-password-confirm').attr('type', 'password');
   }
   return false;
 });
 
-$('body').on('click', '.password-control-login', function () {
-  if ($('#password-input-login').attr('type') == 'password') {
+$('body').on('click', '.log-password-control', function () {
+  if ($('#log-user-password').attr('type') == 'password') {
     $(this).addClass('view');
-    $('#password-input-login').attr('type', 'text');
+    $('#log-user-password').attr('type', 'text');
   } else {
     $(this).removeClass('view');
-    $('#password-input-login').attr('type', 'password');
+    $('#log-user-password').attr('type', 'password');
   }
   return false;
 });
