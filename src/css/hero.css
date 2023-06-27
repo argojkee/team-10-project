@@ -10,7 +10,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-bg-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -188,14 +188,14 @@
 .btn-how-its-made {
   display: inline-block;
 
-  border: 1px solid var(--icon-dark-theme);
+  border: 1px solid var(--additional-bg-color);
 }
 
 .btn-how-its-made:hover,
 .btn-how-its-made:focus {
-  color: var(--specific-color);
-  background-color: var(--icon-dark-theme);
-  border-color: var(--specific-color);
+  color: var(--accent-color);
+  background-color: var(--additional-bg-color);
+  border-color: var(--accent-color);
 }
 
 .btn-scroll {
@@ -213,7 +213,7 @@
 }
 
 .btn-scroll-top {
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 .isShowBtn {
@@ -243,7 +243,7 @@
 }
 
 .icon-arrow-wrapper-top {
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
   transition: background-color var(--general-transition);
 }
 
@@ -255,30 +255,30 @@
   border-radius: 50%;
 }
 .icon-arrow-top {
-  fill: var(--icon-dark-theme);
+  fill: var(--additional-bg-color);
   transition: fill var(--general-transition);
 }
 .icon-arrow-down {
-  fill: var(--specific-color);
+  fill: var(--accent-color);
 }
 
 .btn-scroll-down:hover,
 .btn-scroll-down:focus {
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 .btn-scroll:hover .icon-arrow-down,
 .btn-scroll:focus .icon-arrow-down {
-  fill: var(--icon-dark-theme);
+  fill: var(--additional-bg-color);
 }
 
 .btn-scroll-top:hover .icon-arrow-wrapper-top,
 .btn-scroll-top:focus .icon-arrow-wrapper-top {
-  background-color: var(--icon-dark-theme);
+  background-color: var(--additional-bg-color);
 }
 .btn-scroll:hover .icon-arrow-top,
 .btn-scroll:focus .icon-arrow-top {
-  fill: var(--specific-color);
+  fill: var(--accent-color);
 }
 
 /* mobile */

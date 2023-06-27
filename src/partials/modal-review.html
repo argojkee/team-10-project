@@ -1,0 +1,72 @@
+<div class="backdrop is-hidden" data-second-modal>
+  <div class="modal review-modal">
+    <button
+      type="button"
+      class="modal-close-btn"
+      aria-label="close modal window"
+      data-second-modal-close
+    >
+      <svg class="modal-close-icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-window-title modal-review-title">
+      leave a review
+      <span class="span-to-enter">
+        about <span class="title-span">our chocolate</span>
+      </span>
+    </h2>
+    <form class="review-form" autocomplete="off">
+      <div class="review-form-field-wrapper">
+        <input
+          class="form-input"
+          name="review-user-name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="review-form-field-wrapper">
+        <input
+          class="form-input"
+          name="review-user-email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="review-form-field-wrapper">
+        <label>
+          <span class="country-code-wrapper">
+            <input
+              class="form-input user-phone-input"
+              name="review-user-phone"
+              type="tel"
+              maxlength="9"
+              minlength="9"
+              placeholder="Phone number"
+              required
+            />
+            <svg class="icon-flag">
+              <use class="flag" href="./images/sprite.svg#icon-flag"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+      <div class="review-form-field-wrapper">
+        <textarea
+          class="form-textarea review-form-textarea"
+          name="review-user-comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <button
+        class="modal-button accent-button review-form-submit"
+        type="submit"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>

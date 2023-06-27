@@ -3,7 +3,7 @@
 /*Для всех вьюпортов*/
 
 .advantages-section {
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .advantages-list {
@@ -15,7 +15,6 @@
 }
 
 .advantage-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
@@ -42,7 +41,7 @@
 }
 
 .advantages-icon {
-  fill: var(--specific-color);
+  fill: var(--accent-color);
 }
 .advantage-text {
   max-width: 308px;

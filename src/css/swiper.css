@@ -10,7 +10,7 @@
 
 .swiper-pagination-bullet-active {
   width: 28px;
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
   border-radius: 25px;
 }
 

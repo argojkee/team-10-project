@@ -10,10 +10,9 @@
   display: flex;
   align-items: center;
   column-gap: 4px;
-  letter-spacing: -0.03em;
+
   font-weight: 700;
-  font-style: normal;
-  color: var(--main-color-page);
+  letter-spacing: -0.03em;
 }
 
 .header-simply-logotype {
@@ -22,13 +21,15 @@
 
 .chocolate-icon {
   fill: transparent;
-  stroke: var(--specific-color);
+  stroke: var(--accent-color);
 }
-    .button-registration {
-      background-color: transparent;
-      border: none;
-      text-align: start;
-    }
+.button-registration {
+  text-align: start;
+
+  color: var(--primary-text-color);
+  background-color: transparent;
+  border: none;
+}
 
 /* Только мобилка */
 
@@ -67,14 +68,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-color: transparent;
     border: none;
-    stroke: var(--main-color-page);
+    stroke: var(--primary-text-color);
+
     transition: stroke var(--general-transition);
   }
+
   .burger-button:hover,
   .burger-button:focus {
-    stroke: var(--specific-color);
+    stroke: var(--accent-color);
   }
 }
 
@@ -108,10 +112,10 @@
     padding-bottom: 32px;
   }
 
-
   .header-nav {
     display: flex;
     column-gap: 60px;
+
     align-items: center;
   }
 
@@ -126,17 +130,17 @@
   }
 
   .header-nav-link {
-    color: var(--main-color-page);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+
     transition: color var(--general-transition);
   }
 
   .header-nav-link:hover,
   .header-nav-link:focus {
-    color: var(--specific-color);
+    color: var(--accent-color);
   }
 
   .burger-button {
@@ -149,16 +153,16 @@
   }
 
   .header-social-link {
-    color: var(--main-color-page);
-    transition: color var(--general-transition);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: color var(--general-transition);
   }
 
   .header-social-link:hover,
   .header-social-link:focus {
-    color: var(--specific-color);
+    color: var(--accent-color);
   }
 
   .header-social-icon {

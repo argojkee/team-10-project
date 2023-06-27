@@ -2,142 +2,151 @@
 
 <!-- Registration form  -->
 <div class="backdrop is-hidden" data-fourth-modal>
-  <div class="modal registration-modal-window">
+  <div class="modal registration-modal">
     <button
       type="button"
-      class="buy-now-modal-close-btn modal-close-btn"
+      class="modal-close-btn"
       aria-label="close modal window"
       data-fourth-modal-close
     >
-      <svg class="buy-now-modal-close-icon">
+      <svg class="modal-close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <h2 class="modal-window-title modal-buy-now-title">
+    <h2 class="modal-window-title modal-reg-title">
       Registration <span class="title-span">Form</span>
     </h2>
-    <form class="buy-now-modal-form" autocomplete="off">
-      <label class="buy-now-form-wrapper-for-user-name" for="user-name"
-        >Personal information</label
-      >
-      <label class="" for="user-surname"></label>
-      <span class="contact-form-input-container">
+
+    <form class="registration-form" autocomplete="off">
+      <div class="form-field-wrapper">
+        <label class="form-label" for="reg-user-name"
+          >Personal information</label
+        >
+        <div class="personal-info-input-wrapper">
+          <input
+            class="form-input user-name"
+            id="reg-user-name"
+            type="text"
+            name="reg-user-name"
+            pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="form-input user-surname"
+            name="reg-user-surname"
+            type="text"
+            pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+            placeholder="Surname"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-field-wrapper">
+        <label class="form-label" for="reg-user-email"> Email </label>
         <input
-          class="user-name"
-          id="user-name-registred"
-          type="text"
-          name="user-name"
-          pattern="[a-zA-za-яА-ЯіІїЇєЄ']+"
-          placeholder="Name"
-          required
-        />
-        <input
-          class="user-surname"
-          id="user-surname-registration"
-          type="text"
-          name="user-surname"
-          pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
-          placeholder="Surname"
-          required
-        />
-      </span>
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Email</span>
-        <input
-          class="user-email"
+          class="form-input user-email"
+          id="reg-user-email"
+          name="reg-user-email"
           type="email"
-          name="user-email"
           placeholder="Enter your email"
           required
         />
-      </label>
+      </div>
 
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Phone number</span>
-        <span class="country-code-wrapper">
-          <input
-            class="user-tel"
-            type="tel"
-            name="phone"
-            maxlength="9"
-            minlength="9"
-            placeholder="Phone number"
-            required
-          />
-          <svg class="icon-flag">
-            <use class="flag" href="./images/sprite.svg#icon-flag"></use>
-          </svg>
-        </span>
-      </label>
+      <div class="review-form-field-wrapper">
+        <label>
+          <span class="country-code-wrapper">
+            <input
+              class="form-input user-phone-input"
+              type="tel"
+              name="reg-user-phone"
+              maxlength="9"
+              minlength="9"
+              placeholder="Phone number"
+              required
+            />
+            <svg class="icon-flag">
+              <use class="flag" href="./images/sprite.svg#icon-flag"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
 
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Login</span>
+      <div class="form-field-wrapper">
+        <label class="form-label" for="reg-user-login">Login</label>
         <input
-          class="user-email"
+          class="form-input"
+          id="reg-user-login"
+          name="reg-user-login"
           type="text"
-          name="user-login"
           placeholder="Enter your login"
           pattern="[a-zA-zа]+"
           required
         />
-      </label>
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Password</span>
-        <span class="password">
-          <input
-            class="user-email"
-            id="password-input"
-            type="password"
-            name="password"
-            placeholder="Enter your password"
-            required
-          />
-          <a href="#" class="password-control"></a>
-        </span>
-      </label>
-      <label class="buy-now-form-field-wrapper">
-        <span class="password">
-          <input
-            class="user-email"
-            id="password-input-repit"
-            type="password"
-            name="password"
-            placeholder="Confirm your password"
-            required
-          />
-          <a href="#" class="password-control-repit"></a>
-        </span>
-      </label>
+      </div>
 
-      <label class="policy-label">
-        <input
-          type="checkbox"
-          name="policy"
-          class="checkbox visually-hidden"
-          required
-        />
-        <span class="input-checkbox-wrapper">
-          <span class="checkbox-wrapper checkbox-wrapper-registration">
-            <svg width="10" height="8" class="accept-icon">
-              <use href="./images/sprite.svg#icon-accept-form"></use>
-            </svg>
+      <div class="form-field-wrapper">
+        <label class="form-label" for="reg-user-password">Password</label>
+        <div class="password-input-wrapper">
+          <div class="password-input">
+            <input
+              class="form-input"
+              id="reg-user-password"
+              name="reg-user-password"
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
+            <button type="button" class="reg-password-control"></button>
+          </div>
+          <div class="password-input">
+            <input
+              class="form-input"
+              id="reg-user-password-confirm"
+              name="reg-user-password-confirm"
+              type="password"
+              placeholder="Confirm your password"
+              required
+            />
+            <button type="button" class="reg-password-control-confirm"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-field-wrapper policy-wrapper">
+        <label class="form-label policy-label">
+          <input
+            type="checkbox"
+            name="policy"
+            class="checkbox visually-hidden"
+            required
+          />
+          <span class="input-checkbox-wrapper">
+            <span class="checkbox-wrapper checkbox-wrapper-registration">
+              <svg width="10" height="8" class="accept-icon">
+                <use href="./images/sprite.svg#icon-accept-form"></use>
+              </svg>
+            </span>
+            <span>
+              I accept the terms and conditions of the
+              <a href="" class="link-policy">Privacy Policy</a>
+            </span>
           </span>
-          <span class="policy-text contact-form-field-desk"
-            >I accept the terms and conditions of the
-            <a href="" class="link-policy">Privacy Policy</a></span
-          >
-        </span>
-      </label>
-      <span class="registration-login-button-container">
+        </label>
+      </div>
+
+      <span class="auth-btn-wrapper">
         <button
           type="submit"
-          class="modal-button accent-button buy-now-modal-submit-btn login-registration-button registration-button"
+          class="modal-button accent-button log-reg-btn reg-form-submit"
         >
           Registration
         </button>
         <button
           type="button"
-          class="modal-button accent-button buy-now-modal-submit-btn login-registration-button"
+          class="modal-button accent-button log-reg-btn"
           data-fifth-modal-open
           data-fourth-modal-close
         >
@@ -150,68 +159,77 @@
 
 <!-- Login form  -->
 <div class="backdrop is-hidden" data-fifth-modal>
-  <div class="modal login-modal-window">
+  <div class="modal login-modal">
     <button
       type="button"
-      class="buy-now-modal-close-btn modal-close-btn"
+      class="modal-close-btn"
       aria-label="close modal window"
       data-fifth-modal-close
     >
-      <svg class="buy-now-modal-close-icon">
+      <svg class="modal-close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <h2 class="modal-window-title modal-buy-now-title">
+    <h2 class="modal-window-title modal-log-title">
       Log <span class="title-span">in</span>
     </h2>
-    <form class="buy-now-modal-form" autocomplete="off">
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Login</span>
+
+    <form class="login-form" autocomplete="off">
+      <div class="form-field-wrapper">
+        <label class="form-label" for="log-user-login">Login</label>
         <input
-          class="user-email"
+          class="form-input"
+          id="log-user-login"
+          name="log-user-login"
           type="text"
-          name="user-login"
           placeholder="Enter your login"
-          pattern="[a-zA-za]+"
+          pattern="[a-zA-zа]+"
           required
         />
-      </label>
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Password</span>
-        <span class="password">
+      </div>
+      <div class="form-field-wrapper">
+        <label class="form-label" for="log-user-password">Password</label>
+        <div class="password">
           <input
-            class="user-email"
-            id="password-input-login"
+            class="form-input"
+            id="log-user-password"
+            name="log-user-password"
             type="password"
-            name="password"
             placeholder="Enter your password"
             required
           />
-          <a href="#" class="password-control-login"></a>
-        </span>
-      </label>
+          <button type="button" class="log-password-control"></button>
+        </div>
+      </div>
 
-      <label class="policy-label">
-        <input type="checkbox" name="policy" class="checkbox visually-hidden" />
-        <span class="input-checkbox-wrapper">
-          <span class="checkbox-wrapper checkbox-wrapper-login">
-            <svg width="10" height="8" class="accept-icon">
-              <use href="./images/sprite.svg#icon-accept-form"></use>
-            </svg>
+      <div class="form-field-wrapper remember-me-wrapper">
+        <label class="form-label remember-me-label">
+          <input
+            type="checkbox"
+            name="remember-me"
+            class="checkbox visually-hidden"
+          />
+          <span class="input-checkbox-wrapper">
+            <span class="checkbox-wrapper checkbox-wrapper-login">
+              <svg width="10" height="8" class="accept-icon">
+                <use href="./images/sprite.svg#icon-accept-form"></use>
+              </svg>
+            </span>
+            Remember me
           </span>
-          <span class="policy-text contact-form-field-desk">Remember me</span>
-        </span>
-      </label>
-      <span class="registration-login-button-container">
+        </label>
+      </div>
+
+      <span class="auth-btn-wrapper">
         <button
           type="submit"
-          class="modal-button accent-button buy-now-modal-submit-btn login-registration-button"
+          class="modal-button accent-button log-reg-btn reg-form-submit"
         >
           Log in
         </button>
         <button
-          type="submit"
-          class="modal-button accent-button buy-now-modal-submit-btn login-registration-button"
+          type="button"
+          class="modal-button accent-button log-reg-btn"
           data-fourth-modal-open
           data-fifth-modal-close
         >

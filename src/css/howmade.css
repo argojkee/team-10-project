@@ -9,7 +9,7 @@
 }
 
 .howmade-container-list {
-  background: var(--secondary-background-color);
+  background-color: var(--additional-bg-color);
   border-radius: 15px;
 }
 

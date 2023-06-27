@@ -1,22 +1,21 @@
 <!-- Alina  -->
 
 <div class="backdrop is-hidden" data-first-modal>
-  <div class="buy-now-modal modal">
+  <div class="modal buy-now-modal">
     <button
       type="button"
-      class="buy-now-modal-close-btn modal-close-btn"
+      class="modal-close-btn"
       aria-label="close modal window"
       data-first-modal-close
-      
     >
-      <svg class="buy-now-modal-close-icon">
+      <svg class="modal-close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <h2 class="modal-window-title modal-buy-now-title">
       BUY <span class="title-span">NOW</span>
     </h2>
-    <form class="buy-now-modal-form" autocomplete="off">
+    <form class="buy-now-form" autocomplete="off">
       <!-- <div class="buy-now-modal-chocolate-weight-container">
                 <label class="buy-now-form-chocolate-weight-wrapper">
                     <input type="radio" name="weight" class="buy-now-modal-radio" checked>
@@ -58,7 +57,6 @@
               srcset="./images/buy-now-modal/buy-now-modal-img-1@2.webp 2x"
               src="./images/buy-now-modal/buy-now-modal-img-1.webp"
               alt="chocolate"
-              
               width="84"
               height="69"
             />
@@ -74,7 +72,6 @@
               srcset="./images/buy-now-modal/buy-now-modal-img-2@2.webp 2x"
               src="./images/buy-now-modal/buy-now-modal-img-2.webp"
               alt="chocolate"
-              
               width="84"
               height="69"
             />
@@ -90,7 +87,6 @@
               srcset="./images/buy-now-modal/buy-now-modal-img-3@2.webp 2x"
               src="./images/buy-now-modal/buy-now-modal-img-3.webp"
               alt="chocolate"
-              
               width="84"
               height="69"
             />
@@ -99,65 +95,69 @@
         </label>
       </div>
 
-      <label class="buy-now-form-wrapper-for-user-name" for="user-name"
-        >Personal information</label
-      >
-      <label class="" for="user-surname"></label>
-      <span class="contact-form-input-container">
+      <div class="form-field-wrapper">
+        <label class="form-label" for="order-user-name">
+          Personal information
+        </label>
+        <div class="personal-info-input-wrapper">
+          <input
+            class="form-input user-name"
+            id="order-user-name"
+            type="text"
+            name="order-user-name"
+            pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="form-input user-surname"
+            name="order-user-surname"
+            type="text"
+            pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+            placeholder="Surname"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-field-wrapper">
+        <label class="form-label" for="order-user-email"> Email </label>
         <input
-          class="user-name"
-          id="user-name"
-          type="text"
-          name="user-name"
-          pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
-          placeholder="Name"
-          required
-        />
-        <input
-          class="user-surname"
-          id="user-surname"
-          type="text"
-          name="user-surname"
-          pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
-          placeholder="Surname"
-          required
-        />
-      </span>
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Email</span>
-        <input
-          class="user-email"
+          class="form-input user-email"
+          id="order-user-email"
+          name="order-user-email"
           type="email"
-          name="user-email"
           placeholder="Enter your email"
           required
         />
-      </label>
+      </div>
 
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Phone number</span>
-        <span class="country-code-wrapper">
-          <input
-            class="user-tel"
-            type="tel"
-            name="phone"
-            maxlength="9"
-            minlength="9"
-            placeholder="Phone number"
-            required
-          />
-          <svg class="icon-flag">
-            <use class="flag" href="./images/sprite.svg#icon-flag"></use>
-          </svg>
-        </span>
-      </label>
+      <div class="review-form-field-wrapper">
+        <label>
+          <span class="country-code-wrapper">
+            <input
+              class="form-input user-phone-input"
+              type="tel"
+              name="order-user-phone"
+              maxlength="9"
+              minlength="9"
+              placeholder="Phone number"
+              required
+            />
+            <svg class="icon-flag">
+              <use class="flag" href="./images/sprite.svg#icon-flag"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
 
-      <label class="buy-now-form-field-wrapper">
-        <span class="contact-form-field-desk">Card number</span>
-        <span class="user-card-container">
+      <div class="form-field-wrapper">
+        <label class="form-label" for="order-user-card">Card number</label>
+        <span class="user-card-wrapper">
           <input
-            class="user-card"
-            name="card"
+            class="form-input user-card"
+            id="order-user-card"
+            name="order-user-card"
             type="tel"
             maxlength="16"
             minlength="16"
@@ -168,23 +168,33 @@
             <use href="./images/sprite.svg#icon-mastercard"></use>
           </svg>
         </span>
-      </label>
-      <label class="buy-now-form-textarea-wrapper">
-        <span class="contact-form-field-desk">Comment</span>
+      </div>
+
+      <div class="form-field-wrapper">
+        <label class="form-label" for="order-user-comment">Comment</label>
         <textarea
-          class="user-comment"
-          name="user-comment"
+          class="form-textarea"
+          id="order-user-comment"
+          name="order-user-comment"
           placeholder="Enter text"
         ></textarea>
-      </label>
+      </div>
+
       <button
         type="submit"
-        class="modal-button accent-button buy-now-modal-submit-btn"
+        class="modal-button accent-button buy-now-form-submit"
       >
         Submit
       </button>
     </form>
 
-    <button type="button" class="buy-now-register-link"  data-first-modal-close data-fourth-modal-open>Register to become a member of the loyalty program</button>
+    <button
+      type="button"
+      class="buy-now-register-link"
+      data-first-modal-close
+      data-fourth-modal-open
+    >
+      Register to become a member of the loyalty program
+    </button>
   </div>
 </div>

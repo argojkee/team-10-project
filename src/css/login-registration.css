@@ -1,28 +1,27 @@
 /* Registration Modal Window */
 
 @media screen and (max-width: 767px) {
-  .registration-modal-window {
-    width: 311px;
+  .registration-modal {
     padding: 32px 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .registration-modal-window {
+  .registration-modal {
     width: 517px;
     padding: 48px;
   }
 }
 
 @media screen and (max-width: 767px) and (max-height: 805px) {
-  .registration-modal-window {
+  .registration-modal {
     height: 96%;
     overflow: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 920px) {
-  .registration-modal-window {
+  .registration-modal {
     height: 96%;
     overflow: auto;
   }
@@ -31,41 +30,45 @@
 /* Login Modal Window */
 
 @media screen and (max-width: 767px) {
-  .login-modal-window {
-    width: 311px;
+  .login-modal {
     padding: 32px 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .login-modal-window {
+  .login-modal {
     width: 517px;
     padding: 48px;
   }
 }
 
 @media screen and (max-width: 767px) and (max-height: 413px) {
-  .login-modal-window {
+  .login-modal {
     height: 96%;
     overflow: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-height: 527px) {
-  .login-modal-window {
+  .login-modal {
     height: 96%;
     overflow: auto;
   }
 }
 
-.registration-login-button-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 48px;
+.modal-reg-title,
+.modal-log-title {
+  margin-bottom: 32px;
+  text-align: center;
 }
 
-.login-registration-button {
+.auth-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.log-reg-btn {
   display: block;
 }
 
@@ -87,6 +90,16 @@
   margin-right: 14px;
 }
 
+.policy-wrapper,
+.remember-me-wrapper {
+  margin-bottom: 48px;
+}
+
+.policy-label,
+.remember-me-label {
+  margin-bottom: 0;
+}
+
 .checkbox-wrapper-login {
   margin-right: 8px;
 }
@@ -96,55 +109,46 @@
 
 .checkbox:checked + .input-checkbox-wrapper .checkbox-wrapper {
   border: none;
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
 }
 
 .checkbox:checked + .input-checkbox-wrapper .accept-icon {
-  stroke: var(--icon-dark-theme);
-}
-
-.policy-text {
-  margin-bottom: 0;
+  stroke: var(--secondary-text-color);
 }
 
 .link-policy {
   /* display: block; */
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
-  .registration-login-button-container {
-    column-gap: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .registration-login-button-container {
-    column-gap: 64px;
-  }
-}
-
-.password {
+.password-input {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.password-control,
-.password-control-repit,
-.password-control-login {
+.password-input:first-child {
+  margin-bottom: 14px;
+}
+
+.reg-password-control,
+.reg-password-control-confirm,
+.log-password-control {
   position: absolute;
   top: 50%;
   right: 6px;
+
   display: inline-block;
-  transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
+
   background: url(../images/eye.svg) 0 0 no-repeat;
+  border: none;
+  transform: translate(-50%, -50%);
 }
 
-.password-control.view,
-.password-control-repit.view,
-.password-control-login.view {
+.reg-password-control.view,
+.reg-password-control-confirm.view,
+.log-password-control.view {
   background: url(../images/eye-blocked.svg) 0 0 no-repeat;
 }

@@ -1,20 +1,20 @@
 :root {
-  --main-color-page: #111111;
+  --primary-text-color: #111111;
   --secondary-text-color: #ffffff;
-  --specific-color: rgb(253, 146, 34);
 
-  --primary-background-color: #1e1823;
-  --secondary-background-color: #ffffff;
+  --accent-color: #fd9222;
 
-  --icon-dark-theme: #ffffff;
-  --background-price-btn: #fafafa;
-  --background-modal-window: #fafafa;
-  --active-modal-button-color: #fcf1e0;
+  --primary-bg-color: #fafafa;
+  --secondary-bg-color: #1e1823;
+  --additional-bg-color: #ffffff;
+
+  --field-text-color: #000000;
+  --field-placeholder-color: rgba(64, 64, 64, 0.3);
 
   --general-transition: 250ms linear;
 }
 
-/* Подключение шрифтов */
+/* Fonts */
 
 @font-face {
   font-family: 'Montserrat';
@@ -60,19 +60,20 @@
   font-display: swap;
 }
 
-/*General*/
+/* General */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: var(--main-color-page);
-  background-color: #fafafa;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
+
 body.modal-open {
   overflow: hidden;
- 
 }
 
 .visually-hidden {
@@ -92,17 +93,16 @@ body.modal-open {
   width: 20px;
 } */
 
-
-
 /* .backdrop::-webkit-scrollbar-track {
   background-color: var(--background-our-product-list);
 }
 
 .backdrop::-webkit-scrollbar-thumb {
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
   border-radius: 20px;
   border: 3px solid orange;
 } */
+
 body::-webkit-scrollbar {
   width: 20px;
 }
@@ -112,7 +112,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
   border-radius: 20px;
   border: 3px solid orange;
 }
@@ -122,21 +122,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .flip-card-back-scroll::-webkit-scrollbar-track {
-  background: var(--background-our-product-list);
+  background-color: var(--background-our-product-list);
 }
 
 .flip-card-back-scroll::-webkit-scrollbar-thumb {
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
   border-radius: 20px;
   border: 3px solid orange;
-}
-
-/* Форма */
-/* Маячёк ввода */
-input,
-textarea,
-[contenteditable] {
-  caret-color: var(--specific-color);
 }
 
 /* Section utilities */
@@ -152,7 +144,7 @@ textarea,
 }
 
 .title-span {
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 .modal-window-title {
@@ -177,8 +169,8 @@ textarea,
 }
 
 .accent-button {
-  color: var(--icon-dark-theme);
-  background-color: var(--specific-color);
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
   border: none;
 
   transition: color var(--general-transition),
@@ -187,8 +179,8 @@ textarea,
 
 .accent-button:hover,
 .accent-button:focus {
-  color: var(--specific-color);
-  background-color: var(--active-modal-button-color);
+  color: var(--accent-color);
+  background-color: #fcf1e0;
 }
 
 .transparent-button {
@@ -200,7 +192,6 @@ textarea,
 }
 
 @media screen and (min-width: 376px) {
-  /*General*/
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -209,7 +200,6 @@ textarea,
 
 /*Только мобилка*/
 @media screen and (max-width: 767px) {
-  /*General*/
   .container {
     max-width: 375px;
     padding-left: 20px;
@@ -267,7 +257,6 @@ textarea,
 
 /*Только планшет*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  /*General*/
   .container {
     width: 768px;
     padding-left: 32px;
@@ -284,7 +273,6 @@ textarea,
 
 /*Только десктоп*/
 @media screen and (min-width: 1200px) {
-  /*General*/
   .container {
     width: 1200px;
     padding-left: 32px;

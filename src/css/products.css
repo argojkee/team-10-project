@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
 
-  background: var(--secondary-background-color);
+  background-color: var(--additional-bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
@@ -27,15 +27,14 @@
 
 .text-main-products {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   letter-spacing: -0.02em;
 }
 
 .text-minor-products {
   padding-top: 2px;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: -0.02em;
 
   color: rgba(17, 17, 17, 0.7);
@@ -44,13 +43,13 @@
 .price-btn {
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 19px;
   margin-top: 18px;
-  background: var(--background-price-btn);
+  background-color: var(--primary-bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
@@ -67,7 +66,7 @@
 .price-btn:hover,
 .price-brn:focus {
   color: var(--secondary-text-color);
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
 }
 
 /*Только мобилка*/

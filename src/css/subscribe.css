@@ -7,7 +7,7 @@
   margin-right: auto;
 
   color: var(--secondary-text-color);
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-bg-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

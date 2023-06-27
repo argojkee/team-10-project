@@ -4,7 +4,7 @@
 
 .page-footer {
   color: var(--secondary-text-color);
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .footer-up-block {
@@ -17,20 +17,22 @@
 
 .footer-slogan {
   max-width: 300px;
+
   letter-spacing: -0.02em;
   font-weight: 500;
 }
 
 .footer-social-link {
-  transition: color var(--general-transition);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: color var(--general-transition);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 .footer-social-icon {
@@ -43,23 +45,23 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+
   transition: color var(--general-transition);
 }
 
 .footer-nav-link:hover,
 .footer-nav-link:focus {
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 .footer-first-slogan {
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 .footer-contact {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-style: normal;
 }
 
 .footer-contact-first {
@@ -71,18 +73,19 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+
   transition: color var(--general-transition);
 }
 
 .footer-contact-link:hover,
 .footer-contact-link:focus {
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
-
 
 .button-registration-footer {
   color: var(--secondary-text-color);
 }
+
 .footer-social-list {
   display: flex;
   column-gap: 24px;
@@ -106,17 +109,21 @@
   .footer-up-block {
     padding-bottom: 32px;
   }
+
   .footer-nav {
     padding-top: 32px;
   }
+
   .footer-up-block-right {
     justify-content: space-between;
   }
+
   .footer-slogan {
     margin-bottom: 32px;
     font-size: 24px;
     line-height: 1.17;
   }
+
   .footer-nav-list {
     flex-direction: column;
     row-gap: 18px;
@@ -136,13 +143,16 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
   .footer-nav-list {
     column-gap: 24px;
   }
+
   .footer-social-list {
     display: flex;
     column-gap: 24px;
   }
+
   .footer-up-block {
     display: flex;
     column-gap: 24px;

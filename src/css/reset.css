@@ -25,6 +25,10 @@ button {
   padding: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 img {
   display: block;
   height: auto;

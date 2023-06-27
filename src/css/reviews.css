@@ -5,7 +5,7 @@
 .review-subtitle-name {
   margin-bottom: 10px;
   text-align: center;
-  color: var(--specific-color);
+  color: var(--accent-color);
 }
 
 .reviews-list-item {
@@ -31,7 +31,6 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.33;
-  color: #111111;
 }
 
 .reviews-direction {
@@ -47,51 +46,18 @@
   margin-left: auto;
   margin-right: auto;
 
-  border: 1px solid var(--specific-color);
-
-  color: var(--main-color-page);
+  color: var(--primary-text-color);
+  border: 1px solid var(--accent-color);
 }
 
 .review-button:hover,
 .review-button:focus {
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
   color: var(--secondary-text-color);
 }
 
-.review-modal-title {
-  text-align: start;
-}
-
-.review-input-item {
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 8px;
-}
-
-.review-textarea {
-  resize: none;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 8px;
-}
-
-.review-input-item-flag {
-  position: relative;
-}
-
-.review-flag-block {
-  position: absolute;
-  display: flex;
-  align-items: center;
-}
-
-.review-flag-after::after {
-  content: '';
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-}
-
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background-color: var(--specific-color);
+  background-color: var(--accent-color);
 }
 
 /*Только мобилка*/
